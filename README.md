@@ -4,4 +4,4 @@ Made with ❤️ by BlueSky.
 
 # Packages
 
-- utility-types
+- utils
