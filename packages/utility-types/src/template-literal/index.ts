@@ -1,1 +1,2 @@
-export * from './split'
+export * from './operation'
+export * from './relation'

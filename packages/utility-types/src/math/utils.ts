@@ -1,6 +1,6 @@
-import { And } from '../logic/and'
-import { Or } from '../logic/or'
-import { IsNatural, IsZero } from './property'
+import { And } from '../logic/relation/binary/and'
+import { Or } from '../logic/relation/binary/or'
+import { IsNatural, IsZero } from './relation/unary'
 
 /**
  * If both `A` and `B` are natural numbers then `true` else `false`

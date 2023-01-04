@@ -1,4 +1,4 @@
-import { LessThan } from '../relation/less-than'
+import { LessThan } from '../relation/binary/less-than'
 import { AreNatural } from '../utils'
 import { Add } from './add'
 import { Subtract } from './subtract'

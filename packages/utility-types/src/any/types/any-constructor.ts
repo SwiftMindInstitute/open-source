@@ -8,7 +8,7 @@ import { AnyArray } from './any-array'
  * ```
  */
 export interface AnyConstructor<A extends AnyArray = AnyArray> {
-  new (..._: A): void
+  new (..._: A): {}
 }
 
 export {}
