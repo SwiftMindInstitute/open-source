@@ -1,6 +1,6 @@
 # Utils
 
-A collection of utils functions by BlueSky.
+A collection of utility functions by BlueSky.
 
 # Functions
 

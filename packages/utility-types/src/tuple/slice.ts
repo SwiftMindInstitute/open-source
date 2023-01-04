@@ -22,7 +22,9 @@
  * ```
  */
 
-export type Slice = { linkToBug: '' }
+export type Slice = {
+  linkToBug: 'https://github.com/microsoft/TypeScript/issues/52098'
+}
 // export type Slice<
 //   A extends AnyArray,
 //   B extends number = 0,
