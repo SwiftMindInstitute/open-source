@@ -1,0 +1,7 @@
+export { default as isBigint } from './is-bigint'
+export { default as isBoolean } from './is-boolean'
+export { default as isNull } from './is-null'
+export { default as isNumber } from './is-number'
+export { default as isString } from './is-string'
+export { default as isSymbol } from './is-symbol'
+export { default as isUndefined } from './is-undefined'

@@ -1,0 +1,7 @@
+export { default as isArray } from './is-array'
+export { default as isFunction } from './is-function'
+export { default as isMap } from './is-map'
+export { default as isObject } from './is-object'
+export { default as isSet } from './is-set'
+export { default as isWeakMap } from './is-weak-map'
+export { default as isWeakSet } from './is-weak-set'

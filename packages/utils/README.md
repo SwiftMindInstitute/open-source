@@ -1,4 +1,4 @@
-# utils
+# Utils
 
 A collection of utils functions by BlueSky.
 
