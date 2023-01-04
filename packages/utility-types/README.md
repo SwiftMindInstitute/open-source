@@ -2,7 +2,7 @@
 
 A collection of utility-types by BlueSky.
 
-# Sections
+# Modules
 
 - [Any](#user-content-any)
 - [Tuple](#user-content-tuple)
@@ -10,6 +10,13 @@ A collection of utility-types by BlueSky.
 # Any
 
 These are generic interfaces for structured types.
+
+[TS: Utility-Types: Any Types](https://medium.com/@hansoksendahl/ts-utility-types-any-interfaces-b3bb13cb9639)
+
+## Relations
+
+- IsExtension
+- IsEqual
 
 ## Static Types
 
@@ -39,4 +46,26 @@ These are generic interfaces for structured types.
 
 # Logic
 
-## Logit
+## Generic Types
+
+- And
+- Not
+- Or
+- Xor
+
+# Math
+
+## Operation Types
+
+- add
+- divide
+- modulo
+- multiply
+- subtract
+
+## Relation Types
+
+- greaterThanOrEqual
+- greaterThan
+- lessThanOrEqual
+- lessThan

@@ -21,7 +21,8 @@
  * type Ex2 = Slice<['a', 'b', 'c'], 1, 2> // ['b']
  * ```
  */
-export type Slice = never
+
+export type Slice = { linkToBug: '' }
 // export type Slice<
 //   A extends AnyArray,
 //   B extends number = 0,
