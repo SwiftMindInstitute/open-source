@@ -1,0 +1,26 @@
+{
+  "name": "@blueowl-llc/utility-types",
+  "version": "0.0.0",
+  "description": "Utility types collection for TypeScript by BlueSky",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bluesky-llc/open-source.git"
+  },
+  "keywords": [
+    "typescript",
+    "utility",
+    "types",
+    "static-typing",
+    "bluesky"
+  ],
+  "author": "Hans Oksendahl <hans.oksendahl@bluesky.llc> (https://bluesky.llc)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bluesky-llc/open-source/issues"
+  },
+  "homepage": "https://github.com/bluesky-llc/open-source#readme"
+}

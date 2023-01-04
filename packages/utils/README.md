@@ -8,6 +8,11 @@ A collection of utils functions by BlueSky.
 
 ## createWhich
 
+Which is a functional pattern that provides a deterministic switch like
+functionality.
+
+[Article](https://medium.com/@hansoksendahl/utils-deterministic-switch-statements-with-which-7ef9daa53d85)
+
 There are two patterns of usage with createWhich.
 
 1. Without a default key
