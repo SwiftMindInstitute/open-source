@@ -1,4 +1,4 @@
-import { AnyKey } from './any-key'
+import { AnyKey } from '../static/any-key'
 
 /**
  * Generic object interface
