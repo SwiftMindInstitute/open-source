@@ -1,5 +1,5 @@
 {
-  "name": "@blueowl-llc/utility-types",
+  "name": "@blueowl.llc/utility-types",
   "version": "0.0.0",
   "description": "Utility types collection for TypeScript by BlueSky",
   "main": "index.js",
