@@ -1,1 +1,6 @@
-export * from './operation'
+export * from './head'
+export * from './in'
+export * from './last'
+export * from './length'
+export * from './slice'
+export * from './tail'

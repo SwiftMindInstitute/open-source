@@ -14,7 +14,24 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@any/*": ["any/*"],
+      "@any": ["any"],
+      "@group/*": ["grooup/*"],
+      "@group": ["grooup"],
+      "@logic/*": ["logic/*"],
+      "@logic": ["logic"],
+      "@math/*": ["math/*"],
+      "@math": ["math"],
+      "@object/*": ["object/*"],
+      "@object": ["object"],
+      "@template-literal/*": ["teplate-literal/*"],
+      "@template-literal": ["teplate-literal"],
+      "@tuple/*": ["tuple/*"],
+      "@tuple": ["tuple"]
+    }
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
