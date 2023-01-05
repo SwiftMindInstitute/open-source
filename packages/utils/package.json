@@ -22,17 +22,18 @@
   "homepage": "https://github.com/bluesky-llc/open-source#readme",
   "type": "module",
   "scripts": {
-    "test": "test",
+    "test": "jest",
     "dev": "vite build --watch",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@blueowl-llc/utility-types": "^0.0.0",
+    "@bluesky.llc/utility-types": "^0.0.0",
     "@types/node": "^18.11.5",
     "typescript": "^4.6.4",
     "vite": "^4.0.3",
-    "vite-plugin-dts": "^1.6.6",
-    "@blueowl-llc/utility-types": "^0.0.0"
+    "vite-plugin-dts": "^1.6.6"
   },
   "main": "./dist/utils.es.js",
   "module": "./dist/utils.umd.js",
