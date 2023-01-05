@@ -21,11 +21,11 @@ This package draws inspiration from the following:
 
 # Modules
 
-- [Any](#user-content-any-types)
-- [Tuple](#user-content-tuple-types)
-- [Logic](#user-content-logic-types)
+- [Logic Module](#user-content-logic-types)
+- [Any Module](#user-content-any-types)
+- [Tuple Module](#user-content-tuple-types)
 
-# Logic Types
+# Logic Module
 
 The Utility-Types library leverages the **condition type**. A condition type
 forms just the condition portion of a conditional statement. Since a condition
@@ -43,7 +43,7 @@ Links:
 - [Or](https://medium.com/@hansoksendahl/ts-utility-types-logic-types-1fc9abb69b0#fddb)
 - [Xor](https://medium.com/@hansoksendahl/ts-utility-types-logic-types-1fc9abb69b0#0515)
 
-# Any Types
+# Any Module
 
 Any types are a collection of simple static and generic types that represent the
 "general case" of their associated data type.
@@ -81,6 +81,8 @@ Math module.
 Links:
 
 - [TS: Utility-Types: Tuple Types](https://medium.com/@hansoksendahl/ts-utility-types-tuple-types-6198cd2573a3)
+
+## Types
 
 - [Append](https://medium.com/@hansoksendahl/ts-utility-types-tuple-types-6198cd2573a3#0843)
 - [Concat](https://medium.com/@hansoksendahl/ts-utility-types-tuple-types-6198cd2573a3#334d)
