@@ -10,7 +10,7 @@ This package draws inspiration from the following:
 
 - [utility-types](https://github.com/piotrwitek/utility-types) by [Piotr Witek](https://github.com/piotrwitek)
 - [fp-ts](https://github.com/gcanti/fp-ts) and [io-ts](https://github.com/gcanti/io-ts) by [Giulio Canti](https://gcanti.github.io/)
-- The article "[Implementing Arithmetic Within TypeScript’s Type System]" by [Ryan Dabler](https://medium.com/@ryan.dabler)
+- The article [Implementing Arithmetic Within TypeScript’s Type System](https://itnext.io/implementing-arithmetic-within-typescripts-type-system-a1ef140a6f6f) by [Ryan Dabler](https://medium.com/@ryan.dabler)
 
 # Terms
 
@@ -61,26 +61,26 @@ with them.
 
 # Logic Types
 
-## Generic Types
+## Conditions
 
 - And
 - Not
 - Or
 - Xor
 
-# Math
+# Math Types
 
-## Operation Types
+## Conditions
 
-- add
-- divide
-- modulo
-- multiply
-- subtract
+- GreaterThanOrEqual
+- GreaterThan
+- LessThanOrEqual
+- LessThan
 
-## Relation Types
+## Types
 
-- greaterThanOrEqual
-- greaterThan
-- lessThanOrEqual
-- lessThan
+- Add
+- Divide
+- Modulo
+- Multiply
+- Subtract
