@@ -14,15 +14,10 @@ This package draws inspiration from the following:
 
 # Terms
 
-For the most part the utility types in this library are separated into two
-categories. The reason for this separation is that there are utility types which
-build specifically off of Relations on binary values.
-
-- **Relations** - Return a boolean
-- **Operations** - Return a type other than boolean
-
-Both **Relations** and **Operations** can have unary or binary types associated
-with them.
+- **Static type** - A type that can NOT take parameters
+- **Generic type** - A type that can take parameters
+  - **Conditional type** - A Generic type that uses the extends keyword
+    - **Condition type** - A Conditional type that always returns a boolean
 
 # Modules
 
@@ -30,9 +25,37 @@ with them.
 - [Tuple](#user-content-tuple-types)
 - [Logic](#user-content-logic-types)
 
+# Logic Types
+
+The Utility-Types library leverages the **condition type**. A condition type
+forms just the condition portion of a conditional statement. Since a condition
+type always returns a boolean value it is possible to perform logic with them.
+The types provided by the Utility-Types logic module.
+
+Links:
+
+- [TS: Utility-Types: Logic Types](https://medium.com/@hansoksendahl/ts-utility-types-logic-types-1fc9abb69b0#11a5)
+
+## Conditions
+
+- [And](https://medium.com/@hansoksendahl/ts-utility-types-logic-types-1fc9abb69b0#11a5)
+- [Not](https://medium.com/@hansoksendahl/ts-utility-types-logic-types-1fc9abb69b0#1b7f)
+- [Or](https://medium.com/@hansoksendahl/ts-utility-types-logic-types-1fc9abb69b0#fddb)
+- [Xor](https://medium.com/@hansoksendahl/ts-utility-types-logic-types-1fc9abb69b0#0515)
+
 # Any Types
 
-[TS: Utility-Types: Any Types](https://medium.com/@hansoksendahl/ts-utility-types-any-interfaces-b3bb13cb9639)
+Any types are a collection of simple static and generic types that represent the
+"general case" of their associated data type.
+
+The any types module contains two **condition types** (IsExtension, and
+IsEqual). Condition types are conditional types that return only boolean values.
+Condition types can be composed using boolean logic such as that provided by
+Utility-Types' logic module.
+
+Links:
+
+- [TS: Utility-Types: Any Types](https://medium.com/@hansoksendahl/ts-utility-types-any-interfaces-b3bb13cb9639)
 
 ## Conditions
 
@@ -50,6 +73,15 @@ with them.
 
 # Tuple Types
 
+Tuple types are generic types for working with tuples. Tuples unlike their
+counsins arrays have order, and magnitude (length). The additional properties of
+arrays enable arithematic operations such as those provided by Utility-Types'
+Math module.
+
+Links:
+
+- [TS: Utility-Types: Tuple Types](https://medium.com/@hansoksendahl/ts-utility-types-tuple-types-6198cd2573a3)
+
 - [Append](https://medium.com/@hansoksendahl/ts-utility-types-tuple-types-6198cd2573a3#0843)
 - [Concat](https://medium.com/@hansoksendahl/ts-utility-types-tuple-types-6198cd2573a3#334d)
 - [Head](https://medium.com/@hansoksendahl/ts-utility-types-tuple-types-6198cd2573a3#332e)
@@ -58,15 +90,6 @@ with them.
 - [Length](https://medium.com/@hansoksendahl/ts-utility-types-tuple-types-6198cd2573a3#f28a)
 - [Prepend](https://medium.com/@hansoksendahl/ts-utility-types-tuple-types-6198cd2573a3#8228)
 - [Tail](https://medium.com/@hansoksendahl/ts-utility-types-tuple-types-6198cd2573a3#8612)
-
-# Logic Types
-
-## Conditions
-
-- And
-- Not
-- Or
-- Xor
 
 # Math Types
 
