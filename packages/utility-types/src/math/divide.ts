@@ -3,7 +3,10 @@ import { EveryNatural } from './condition/every-natural'
 import { LessThan } from './condition/less-than'
 import { Subtract } from './subtract'
 
-/** Utility function used in division */
+/**
+ * Repeated subtraction utility function used in division
+ * @internal
+ */
 export type MultiSub<
   A extends number,
   B extends number,
@@ -14,7 +17,15 @@ export type MultiSub<
   ? MultiSub<Subtract<A, B>, B, Add<C, 1>>
   : never
 
-/** Return the quotient of `A / B` as a natural number */
+/**
+ * Evaluate `A / B`, where `A ∈ ℕ` and `B ∈ ℕ`
+ * @example
+ * ```
+ * type Ex1 = Divide<9, 3> // 3
+ * // Note: mathematical operations only support the natural numbers
+ * type Ex2 = Divide<11, 3> // 3
+ * ```
+ */
 export type Divide<A extends number, B extends number> = EveryNatural<
   A,
   B

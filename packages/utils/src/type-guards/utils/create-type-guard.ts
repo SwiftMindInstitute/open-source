@@ -1,4 +1,4 @@
-import { AnyFunction } from 'utility-types'
+import { AnyFunction } from '@bluesky.llc/utility-types'
 
 const createTypeGuard = <A>(callback: AnyFunction<[unknown], boolean>) => {
   return (a: unknown): a is A => callback(a)

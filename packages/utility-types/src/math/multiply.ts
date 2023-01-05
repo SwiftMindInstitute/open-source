@@ -2,7 +2,10 @@ import { Add } from './add'
 import { EveryNatural } from './condition/every-natural'
 import { Subtract } from './subtract'
 
-/** Utility function used in division */
+/**
+ * Repeated addition utility function used in multiplication
+ * @internal
+ */
 type MultiAdd<
   A extends number,
   B extends number,
@@ -13,7 +16,14 @@ type MultiAdd<
   ? MultiAdd<A, Add<A, B>, Subtract<C, 1>>
   : never
 
-/** Return the product of `A * B` */
+/**
+ * Return the product of `A * B`
+ * @example
+ * ```
+ * type Ex1 = Multiply<2, 3> // 6
+ * type Ex2 = Multiply<5, 5> // 25
+ * ```
+ * */
 export type Multiply<A extends number, B extends number> = EveryNatural<
   A,
   B

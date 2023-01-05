@@ -1,5 +1,6 @@
 import { IsEqual } from '@any/condition/is-equal'
 import { Subtract } from '../subtract'
+import { IsZero } from './is-zero'
 import { SomeZero } from './some-zero'
 
 /**
@@ -16,7 +17,7 @@ export type LessThan<A extends number, B extends number> = SomeZero<
 > extends true
   ? IsEqual<A, B> extends true
     ? false
-    : A extends 0
+    : IsZero<A> extends true
     ? true
     : false
   : LessThan<Subtract<A, 1>, Subtract<B, 1>>

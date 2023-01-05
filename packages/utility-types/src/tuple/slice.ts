@@ -13,6 +13,8 @@
  *
  * > I'm not ready to mark this as deprecated yet I would like to file a bug with
  * > the TypeScript team. -- hao
+ * >
+ * > [Link to bug](https://github.com/microsoft/TypeScript/issues/52098)
  *
  * Return a slice of a tuple starting at index `A` ending at index `B`
  * @example
@@ -22,20 +24,25 @@
  * ```
  */
 
-export type Slice = {
-  linkToBug: 'https://github.com/microsoft/TypeScript/issues/52098'
-}
-// export type Slice<
-//   A extends AnyArray,
-//   B extends number = 0,
-//   C extends number = Length<A>,
-//   D extends AnyArray = []
-// > = LessThan<B, Length<A>> extends true
-//   ? LessThan<Add<B, Length<D>>, C> extends true
-//     ? LessThan<Add<B, Length<D>>, Length<A>> extends true
-//       ? Slice<A, B, C, [...D, A[Add<B, Length<D>>]]>
-//       : D
-//     : D
-//   : []
+import { AnyArray } from '@any/any-array'
+import { Add } from '@math/add'
+import { LessThan } from '@math/condition/less-than'
+import { Length } from './length'
+
+export type Slice<
+  A extends AnyArray,
+  B extends number = 0,
+  C extends number = Length<A>,
+  D extends AnyArray = []
+> = LessThan<B, Length<A>> extends true
+  ? // @ts-ignore
+    LessThan<Add<B, Length<D>>, C> extends true
+    ? // @ts-ignore
+      LessThan<Add<B, Length<D>>, Length<A>> extends true
+      ? // @ts-ignore
+        Slice<A, B, C, [...D, A[Add<B, Length<D>>]]>
+      : D
+    : D
+  : []
 
 export {}

@@ -1,4 +1,4 @@
-import { Falsy } from 'utility-types'
+import { Falsy } from '@bluesky.llc/utility-types'
 import { createTypeGuard } from './utils'
 
 const isFalsy = createTypeGuard<Falsy>(value => !value)

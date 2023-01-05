@@ -13,3 +13,5 @@ import { IsWhole } from './is-whole'
  * ```
  */
 export type IsNatural<A extends number> = And<IsNonNegative<A>, IsWhole<A>>
+
+export {}
