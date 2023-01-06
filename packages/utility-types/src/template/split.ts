@@ -3,15 +3,19 @@
  * @experimental
  * @example
  * ```
- * type Ex1 = Split<'a.b.c'> // ['a', 'b', 'c']
+ * type Ex1 = Split<'abc'> // ['a', 'b', 'c']
  * type Ex2 = Split<'1,2,3', ','> // ['1', '2', '3']
  * ```
  */
 export type Split<
   A extends string,
-  B extends string = '.',
+  B extends string = '',
   C extends string[] = []
-> = A extends `${string}${B}${string}`
+> = B extends ''
+  ? A extends `${infer D}${infer E}`
+    ? Split<E, B, [...C, D]>
+    : C
+  : A extends `${string}${B}${string}`
   ? A extends `${infer D}${B}${infer E}`
     ? Split<E, B, [...C, D]>
     : never

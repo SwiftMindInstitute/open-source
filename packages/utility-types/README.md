@@ -2,6 +2,39 @@
 
 A collection of utility-types by BlueSky.
 
+These utility types enable you to be more expressive with your type definitions.
+
+Utility-Types introduces the concept of a [condition type](https://medium.com/@hansoksendahl/ts-composing-boolean-logic-with-the-condition-type-11059db6f288#d5dc). The
+condition type is a conditional type that always retuns a boolean value. What
+the condition type does is standardize the interface for composing boolean
+statements enabling the creation of complex comparisons for other conditionals.
+
+Here is an example from the Utility-Types logic module.
+
+```ts
+// Xor uses condition types and is itself a condition type.
+export type Xor<A extends boolean, B extends boolean> = And<
+  Or<A, B>,
+  Not<And<A, B>>
+>
+
+type TT = Xor<true, true> // false
+type TF = Xor<true, false> // true
+type FT = Xor<false, true> // true
+type FF = Xor<false, false> // false
+```
+
+This increase in expressiveness is not limited to logic you can also perform
+mathematical operations on the natural numbers (ℕ).
+
+```ts
+type Ex1 = Add<1, 1> // 2
+type Ex2 = Subtract<3, 1> // 2
+type Ex3 = Multiply<2, 3> // 6
+type Ex4 = Divide<9, 3> // 3
+type Ex5 = Modulo<4, 3> // 1
+```
+
 # Overview
 
 This package contains only types. There is no run time code.
@@ -124,3 +157,30 @@ Links:
 - [Modulo](https://medium.com/@hansoksendahl/ts-utility-types-math-types-8c06e650cc82#394e)
 - [Multiply](https://medium.com/@hansoksendahl/ts-utility-types-math-types-8c06e650cc82#da06)
 - [Subtract](https://medium.com/@hansoksendahl/ts-utility-types-math-types-8c06e650cc82#a01c)
+
+# Object Types
+
+## Types
+
+- [KeyOf]()
+- [Override]()
+- [ValueOf]()
+
+# Template Types
+
+## Conditions
+
+- [Includes]()
+
+## Types
+
+- [Split]()
+- [Join]()
+
+## Union Types
+
+Static types, used by Utils.
+
+- [Falsy]()
+- [Nullish]()
+- [Primitive]()

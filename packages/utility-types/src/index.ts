@@ -1,5 +1,7 @@
 export * from './any'
 export * from './logic'
 export * from './math'
+export * from './object'
+export * from './template'
 export * from './tuple'
 export * from './union'
