@@ -12,6 +12,12 @@ This package draws inspiration from the following:
 - [fp-ts](https://github.com/gcanti/fp-ts) and [io-ts](https://github.com/gcanti/io-ts) by [Giulio Canti](https://gcanti.github.io/)
 - The article [Implementing Arithmetic Within TypeScript’s Type System](https://itnext.io/implementing-arithmetic-within-typescripts-type-system-a1ef140a6f6f) by [Ryan Dabler](https://medium.com/@ryan.dabler)
 
+# Installation
+
+```shell
+npm install @bluesky.llc/utility-types --save-dev
+```
+
 # Terms
 
 - **Static type** - A type that can NOT take parameters
