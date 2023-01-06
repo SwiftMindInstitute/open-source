@@ -59,17 +59,17 @@ Links:
 
 ## Conditions
 
-- [IsExtension](https://medium.com/@hansoksendahl/ts-utility-types-any-interfaces-b3bb13cb9639#fbd6)
-- [IsEqual](https://medium.com/@hansoksendahl/ts-utility-types-any-interfaces-b3bb13cb9639#e295)
+- [IsExtension<A> → boolean](https://medium.com/@hansoksendahl/ts-utility-types-any-interfaces-b3bb13cb9639#fbd6)
+- [IsEqual<A, B> → boolean](https://medium.com/@hansoksendahl/ts-utility-types-any-interfaces-b3bb13cb9639#e295)
 
 ## Types
 
-- [AnyArray](https://medium.com/@hansoksendahl/ts-utility-types-any-interfaces-b3bb13cb9639#c655)
-- [AnyConstructor](https://medium.com/@hansoksendahl/ts-utility-types-any-interfaces-b3bb13cb9639#129e)
-- [AnyFunction](https://medium.com/@hansoksendahl/ts-utility-types-any-interfaces-b3bb13cb9639#ed5a)
+- [AnyArray<A = any>](https://medium.com/@hansoksendahl/ts-utility-types-any-interfaces-b3bb13cb9639#c655)
+- [AnyConstructor<A = AnyArray, B = any>](https://medium.com/@hansoksendahl/ts-utility-types-any-interfaces-b3bb13cb9639#129e)
+- [AnyFunction<A = AnyArray, B = any>](https://medium.com/@hansoksendahl/ts-utility-types-any-interfaces-b3bb13cb9639#ed5a)
 - [AnyKey](https://medium.com/@hansoksendahl/ts-utility-types-any-interfaces-b3bb13cb9639#f6e5)
-- [AnyObject](https://medium.com/@hansoksendahl/ts-utility-types-any-interfaces-b3bb13cb9639#1273)
-- [AnyTuple](https://medium.com/@hansoksendahl/ts-utility-types-any-interfaces-b3bb13cb9639#8313)
+- [AnyObject<A = AnyKey, B = any>](https://medium.com/@hansoksendahl/ts-utility-types-any-interfaces-b3bb13cb9639#1273)
+- [AnyTuple<A extends number, B = any>](https://medium.com/@hansoksendahl/ts-utility-types-any-interfaces-b3bb13cb9639#8313)
 
 # Tuple Types
 
@@ -106,14 +106,14 @@ Links:
 - [IsNonPositive](https://medium.com/@hansoksendahl/ts-utility-types-math-types-8c06e650cc82#2996)
 - [IsPositive](https://medium.com/@hansoksendahl/ts-utility-types-math-types-8c06e650cc82#e657)
 - [IsWhole](https://medium.com/@hansoksendahl/ts-utility-types-math-types-8c06e650cc82#cf62)
-- [IsZero]()
-- [LessThanOrEqual]()
-- [LessThan]()
+- [IsZero](https://medium.com/@hansoksendahl/ts-utility-types-math-types-8c06e650cc82#e787)
+- [LessThanOrEqual](LessThanOrEqual)
+- [LessThan](https://medium.com/@hansoksendahl/ts-utility-types-math-types-8c06e650cc82#dd91)
 
 ## Types
 
-- Add
-- Divide
-- Modulo
-- Multiply
-- Subtract
+- [Add](https://medium.com/@hansoksendahl/ts-utility-types-math-types-8c06e650cc82#5aab)
+- [Divide](https://medium.com/@hansoksendahl/ts-utility-types-math-types-8c06e650cc82#6856)
+- [Modulo](https://medium.com/@hansoksendahl/ts-utility-types-math-types-8c06e650cc82#394e)
+- [Multiply](https://medium.com/@hansoksendahl/ts-utility-types-math-types-8c06e650cc82#da06)
+- [Subtract](https://medium.com/@hansoksendahl/ts-utility-types-math-types-8c06e650cc82#a01c)
