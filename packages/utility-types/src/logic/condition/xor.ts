@@ -12,8 +12,9 @@ import { Or } from './or'
  * type Ex4 = Xor<false, false> // false
  * ```
  */
-export type Xor<A extends boolean, B extends boolean> = Or<A, B> extends true
-  ? Not<And<A, B>>
-  : false
+export type Xor<A extends boolean, B extends boolean> = And<
+  Or<A, B>,
+  Not<And<A, B>>
+>
 
 export {}
