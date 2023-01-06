@@ -65,17 +65,17 @@ Links:
 
 ## Conditions
 
-- [IsExtension<A> → boolean](https://medium.com/@hansoksendahl/ts-utility-types-any-interfaces-b3bb13cb9639#fbd6)
-- [IsEqual<A, B> → boolean](https://medium.com/@hansoksendahl/ts-utility-types-any-interfaces-b3bb13cb9639#e295)
+- [IsExtension](https://medium.com/@hansoksendahl/ts-utility-types-any-interfaces-b3bb13cb9639#fbd6)
+- [IsEqual](https://medium.com/@hansoksendahl/ts-utility-types-any-interfaces-b3bb13cb9639#e295)
 
 ## Types
 
-- [AnyArray<A = any>](https://medium.com/@hansoksendahl/ts-utility-types-any-interfaces-b3bb13cb9639#c655)
-- [AnyConstructor<A = AnyArray, B = any>](https://medium.com/@hansoksendahl/ts-utility-types-any-interfaces-b3bb13cb9639#129e)
-- [AnyFunction<A = AnyArray, B = any>](https://medium.com/@hansoksendahl/ts-utility-types-any-interfaces-b3bb13cb9639#ed5a)
+- [AnyArray](https://medium.com/@hansoksendahl/ts-utility-types-any-interfaces-b3bb13cb9639#c655)
+- [AnyConstructor](https://medium.com/@hansoksendahl/ts-utility-types-any-interfaces-b3bb13cb9639#129e)
+- [AnyFunction](https://medium.com/@hansoksendahl/ts-utility-types-any-interfaces-b3bb13cb9639#ed5a)
 - [AnyKey](https://medium.com/@hansoksendahl/ts-utility-types-any-interfaces-b3bb13cb9639#f6e5)
-- [AnyObject<A = AnyKey, B = any>](https://medium.com/@hansoksendahl/ts-utility-types-any-interfaces-b3bb13cb9639#1273)
-- [AnyTuple<A extends number, B = any>](https://medium.com/@hansoksendahl/ts-utility-types-any-interfaces-b3bb13cb9639#8313)
+- [AnyObject](https://medium.com/@hansoksendahl/ts-utility-types-any-interfaces-b3bb13cb9639#1273)
+- [AnyTuple](https://medium.com/@hansoksendahl/ts-utility-types-any-interfaces-b3bb13cb9639#8313)
 
 # Tuple Types
 
