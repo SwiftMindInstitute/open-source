@@ -30,6 +30,7 @@ npm install @bluesky.llc/utility-types --save-dev
 - [Logic Module](#user-content-logic-types)
 - [Any Module](#user-content-any-types)
 - [Tuple Module](#user-content-tuple-types)
+- [Math Module](#user-content-math-types)
 
 # Logic Module
 
