@@ -1,6 +1,6 @@
 import { Add } from './add'
 import { EveryNatural } from './condition/every-natural'
-import { LessThan } from './condition/less-than'
+import { IsLessThan } from './condition/is-less-than'
 import { Subtract } from './subtract'
 
 /**
@@ -11,7 +11,7 @@ export type MultiSub<
   A extends number,
   B extends number,
   C extends number
-> = LessThan<A, B> extends true
+> = IsLessThan<A, B> extends true
   ? C
   : Add<C, 1> extends number
   ? MultiSub<Subtract<A, B>, B, Add<C, 1>>

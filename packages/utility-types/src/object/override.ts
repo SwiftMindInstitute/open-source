@@ -8,3 +8,5 @@ import { KeyOf } from './key-of'
  * ```
  */
 export type Override<A extends object, B extends object> = Omit<A, KeyOf<B>> & B
+
+export {}

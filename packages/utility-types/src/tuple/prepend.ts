@@ -7,6 +7,6 @@ import { AnyArray } from '@any/any-array'
  * type Ex = Prepend<[2, 3], 1> // [1, 2, 3]
  * ```
  */
-export type Prepend<A extends AnyArray, B extends any> = [B, ...A]
+export type Prepend<A extends AnyArray, B> = [B, ...A]
 
 export {}

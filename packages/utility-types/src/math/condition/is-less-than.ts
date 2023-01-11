@@ -7,11 +7,11 @@ import { SomeZero } from './some-zero'
  * Evaluate `A < B`, where `A ∈ ℕ` and `B ∈ ℕ`
  * @example
  * ```
- * type Ex1 = LessThan<1, 3> // true
- * type Ex2 = LessThan<3, 1> // false
+ * type Ex1 = IsLessThan<1, 3> // true
+ * type Ex2 = IsLessThan<3, 1> // false
  * ```
  */
-export type LessThan<A extends number, B extends number> = SomeZero<
+export type IsLessThan<A extends number, B extends number> = SomeZero<
   A,
   B
 > extends true
@@ -20,6 +20,6 @@ export type LessThan<A extends number, B extends number> = SomeZero<
     : IsZero<A> extends true
     ? true
     : false
-  : LessThan<Subtract<A, 1>, Subtract<B, 1>>
+  : IsLessThan<Subtract<A, 1>, Subtract<B, 1>>
 
 export {}

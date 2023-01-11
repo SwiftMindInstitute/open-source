@@ -1,14 +1,31 @@
 import { IsEmpty } from '@tuple/condition/IsEmpty'
+import { Opts } from 'helpers/opts'
 
+/**
+ * Recursive options for Join
+ * @internal
+ */
+type JoinOpts<A extends string = string> = Opts<'Join', { value: A }>
+
+/**
+ * Join a tuple of strings A on a character B.
+ * @example
+ * ```
+ * type Ex = Join<['a', 'b', 'c'], ', '> // 'a, b, c'
+ * ```
+ */
 export type Join<
   A extends string[],
-  B extends string = ''
+  B extends string = '',
+  O extends JoinOpts = JoinOpts<''>
 > = IsEmpty<A> extends true
-  ? B
-  : A extends [infer C, ...infer D]
-  ? C extends string // Why this is necessary...
-    ? D extends string[] // ...I do not know. More 4.9.4 weirdness? - hao
-      ? Join<D, `${B}${C}`>
+  ? O['value']
+  : A extends [infer D, ...infer E]
+  ? D extends string
+    ? E extends string[]
+      ? O['value'] extends ''
+        ? Join<E, B, JoinOpts<D>>
+        : Join<E, B, JoinOpts<`${O['value']}${B}${D}`>>
       : never
     : never
-  : B
+  : never

@@ -9,8 +9,6 @@ import { AnyArray } from './any-array'
  * type Ex3 = AnyFunction<[number, number], number> // (a: number, b: number) => number
  * ```
  */
-export type AnyFunction<A extends AnyArray = AnyArray, B extends any = any> = (
-  ..._: A
-) => B
+export type AnyFunction<A extends AnyArray = AnyArray, B = any> = (..._: A) => B
 
 export {}

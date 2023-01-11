@@ -7,7 +7,7 @@ import { AnyKey } from './any-key'
  * type Ex1 = AnyObject //
  * ```
  */
-export type AnyObject<A extends AnyKey = AnyKey, B extends any = any> = {
+export type AnyObject<A extends AnyKey = AnyKey, B = any> = {
   [C in A]: B
 }
 

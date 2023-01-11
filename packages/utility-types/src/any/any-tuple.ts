@@ -10,7 +10,7 @@ import { AnyArray } from './any-array'
  */
 export type AnyTuple<
   A extends number,
-  B extends any = any,
+  B = any,
   C extends AnyArray = []
 > = C extends {
   length: A

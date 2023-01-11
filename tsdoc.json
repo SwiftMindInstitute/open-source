@@ -1,0 +1,13 @@
+{
+  "extends": ["typedoc/tsdoc.json"],
+  "tagDefinitions": [
+    {
+      "tagName": "@myCustomTag",
+      "syntaxKind": "block"
+    }
+  ],
+  "$schema": "https://typedoc.org/schema.json",
+  "entryPointStrategy": "packages",
+  "entryPoints": ["packages/utility-types", "packages/utils"],
+  "out": "doc"
+}

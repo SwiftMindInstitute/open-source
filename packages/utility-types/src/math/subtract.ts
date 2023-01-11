@@ -1,5 +1,5 @@
 import { AnyTuple } from '@any/any-tuple'
-import { Length } from '@tuple/length'
+import { LengthProp } from 'prop/length-prop'
 import { EveryNatural } from './condition/every-natural'
 
 /**
@@ -15,6 +15,6 @@ export type Subtract<A extends number, B extends number> = EveryNatural<
   B
 > extends true
   ? AnyTuple<A> extends [...infer C, ...AnyTuple<B>]
-    ? Length<C>
+    ? LengthProp<C>
     : never
   : never
