@@ -36,5 +36,11 @@
   "types": "./dist/index.d.ts",
   "files": [
     "./dist/*"
-  ]
+  ],
+  "typedoc": {
+    "entryPoint": "./src/index.ts",
+    "readmeFile": "./README.md",
+    "displayName": "Utility-Types",
+    "tsconfig": "./tsconfig.json"
+  }
 }

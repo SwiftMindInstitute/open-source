@@ -1,9 +1,9 @@
 {
-  "name": "@bluesky.llc/utility-types",
+  "name": "@bluesky.llc/utils",
   "version": "0.0.1",
   "typedoc": {
     "entryPoint": "./src/index.ts",
     "readmeFile": "./README.md",
-    "displayName": "Utility-Types"
+    "displayName": "Utils"
   }
 }

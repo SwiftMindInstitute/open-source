@@ -1,10 +1,9 @@
-/** The type of any possible key */
-type Key = keyof any
+import { AnyKey } from '@bluesky.llc/utility-types'
 
 /**
  * If `A[B]` then `A[B]` else if `A[C]` then `A[C]` else `undefined`
  */
-type WithFallback<A, B, C = undefined> = B extends keyof A
+export type WithFallback<A, B, C = undefined> = B extends keyof A
   ? A[B]
   : C extends keyof A
   ? A[C]
@@ -13,9 +12,9 @@ type WithFallback<A, B, C = undefined> = B extends keyof A
 /**
  * Which function interface overloads
  */
-interface Which {
-  <A>(a: A): <B extends Key>(b?: B) => WithFallback<A, B>
-  <A, B extends keyof A>(a: A, b?: B): <C extends Key>(
+export interface Which {
+  <A>(a: A): <B extends AnyKey>(b?: B) => WithFallback<A, B>
+  <A, B extends keyof A>(a: A, b?: B): <C extends AnyKey>(
     c?: C
   ) => WithFallback<A, C, B>
 }
@@ -45,14 +44,15 @@ interface Which {
  * @param defaultKey
  * @returns `ref[key]`
  */
-const createWhich: Which = (ref: any, defaultKey?: Key) => (key?: Key) => {
-  if (key !== undefined) {
-    return ref[key]
-  } else if (defaultKey !== undefined) {
-    return ref[defaultKey]
-  } else {
-    return
+const createWhich: Which =
+  (ref: any, defaultKey?: AnyKey) => (key?: AnyKey) => {
+    if (key !== undefined) {
+      return ref[key]
+    } else if (defaultKey !== undefined) {
+      return ref[defaultKey]
+    } else {
+      return
+    }
   }
-}
 
 export default createWhich

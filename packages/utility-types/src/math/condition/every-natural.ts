@@ -15,3 +15,5 @@ export type EveryNatural<A extends number, B extends number> = And<
   IsNatural<A>,
   IsNatural<B>
 >
+
+export {}

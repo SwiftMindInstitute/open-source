@@ -19,6 +19,5 @@
     "sourceMap": true,
     "jsx": "react",
     "skipLibCheck": true
-  },
-  "include": ["src"]
+  }
 }
