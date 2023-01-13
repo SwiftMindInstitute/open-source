@@ -8,7 +8,7 @@ import { Subtract } from './subtract'
  * @group Math
  * @internal
  */
-export type MultiSub<
+type MultiSub<
   A extends number,
   B extends number,
   C extends number
