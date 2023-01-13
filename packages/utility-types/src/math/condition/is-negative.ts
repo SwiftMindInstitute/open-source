@@ -7,8 +7,8 @@ import { IsExtension } from '@any/condition/is-extension'
  * @example
  * ```
  * type Ex1 = IsNegative<-1> // true
- * type Ex2 = IsNegative<0> // false
- * type Ex3 = IsNegative<1> // false
+ * type Ex2 = IsNegative<0>  // false
+ * type Ex3 = IsNegative<1>  // false
  * ```
  */
 export type IsNegative<A extends number> = IsExtension<`${A}`, `-${number}`>

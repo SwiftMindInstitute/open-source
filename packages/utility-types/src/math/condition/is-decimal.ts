@@ -7,7 +7,7 @@ import { IsExtension } from '@any/condition/is-extension'
  * @example
  * ```
  * type Ex1 = IsDecimal<1.2> // true
- * type Ex2 = IsDecimal<3> // false
+ * type Ex2 = IsDecimal<3>   // false
  * ```
  */
 export type IsDecimal<A extends number> = IsExtension<

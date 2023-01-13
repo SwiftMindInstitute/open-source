@@ -7,7 +7,7 @@ import { StringIdentity } from '..'
  * @group Identity
  * @example
  * ```
- * type Ex1 = IsStringIdentity<''> // true
+ * type Ex1 = IsStringIdentity<''>    // true
  * type Ex2 = IsStringIdentity<'abc'> // false
  * ```
  */

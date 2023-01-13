@@ -4,7 +4,7 @@
  * @group Logic
  * @example
  * ```
- * type Ex1 = Not<true> // false
+ * type Ex1 = Not<true>  // false
  * type Ex2 = Not<false> // true
  * ```
  */

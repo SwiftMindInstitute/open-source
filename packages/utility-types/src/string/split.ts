@@ -4,7 +4,7 @@
  * @group String
  * @example
  * ```
- * type Ex1 = Split<'abc'> // ['a', 'b', 'c']
+ * type Ex1 = Split<'abc'>        // ['a', 'b', 'c']
  * type Ex2 = Split<'1,2,3', ','> // ['1', '2', '3']
  * ```
  */

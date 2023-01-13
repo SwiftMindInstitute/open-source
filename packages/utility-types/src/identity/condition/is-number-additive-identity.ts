@@ -2,7 +2,7 @@ import { IsEqual } from '@any/condition'
 import { NumberAdditiveIdentity } from '../number-additive-identity'
 
 /**
- * If `A ≡ 0` then true else false
+ * If `A ≡ 0` then `true` else `false`
  * @group Condition
  * @group Identity
  * @example

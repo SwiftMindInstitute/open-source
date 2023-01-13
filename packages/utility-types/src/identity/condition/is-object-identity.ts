@@ -7,7 +7,7 @@ import { ObjectIdenity } from '@identity/object-identity'
  * @group Identity
  * @example
  * ```
- * type Ex1 = IsObjectIdentity<{}> // true
+ * type Ex1 = IsObjectIdentity<{}>          // true
  * type Ex2 = IsObjectIdentity<{ a: true }> // false
  * ```
  */

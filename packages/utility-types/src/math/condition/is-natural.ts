@@ -8,9 +8,9 @@ import { IsWhole } from './is-whole'
  * @group Math
  * @example
  * ```
- * type Ex1 = IsNatural<-1> // false
- * type Ex2 = IsNatural<0> // true
- * type Ex3 = IsNatural<1> // true
+ * type Ex1 = IsNatural<-1>  // false
+ * type Ex2 = IsNatural<0>   // true
+ * type Ex3 = IsNatural<1>   // true
  * type Ex4 = IsNatural<2.3> // false
  * ```
  */

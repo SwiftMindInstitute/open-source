@@ -7,7 +7,7 @@ import { WithLengthProp } from './with-prop/with-length-prop'
  * @group Prop
  * @example
  * ```
- * type Ex1 = LengthProp<'Hello'> // 5
+ * type Ex1 = LengthProp<'Hello'>   // 5
  * type Ex2 = LengthProp<[1, 2, 3]> // 3
  * ```
  */

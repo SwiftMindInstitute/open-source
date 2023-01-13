@@ -5,7 +5,7 @@ import { AnyArray } from './any-array'
  * @group Any
  * @example
  * ```
- * type Ex1 = AnyTuple<2> // [any, any]
+ * type Ex1 = AnyTuple<2>         // [any, any]
  * type Ex2 = AnyTuple<3, number> // [number, number, number]
  * ```
  */

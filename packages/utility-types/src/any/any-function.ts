@@ -5,8 +5,8 @@ import { AnyArray } from './any-array'
  * @group Any
  * @example
  * ```
- * type Ex1 = AnyFunction // (..._: any[]) => any
- * type Ex2 = AnyFunction<[string]> // (a: string) => any
+ * type Ex1 = AnyFunction                           // (..._: any[]) => any
+ * type Ex2 = AnyFunction<[string]>                 // (a: string) => any
  * type Ex3 = AnyFunction<[number, number], number> // (a: number, b: number) => number
  * ```
  */

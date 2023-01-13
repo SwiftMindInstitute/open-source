@@ -7,7 +7,7 @@ import { ArrayIdentity } from '@identity/array-identity'
  * @group Identity
  * @example
  * ```
- * type Ex1 = IsArrayIdentity<[]> // true
+ * type Ex1 = IsArrayIdentity<[]>     // true
  * type Ex2 = IsArrayIdentity<[true]> // false
  * ```
  */

@@ -8,7 +8,7 @@ import { IsExtension } from './is-extension'
  * @example
  * ```
  * type Ex1 = IsEqual<string, string> // true
- * type Ex2 = IsEqual<true, false> // false
+ * type Ex2 = IsEqual<true, false>    // false
  * ```
  */
 export type IsEqual<A, B> = And<IsExtension<A, B>, IsExtension<B, A>>

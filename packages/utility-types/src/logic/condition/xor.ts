@@ -8,9 +8,9 @@ import { Or } from './or'
  * @group Logic
  * @example
  * ```
- * type Ex1 = Xor<true, true> // false
- * type Ex2 = Xor<true, false> // true
- * type Ex3 = Xor<false, true> // true
+ * type Ex1 = Xor<true, true>   // false
+ * type Ex2 = Xor<true, false>  // true
+ * type Ex3 = Xor<false, true>  // true
  * type Ex4 = Xor<false, false> // false
  * ```
  */

@@ -28,7 +28,7 @@ import { LengthProp } from '../prop/length-prop'
  * @group Tuple
  * @example
  * ```
- * type Ex1 = Slice<[1, 2, 3], 1> // [2, 3]
+ * type Ex1 = Slice<[1, 2, 3], 1>          // [2, 3]
  * type Ex2 = Slice<['a', 'b', 'c'], 1, 2> // ['b']
  * ```
  */

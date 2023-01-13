@@ -7,7 +7,7 @@ import { EveryNatural } from './condition/every-natural'
  * @group Math
  * @example
  * ```
- * type Ex1 = Subtract<10, 5> // 5
+ * type Ex1 = Subtract<10, 5>  // 5
  * type Ex2 = Subtract<20, 13> // 7
  * ```
  */

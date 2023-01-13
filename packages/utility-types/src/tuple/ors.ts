@@ -8,7 +8,7 @@ import { Or } from '@logic/condition/or'
  * @group Tuple
  * @example
  * ```
- * type Ex1 = Ors<[false, true, false]> // true
+ * type Ex1 = Ors<[false, true, false]>  // true
  * type Ex2 = Ors<[false, false, false]> // false
  * ```
  */

@@ -24,7 +24,6 @@ type MultiSub<
  * @example
  * ```
  * type Ex1 = Divide<9, 3> // 3
- * // Note: mathematical operations only support the natural numbers
  * type Ex2 = Divide<11, 3> // 3
  * ```
  */

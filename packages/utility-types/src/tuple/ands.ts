@@ -8,7 +8,7 @@ import { And } from '@logic/condition/and'
  * @group Tuple
  * @example
  * ```
- * type Ex1 = Ands<[true, true, true]> // true
+ * type Ex1 = Ands<[true, true, true]>  // true
  * type Ex2 = Ands<[true, true, false]> // false
  * ```
  */

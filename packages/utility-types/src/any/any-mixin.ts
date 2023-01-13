@@ -6,6 +6,9 @@ import { AnyFunction } from './any-function'
  * @experimental
  * @group Any
  * @example
+ * ```
+ * type Ex = AnyMixin = (..._: any[]) => { new (..._: any[]) => any }
+ * ```
  */
 export type AnyMixin<A extends AnyConstructor = AnyConstructor> = AnyFunction<
   [AnyConstructor],

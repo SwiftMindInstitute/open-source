@@ -7,7 +7,7 @@
  * @group Any
  * @example
  * ```
- * type Ex1 = AnyConstructor // { new (..._: any[]): any }
+ * type Ex1 = AnyConstructor           // { new (..._: any[]): any }
  * type Ex2 = AnyConstructor<[number]> // { new (a: number): any }
  * ```
  */

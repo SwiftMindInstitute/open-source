@@ -7,7 +7,7 @@ import { Modulo } from '../modulo'
  * @group Math
  * @example
  * ```
- * type Ex1 = IsDivisble<9, 3> // true
+ * type Ex1 = IsDivisble<9, 3>   // true
  * type Ex2 = IsDivisible<11, 3> // false
  * ```
  */
