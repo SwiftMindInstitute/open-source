@@ -1,4 +1,4 @@
-import { AnyArray } from '@any/any-array'
+import { AnyArray } from '../any/any-array'
 
 /**
  * Evaluate the union of all entries of `A`

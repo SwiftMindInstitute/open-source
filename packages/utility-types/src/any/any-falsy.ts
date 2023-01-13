@@ -1,5 +1,5 @@
-import { NumberAdditiveIdentity } from '@identity/number-additive-identity'
-import { StringIdentity } from '@identity/string-identity'
+import { NumberAdditiveIdentity } from '../identity/number-additive-identity'
+import { StringIdentity } from '../identity/string-identity'
 
 /**
  * All union of values that satisfy `<A>(a: A) => a == false`

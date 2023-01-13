@@ -1,4 +1,4 @@
-import { And } from '@logic/condition/and'
+import { And } from '../../logic/condition/and'
 import { IsNonNegative } from './is-non-negative'
 import { IsWhole } from './is-whole'
 

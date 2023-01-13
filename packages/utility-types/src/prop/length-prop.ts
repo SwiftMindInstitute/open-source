@@ -1,4 +1,4 @@
-import { Split } from 'string/split'
+import { Split } from '../string/split'
 import { InferProperty } from './infer-property'
 import { WithLengthProp } from './with-prop/with-length-prop'
 

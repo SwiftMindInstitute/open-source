@@ -1,5 +1,5 @@
-import { IsEqual } from '@any/condition'
-import { StringIdentity } from '..'
+import { IsEqual } from '../../any/condition/is-equal'
+import { StringIdentity } from '../string-identity'
 
 /**
  * If `A ≡ ''` then `true` else `false`

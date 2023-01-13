@@ -1,5 +1,5 @@
-import { AnyArray } from '@any/any-array'
-import { Zero } from '@identity/number-additive-identity'
+import { AnyArray } from '../any/any-array'
+import { Zero } from '../identity/number-additive-identity'
 
 /**
  * Return the head of tuple `A`

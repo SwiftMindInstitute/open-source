@@ -1,4 +1,4 @@
-import { IsEmpty } from '@any/condition/is-empty'
+import { IsEmpty } from '../any/condition/is-empty'
 
 /**
  * Join a tuple of strings A on a character B.

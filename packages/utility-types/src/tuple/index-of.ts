@@ -1,4 +1,4 @@
-import { AnyArray } from '@any/any-array'
+import { AnyArray } from '../any/any-array'
 
 /**
  * Extract the indices from a tuple `A`

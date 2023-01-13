@@ -1,4 +1,4 @@
-import { AnyArray } from '@any/any-array'
+import { AnyArray } from '../any/any-array'
 
 /**
  * Return the concatenation of `A` and `B`

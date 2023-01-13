@@ -1,4 +1,4 @@
-import { AnyArray } from '@any/any-array'
+import { AnyArray } from '../any/any-array'
 import { Prepend } from './prepend'
 
 /**

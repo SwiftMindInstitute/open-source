@@ -1,4 +1,4 @@
-import { IsExtension } from '@any/condition/is-extension'
+import { IsExtension } from '../../any/condition/is-extension'
 
 /**
  * If the string representation of `A` has a decimal then `true` else `false`

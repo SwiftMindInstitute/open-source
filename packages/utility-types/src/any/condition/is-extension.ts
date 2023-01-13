@@ -9,3 +9,5 @@
  * ```
  */
 export type IsExtension<A, B> = A extends B ? true : false
+
+export {}

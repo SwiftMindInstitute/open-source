@@ -1,13 +1,11 @@
-import {
-  IsEmptyArray,
-  IsEmptyObject,
-  IsEmptyString,
-  IsZero,
-} from '@identity/condition'
-import { Or } from '@logic/condition/or'
+import { IsEmptyArray } from '../../identity/condition/is-array-identity'
+import { IsZero } from '../../identity/condition/is-number-additive-identity'
+import { IsEmptyObject } from '../../identity/condition/is-object-identity'
+import { IsEmptyString } from '../../identity/condition/is-string-identity'
+import { Or } from '../../logic/condition/or'
 
 /**
- * If A extends [] then true else false
+ * If `A extends []` or `A extends ''` or `A extends {}` then `true` else `false`
  * @experimental
  * @group Condition
  * @group Any
@@ -27,3 +25,5 @@ export type IsEmpty<A> = Or<
   IsZero<A>,
   Or<IsEmptyString<A>, Or<IsEmptyObject<A>, IsEmptyArray<A>>>
 >
+
+export {}

@@ -1,4 +1,4 @@
-import { And } from '@logic/condition/and'
+import { And } from '../../logic/condition/and'
 import { IsNatural } from './is-natural'
 
 /**

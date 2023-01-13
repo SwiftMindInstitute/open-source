@@ -10,7 +10,7 @@ import { AnyFunction } from './any-function'
  * type Ex = AnyMixin = (..._: any[]) => { new (..._: any[]) => any }
  * ```
  */
-export type AnyMixin<A extends AnyConstructor = AnyConstructor> = AnyFunction<
-  [AnyConstructor],
-  A
->
+export type AnyMixin<
+  A extends AnyConstructor = AnyConstructor,
+  B extends any = any
+> = AnyFunction<[A], B>

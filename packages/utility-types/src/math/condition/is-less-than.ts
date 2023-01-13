@@ -1,5 +1,5 @@
-import { IsEqual } from '@any/condition/is-equal'
-import { IsZero } from '@identity/condition/is-number-additive-identity'
+import { IsEqual } from '../../any/condition/is-equal'
+import { IsZero } from '../../identity/condition/is-number-additive-identity'
 import { Subtract } from '../subtract'
 import { SomeZero } from './some-zero'
 

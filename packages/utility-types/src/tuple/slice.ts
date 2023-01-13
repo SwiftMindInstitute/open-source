@@ -17,9 +17,9 @@
  * > [Link to bug](https://github.com/microsoft/TypeScript/issues/52098)
  */
 
-import { AnyArray } from '@any/any-array'
-import { Add } from '@math/add'
-import { IsLessThan } from '@math/condition/is-less-than'
+import { AnyArray } from '../any/any-array'
+import { Add } from '../math/add'
+import { IsLessThan } from '../math/condition/is-less-than'
 import { LengthProp } from '../prop/length-prop'
 
 /**

@@ -1,5 +1,5 @@
-import { IsEqual } from '@any/condition'
-import { ArrayIdentity } from '@identity/array-identity'
+import { IsEqual } from '../../any/condition/is-equal'
+import { ArrayIdentity } from '../array-identity'
 
 /**
  * If `A ≡ []` then `true` else `false`

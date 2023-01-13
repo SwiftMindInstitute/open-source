@@ -1,5 +1,5 @@
-import { IsEqual } from '@any/condition'
-import { ObjectIdenity } from '@identity/object-identity'
+import { IsEqual } from '../../any/condition/is-equal'
+import { ObjectIdenity } from '../object-identity'
 
 /**
  * If `A ≡ {}` then `true` else `false`

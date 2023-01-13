@@ -1,4 +1,4 @@
-import { CaptureGroup } from 'string/utils'
+import { CaptureGroup } from '../utils'
 
 /**
  * Evaluate if `A` has a match mathing MatchGroup `B`

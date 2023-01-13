@@ -1,5 +1,6 @@
-import { AnyArray } from '@any/any-array'
+import { AnyArray } from '../any/any-array'
 import { Append } from './append'
+
 /**
  * Return the last entry of tuple `A`
  * @group Tuple

@@ -1,4 +1,4 @@
-import { IsExtension } from '@any/condition/is-extension'
+import { IsExtension } from '../../any/condition/is-extension'
 
 /**
  * If `A < 0` then `true` else `false`

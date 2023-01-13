@@ -1,4 +1,5 @@
-import { AnyFalsy } from '@any/any-falsy'
+import { AnyFalsy } from '../any-falsy'
+import { IsExtension } from './is-extension'
 
 /**
  * If `A extends AnyFalsy` then `true` else `false`
@@ -18,6 +19,6 @@ import { AnyFalsy } from '@any/any-falsy'
  * type Ex10 = IsFalsy<{}>       // false
  * ```
  */
-export type IsFalsy<A> = A extends AnyFalsy ? true : false
+export type IsFalsy<A> = IsExtension<A, AnyFalsy>
 
 export {}

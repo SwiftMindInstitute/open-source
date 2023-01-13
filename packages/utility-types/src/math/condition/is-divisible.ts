@@ -1,4 +1,4 @@
-import { IsZero } from '@identity/condition/is-number-additive-identity'
+import { IsZero } from '../../identity/condition/is-number-additive-identity'
 import { Modulo } from '../modulo'
 
 /**

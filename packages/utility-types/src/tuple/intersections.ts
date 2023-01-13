@@ -1,5 +1,5 @@
-import { AnyArray } from '@any/any-array'
-import { EmptyObject } from '@identity/object-identity'
+import { AnyArray } from '../any/any-array'
+import { EmptyObject } from '../identity/object-identity'
 
 /**
  * Evaluate the intersection of all entries of `A`

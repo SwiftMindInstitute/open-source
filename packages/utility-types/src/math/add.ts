@@ -1,5 +1,5 @@
-import { AnyTuple } from '@any/any-tuple'
-import { LengthProp } from 'prop/length-prop'
+import { AnyTuple } from '../any/any-tuple'
+import { LengthProp } from '../prop/length-prop'
 import { EveryNatural } from './condition/every-natural'
 
 /**

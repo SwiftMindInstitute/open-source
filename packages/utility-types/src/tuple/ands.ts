@@ -1,6 +1,6 @@
-import { AnyArray } from '@any/any-array'
-import { IsEmptyArray } from '@identity/condition/is-array-identity'
-import { And } from '@logic/condition/and'
+import { AnyArray } from '../any/any-array'
+import { IsEmptyArray } from '../identity/condition/is-array-identity'
+import { And } from '../logic/condition/and'
 
 /**
  * Evaluate the conjunction of all entries of `A`

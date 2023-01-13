@@ -1,6 +1,6 @@
-import { AnyKey } from '@any/any-key'
-import { AnyObject } from '@any/any-object'
-import { KeyOf } from '@object/key-of'
+import { AnyKey } from '../../any/any-key'
+import { AnyObject } from '../../any/any-object'
+import { KeyOf } from '../../object/key-of'
 
 /**
  * If `B extends KeyOf<A>` then `true` else `false`

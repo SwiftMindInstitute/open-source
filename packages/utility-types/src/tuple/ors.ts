@@ -1,6 +1,6 @@
-import { AnyArray } from '@any/any-array'
-import { IsEmptyArray } from '@identity/condition/is-array-identity'
-import { Or } from '@logic/condition/or'
+import { AnyArray } from '../any/any-array'
+import { IsEmptyArray } from '../identity/condition/is-array-identity'
+import { Or } from '../logic/condition/or'
 
 /**
  * Evaluate the disjunction of all elements of `A`

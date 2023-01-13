@@ -1,5 +1,5 @@
-import { IsEqual } from '@any/condition'
-import { NumberMultiplicativeIdentity } from '@identity/number-multiplicative-identity'
+import { IsEqual } from '../../any/condition/is-equal'
+import { NumberMultiplicativeIdentity } from '../number-multiplicative-identity'
 
 /**
  * If `A ≡ 1` then `true` else `false`

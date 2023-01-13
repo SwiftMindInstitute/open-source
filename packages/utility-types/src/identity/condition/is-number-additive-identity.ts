@@ -1,4 +1,4 @@
-import { IsEqual } from '@any/condition'
+import { IsEqual } from '../../any/condition/is-equal'
 import { NumberAdditiveIdentity } from '../number-additive-identity'
 
 /**

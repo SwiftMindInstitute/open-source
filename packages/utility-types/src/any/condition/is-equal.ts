@@ -1,4 +1,4 @@
-import { And } from '@logic/condition'
+import { And } from '../../logic/condition/and'
 import { IsExtension } from './is-extension'
 
 /**
@@ -12,3 +12,5 @@ import { IsExtension } from './is-extension'
  * ```
  */
 export type IsEqual<A, B> = And<IsExtension<A, B>, IsExtension<B, A>>
+
+export {}

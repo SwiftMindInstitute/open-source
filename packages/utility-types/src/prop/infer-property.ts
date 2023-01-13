@@ -1,4 +1,4 @@
-import { AnyObject } from '@any/any-object'
+import { AnyObject } from '../any/any-object'
 
 /**
  * Infer the type of property `A[B]`.

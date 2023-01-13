@@ -1,5 +1,5 @@
-import { IsZero } from '@identity/condition/is-number-additive-identity'
-import { Or } from '@logic/condition/or'
+import { IsZero } from '../../identity/condition/is-number-additive-identity'
+import { Or } from '../../logic/condition/or'
 import { IsNegative } from './is-negative'
 
 /**

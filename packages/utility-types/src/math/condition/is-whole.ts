@@ -1,4 +1,4 @@
-import { Not } from '@logic/condition/not'
+import { Not } from '../../logic/condition/not'
 import { IsDecimal } from './is-decimal'
 
 /**

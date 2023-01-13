@@ -1,4 +1,4 @@
-import { Not } from '@logic/condition/not'
+import { Not } from '../../logic/condition/not'
 import { IsGreaterThan } from './is-greater-than'
 
 /**
