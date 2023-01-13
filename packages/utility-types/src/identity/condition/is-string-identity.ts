@@ -3,6 +3,8 @@ import { StringIdentity } from '..'
 
 /**
  * If `A ≡ ''` then `true` else `false`
+ * @group Condition
+ * @group Identity
  * @example
  * ```
  * type Ex1 = IsStringIdentity<''> // true
@@ -13,6 +15,8 @@ export type IsStringIdentity<A> = IsEqual<A, StringIdentity>
 
 /**
  * Alias for `IsStringIdentity`
+ * @group Condition
+ * @group Identity
  */
 export type IsEmptyString<A> = IsStringIdentity<A>
 

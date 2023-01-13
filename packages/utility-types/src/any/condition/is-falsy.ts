@@ -2,6 +2,8 @@ import { AnyFalsy } from '@any/any-falsy'
 
 /**
  * If `A extends AnyFalsy` then `true` else `false`
+ * @group Condition
+ * @group Any
  * @example
  * ```
  * type Ex1 = IsFalsy<false> // true

@@ -3,6 +3,8 @@ import { IsGreaterThan } from './is-greater-than'
 
 /**
  * Evaluate `A ≤ B`, where `A ∈ ℕ` and `B ∈ ℕ`
+ * @group Condition
+ * @group Math
  * @example
  * ```
  * type Ex1 = IsLessThanOrEqual<3, 1> // true

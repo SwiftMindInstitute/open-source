@@ -4,6 +4,8 @@ import { IsWhole } from './is-whole'
 
 /**
  * If `A ∈ ℕ` then `true` else `false`
+ * @group Condition
+ * @group Math
  * @example
  * ```
  * type Ex1 = IsNatural<-1> // false

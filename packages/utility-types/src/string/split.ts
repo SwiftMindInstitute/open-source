@@ -1,6 +1,7 @@
 /**
  * Splits a string `A` into an array of substrings split on string `B`
  * @experimental
+ * @group String
  * @example
  * ```
  * type Ex1 = Split<'abc'> // ['a', 'b', 'c']

@@ -5,6 +5,7 @@ import { Subtract } from './subtract'
 
 /**
  * Repeated subtraction utility function used in division
+ * @group Math
  * @internal
  */
 export type MultiSub<
@@ -19,6 +20,7 @@ export type MultiSub<
 
 /**
  * Evaluate `A / B`, where `A ∈ ℕ` and `B ∈ ℕ`
+ * @group Math
  * @example
  * ```
  * type Ex1 = Divide<9, 3> // 3

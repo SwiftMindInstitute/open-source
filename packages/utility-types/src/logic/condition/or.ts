@@ -1,6 +1,8 @@
 /**
  * If `A ∨ B` then `true` else `false` where `A extends boolean` and `B extends
  * boolean`
+ * @group Condition
+ * @group Logic
  * @example
  * ```
  * type Ex1 = Or<true, true> // true

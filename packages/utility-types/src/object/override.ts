@@ -2,6 +2,7 @@ import { KeyOf } from './key-of'
 
 /**
  * Return the intersection of `A` and `B` for any conflicts defer to `B`.
+ * @group Object
  * @example
  * ```
  * type Ex = Override<{ a: number, b: number }, { a: string }>['a'] // string

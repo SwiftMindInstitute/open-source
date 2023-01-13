@@ -1,13 +1,8 @@
 import { IsEmpty } from '@any/condition/is-empty'
 
 /**
- * Recursive options for Join
- * @internal
- */
-// export type JoinOpts<A extends string = string> = Opts<'Join', { value: A }>
-
-/**
  * Join a tuple of strings A on a character B.
+ * @group String
  * @example
  * ```
  * type Ex = Join<['a', 'b', 'c'], ', '> // 'a, b, c'

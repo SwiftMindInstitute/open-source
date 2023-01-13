@@ -25,6 +25,7 @@ import { LengthProp } from '../prop/length-prop'
 /**
  * Return a slice of a tuple starting at index `A` ending at index `B`
  * @deprecated
+ * @group Tuple
  * @example
  * ```
  * type Ex1 = Slice<[1, 2, 3], 1> // [2, 3]

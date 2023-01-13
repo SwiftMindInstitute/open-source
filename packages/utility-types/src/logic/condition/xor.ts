@@ -4,6 +4,8 @@ import { Or } from './or'
 
 /**
  * If `A ⊻ B` then `true` else `false` where `A extends boolean` and `B extends
+ * @group Condition
+ * @group Logic
  * @example
  * ```
  * type Ex1 = Xor<true, true> // false

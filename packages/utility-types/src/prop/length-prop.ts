@@ -4,6 +4,7 @@ import { WithLengthProp } from './with-prop/with-length-prop'
 
 /**
  * Return the length of tuple `A`
+ * @group Prop
  * @example
  * ```
  * type Ex1 = LengthProp<'Hello'> // 5

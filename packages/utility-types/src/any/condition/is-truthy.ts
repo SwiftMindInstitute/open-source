@@ -3,6 +3,8 @@ import { IsFalsy } from './is-falsy'
 
 /**
  * If `A extends AnyFalsy` then `false` else `true`
+ * @group Condition
+ * @group Any
  * @example
  * ```
  * type Ex1 = IsTruthy<false> // false

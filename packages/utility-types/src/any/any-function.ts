@@ -2,6 +2,7 @@ import { AnyArray } from './any-array'
 
 /**
  * Generic function interface
+ * @group Any
  * @example
  * ```
  * type Ex1 = AnyFunction // (..._: any[]) => any

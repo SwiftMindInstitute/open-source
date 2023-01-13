@@ -1,5 +1,7 @@
 /**
  * Check if the string `B` is in `A`.
+ * @group Condition
+ * @group String
  * @example
  * ```
  * type Ex = Includes<'book', 'oo'> // true

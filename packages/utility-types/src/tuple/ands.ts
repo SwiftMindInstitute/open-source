@@ -4,6 +4,8 @@ import { And } from '@logic/condition/and'
 
 /**
  * Evaluate the conjunction of all entries of `A`
+ * @experimental
+ * @group Tuple
  * @example
  * ```
  * type Ex1 = Ands<[true, true, true]> // true

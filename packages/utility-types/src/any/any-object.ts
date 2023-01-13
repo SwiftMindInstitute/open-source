@@ -2,6 +2,7 @@ import { AnyKey } from './any-key'
 
 /**
  * Generic object interface
+ * @group Any
  * @example
  * ```
  * type Ex1 = AnyObject //

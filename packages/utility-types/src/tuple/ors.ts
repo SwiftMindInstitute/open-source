@@ -4,6 +4,8 @@ import { Or } from '@logic/condition/or'
 
 /**
  * Evaluate the disjunction of all elements of `A`
+ * @experimental
+ * @group Tuple
  * @example
  * ```
  * type Ex1 = Ors<[false, true, false]> // true

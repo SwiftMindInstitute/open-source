@@ -1,9 +1,11 @@
 import { Match } from './match'
-import { MatchGroup } from './utils'
+import { CaptureGroup } from './utils'
 
 /**
  * Evaluate the string template `A` interpolating variables of `A` with
  * values from `B`
+ * @experimental
+ * @group String
  * @example
  * ```
  * type Ex = Interpolate<'Hello {{a}}', { a: 'World' }> // 'Hello World!'
@@ -12,7 +14,7 @@ import { MatchGroup } from './utils'
 export type Interpolation<
   A extends string,
   B extends Record<Match<A, C>, string>,
-  C extends MatchGroup = MatchGroup<'{{', '}}'>,
+  C extends CaptureGroup = CaptureGroup<'{{', '}}'>,
   D extends string = A,
   F extends Match<A, C> = Match<A, C>
 > = D extends `${infer G}${C['start']}${infer H}${C['end']}${infer I}`

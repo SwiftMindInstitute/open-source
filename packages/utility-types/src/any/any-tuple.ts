@@ -2,6 +2,7 @@ import { AnyArray } from './any-array'
 
 /**
  * Create a tuple of length `A` with entries of type `B` (defaults to `any`)
+ * @group Any
  * @example
  * ```
  * type Ex1 = AnyTuple<2> // [any, any]

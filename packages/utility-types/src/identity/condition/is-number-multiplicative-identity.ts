@@ -3,6 +3,8 @@ import { NumberMultiplicativeIdentity } from '@identity/number-multiplicative-id
 
 /**
  * If `A ≡ 0` then true else false
+ * @group Condition
+ * @group Identity
  * @example
  * ```
  * type Ex1 = IsNumberMultiplicativeIdentity<1> // true
@@ -16,6 +18,8 @@ export type IsNumberMultiplicativeIdentity<A> = IsEqual<
 
 /**
  * Alias for `IsNumberMultiplicativeIdentity`
+ * @group Condition
+ * @group Identity
  */
 export type IsOne<A> = IsNumberMultiplicativeIdentity<A>
 

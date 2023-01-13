@@ -3,6 +3,7 @@ import { AnyArray } from '@any/any-array'
 /**
  * Extract the indices from a tuple `A`
  * @experimental
+ * @group Tuple
  * @example
  * ```
  * type Ex = KeyOf<['a', 'b']> // '0' | '1'

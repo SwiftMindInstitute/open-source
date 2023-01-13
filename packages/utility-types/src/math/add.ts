@@ -4,6 +4,7 @@ import { EveryNatural } from './condition/every-natural'
 
 /**
  * Evaluate `A + B`, where `A ∈ ℕ` and `B ∈ ℕ`
+ * @group Math
  * @example
  * ```
  * type Ex1 = Add<1, 2> // 3

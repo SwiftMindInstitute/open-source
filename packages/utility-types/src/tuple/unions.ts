@@ -2,6 +2,8 @@ import { AnyArray } from '@any/any-array'
 
 /**
  * Evaluate the union of all entries of `A`
+ * @experimental
+ * @group Tuple
  * @example
  * ```
  * type Ex = Unions<[true, null, false]> // boolean | null

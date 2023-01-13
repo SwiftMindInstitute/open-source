@@ -4,6 +4,7 @@
  * > Note for some reason constructors can't have `readonly any[]` for their
  * > rest parameters. The sole exception for functions. - hao
  *
+ * @group Any
  * @example
  * ```
  * type Ex1 = AnyConstructor // { new (..._: any[]): any }

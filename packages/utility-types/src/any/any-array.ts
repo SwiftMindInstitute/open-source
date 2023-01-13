@@ -1,5 +1,6 @@
 /**
  * Generic array interface
+ * @group Any
  * @example
  * ```
  * type Ex1 = AnyArray // any[] | readonly any[]

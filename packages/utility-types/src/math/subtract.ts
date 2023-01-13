@@ -4,6 +4,7 @@ import { EveryNatural } from './condition/every-natural'
 
 /**
  * Return the difference of `A - B`
+ * @group Math
  * @example
  * ```
  * type Ex1 = Subtract<10, 5> // 5

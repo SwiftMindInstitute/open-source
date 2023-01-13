@@ -3,6 +3,8 @@ import { IsDecimal } from './is-decimal'
 
 /**
  * If `A ∈ ℤ` then `true` else `false`.
+ * @group Condition
+ * @group Math
  * @example
  * ```
  * type Ex1 = IsWhole<1> // true

@@ -4,6 +4,7 @@ import { Subtract } from './subtract'
 
 /**
  * Repeated addition utility function used in multiplication
+ * @group Math
  * @internal
  */
 type MultiAdd<
@@ -18,6 +19,7 @@ type MultiAdd<
 
 /**
  * Return the product of `A * B`
+ * @group Math
  * @example
  * ```
  * type Ex1 = Multiply<2, 3> // 6

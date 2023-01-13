@@ -4,6 +4,7 @@ import { Subtract } from './subtract'
 
 /**
  * Evaluate `A % B`, where `A ∈ ℕ` and `B ∈ ℕ`
+ * @group Math
  * @example
  * ```
  * type Ex1 = Modulo<3, 2> // 1

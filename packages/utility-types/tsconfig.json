@@ -19,8 +19,6 @@
     "paths": {
       "@any/*": ["any/*"],
       "@any": ["any"],
-      "@group/*": ["grooup/*"],
-      "@group": ["grooup"],
       "@logic/*": ["logic/*"],
       "@logic": ["logic"],
       "@math/*": ["math/*"],

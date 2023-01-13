@@ -2,6 +2,7 @@ import { AnyArray } from '@any/any-array'
 import { Append } from './append'
 /**
  * Return the last entry of tuple `A`
+ * @group Tuple
  * @example
  * ```
  * type Ex = Last<['a', 'b', 'c']> // 'c'

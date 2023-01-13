@@ -5,6 +5,8 @@ import { SomeZero } from './some-zero'
 
 /**
  * Evaluate `A < B`, where `A ∈ ℕ` and `B ∈ ℕ`
+ * @group Condition
+ * @group Math
  * @example
  * ```
  * type Ex1 = IsLessThan<1, 3> // true

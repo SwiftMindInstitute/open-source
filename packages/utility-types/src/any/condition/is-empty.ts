@@ -9,6 +9,8 @@ import { Or } from '@logic/condition/or'
 /**
  * If A extends [] then true else false
  * @experimental
+ * @group Condition
+ * @group Any
  * @example
  * ```
  * type Ex1 = IsEmpty<0>           // true

@@ -3,6 +3,8 @@ import { EmptyObject } from '@identity/object-identity'
 
 /**
  * Evaluate the intersection of all entries of `A`
+ * @experimental
+ * @group Tuple
  * @example
  * ```
  * type Ex = Intersections<[{ a: 'a' }, { b: 'b' }]> // { a: 'a', b: 'b' }

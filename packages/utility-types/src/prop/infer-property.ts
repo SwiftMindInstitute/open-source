@@ -2,6 +2,7 @@ import { AnyObject } from '@any/any-object'
 
 /**
  * Infer the type of property `A[B]`.
+ * @group Prop
  * @example
  * ```
  * type Ex = InferProperty<{ test: 'blah' }, 'test'> // blah
