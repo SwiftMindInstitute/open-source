@@ -19,6 +19,7 @@
   "author": "Hans Oksendahl <hans.oksendahl@bluesky.llc> (https://bluesky.llc)",
   "license": "MIT",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "docs": "typedoc"
   }
 }

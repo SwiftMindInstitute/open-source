@@ -25,7 +25,7 @@ generic type it can only be used internally in the library. An options object
 is ideal for being able to pass down options in a recursive type definition
 as an added benefit it protects the user from having to know a type&#39;s
 implementation.</p>
-<pre><code><span class="hl-3">type</span><span class="hl-2"> </span><span class="hl-4">Ex</span><span class="hl-2"> = </span><span class="hl-4">Opts</span><span class="hl-2">&lt;</span><span class="hl-6">&#39;Ex&#39;</span><span class="hl-2">, { </span><span class="hl-7">value</span><span class="hl-2">: </span><span class="hl-4">any</span><span class="hl-2"> }&gt; </span><span class="hl-0">// { [TYPE_NAME]: &#39;Ex&#39;, value: any }</span>
+<pre><code><span class="hl-0">type</span><span class="hl-1"> </span><span class="hl-2">Ex</span><span class="hl-1"> = </span><span class="hl-2">Opts</span><span class="hl-1">&lt;</span><span class="hl-5">&#39;Ex&#39;</span><span class="hl-1">, { </span><span class="hl-6">value</span><span class="hl-1">: </span><span class="hl-2">any</span><span class="hl-1"> }&gt; </span><span class="hl-3">// { [TYPE_NAME]: &#39;Ex&#39;, value: any }</span>
 </code></pre>
 </div>
 <section class="tsd-panel tsd-type-parameters">
