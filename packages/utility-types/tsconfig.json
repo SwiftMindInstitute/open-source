@@ -30,7 +30,11 @@
       "@template-literal/*": ["teplate-literal/*"],
       "@template-literal": ["teplate-literal"],
       "@tuple/*": ["tuple/*"],
-      "@tuple": ["tuple"]
+      "@tuple": ["tuple"],
+      "@prop/*": ["prop/*"],
+      "@prop": ["prop"],
+      "@identity/*": ["identity/*"],
+      "@identity": ["identity"]
     }
   },
   "include": ["src"],

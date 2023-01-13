@@ -1,6 +1,6 @@
 import { IsEqual } from '@any/condition/is-equal'
+import { IsZero } from '@identity/condition/is-number-additive-identity'
 import { Subtract } from '../subtract'
-import { IsZero } from './is-zero'
 import { SomeZero } from './some-zero'
 
 /**

@@ -1,11 +1,10 @@
-import { IsEmpty } from '@tuple/condition/IsEmpty'
-import { Opts } from 'helpers/opts'
+import { IsEmpty } from '@any/condition/is-empty'
 
 /**
  * Recursive options for Join
  * @internal
  */
-type JoinOpts<A extends string = string> = Opts<'Join', { value: A }>
+// export type JoinOpts<A extends string = string> = Opts<'Join', { value: A }>
 
 /**
  * Join a tuple of strings A on a character B.
@@ -17,15 +16,17 @@ type JoinOpts<A extends string = string> = Opts<'Join', { value: A }>
 export type Join<
   A extends string[],
   B extends string = '',
-  O extends JoinOpts = JoinOpts<''>
+  Z extends string = ''
 > = IsEmpty<A> extends true
-  ? O['value']
+  ? Z
   : A extends [infer D, ...infer E]
   ? D extends string
     ? E extends string[]
-      ? O['value'] extends ''
-        ? Join<E, B, JoinOpts<D>>
-        : Join<E, B, JoinOpts<`${O['value']}${B}${D}`>>
+      ? Z extends ''
+        ? Join<E, B, D>
+        : Join<E, B, `${Z}${B}${D}`>
       : never
     : never
   : never
+
+export {}

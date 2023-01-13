@@ -7,6 +7,6 @@ import { AnyArray } from '@any/any-array'
  * type Ex = Append<['a', 'b'], 'c'> // ['a', 'b', 'c']
  * ```
  */
-export type Append<A extends AnyArray, B> = [...A, B]
+export type Append<A extends AnyArray, B = any> = [...A, B]
 
 export {}

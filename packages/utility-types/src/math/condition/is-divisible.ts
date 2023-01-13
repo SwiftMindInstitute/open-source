@@ -1,5 +1,5 @@
+import { IsZero } from '@identity/condition/is-number-additive-identity'
 import { Modulo } from '../modulo'
-import { IsZero } from './is-zero'
 
 /**
  * Evaluate `A % B === 0`, where `A ∈ ℕ` and `B ∈ ℕ`

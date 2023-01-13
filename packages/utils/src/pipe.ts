@@ -155,6 +155,13 @@ interface Pipe {
   ): P
 }
 
+/**
+ * Apply an input to a series of functions applied sequentially
+ * @example
+ * ```
+ * pipe(10, (x: number) => x + 2, (x: number) => x * 3) // 36
+ * ```
+ */
 const pipe: Pipe = <A extends any[]>(...params: A) => {
   const [value, ...callbacks] = params
   return callbacks.reduce((memo, callback) => callback(memo), value)

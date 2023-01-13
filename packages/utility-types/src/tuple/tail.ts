@@ -1,4 +1,5 @@
 import { AnyArray } from '@any/any-array'
+import { Prepend } from './prepend'
 
 /**
  * Return the tail of tuple `A`
@@ -7,8 +8,6 @@ import { AnyArray } from '@any/any-array'
  * type Ex = Tail<['a', 'b', 'c']> // ['b', 'c']
  * ```
  */
-export type Tail<A extends AnyArray> = A extends [any, ...infer B]
+export type Tail<A extends AnyArray> = A extends Prepend<infer B, any>
   ? B
-  : A extends readonly [any, ...infer C]
-  ? C
   : never

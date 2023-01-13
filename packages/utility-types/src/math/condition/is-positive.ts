@@ -1,7 +1,7 @@
+import { IsZero } from '@identity/condition/is-number-additive-identity'
 import { And } from '@logic/condition/and'
 import { Not } from '@logic/condition/not'
 import { IsNonNegative } from './is-non-negative'
-import { IsZero } from './is-zero'
 
 /**
  * If `A > 0` then `true` else `false`

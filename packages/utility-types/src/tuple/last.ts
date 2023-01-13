@@ -1,4 +1,5 @@
 import { AnyArray } from '@any/any-array'
+import { Append } from './append'
 /**
  * Return the last entry of tuple `A`
  * @example
@@ -6,10 +7,8 @@ import { AnyArray } from '@any/any-array'
  * type Ex = Last<['a', 'b', 'c']> // 'c'
  * ```
  */
-export type Last<A extends AnyArray> = A extends [...AnyArray, infer B]
+export type Last<A extends AnyArray> = A extends Append<any[], infer B>
   ? B
-  : A extends readonly [...AnyArray, infer C]
-  ? C
   : never
 
 export {}

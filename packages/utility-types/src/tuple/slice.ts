@@ -15,13 +15,6 @@
  * > the TypeScript team. -- hao
  * >
  * > [Link to bug](https://github.com/microsoft/TypeScript/issues/52098)
- *
- * Return a slice of a tuple starting at index `A` ending at index `B`
- * @example
- * ```
- * type Ex1 = Slice<[1, 2, 3], 1> // [2, 3]
- * type Ex2 = Slice<['a', 'b', 'c'], 1, 2> // ['b']
- * ```
  */
 
 import { AnyArray } from '@any/any-array'
@@ -29,6 +22,15 @@ import { Add } from '@math/add'
 import { IsLessThan } from '@math/condition/is-less-than'
 import { LengthProp } from '../prop/length-prop'
 
+/**
+ * Return a slice of a tuple starting at index `A` ending at index `B`
+ * @deprecated
+ * @example
+ * ```
+ * type Ex1 = Slice<[1, 2, 3], 1> // [2, 3]
+ * type Ex2 = Slice<['a', 'b', 'c'], 1, 2> // ['b']
+ * ```
+ */
 export type Slice<
   A extends AnyArray,
   B extends number = 0,

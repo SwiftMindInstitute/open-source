@@ -7,10 +7,6 @@ import { AnyArray } from '@any/any-array'
  * type Ex = In<[1, 'a']> // number | string
  * ```
  */
-export type In<A extends AnyArray> = A extends (infer B)[]
-  ? B
-  : A extends readonly (infer C)[]
-  ? C
-  : never
+export type In<A extends AnyArray> = A extends AnyArray<infer B> ? B : never
 
 export {}

@@ -1,7 +1,7 @@
-import { Primitive } from '@bluesky.llc/utility-types'
+import { AnyPrimitive } from '@bluesky.llc/utility-types'
 import { createTypeGuard } from './utils'
 
-const isPrimitive = createTypeGuard<Primitive>(value => {
+const isPrimitive = createTypeGuard<AnyPrimitive>(value => {
   if (value === null || value === undefined) {
     return true
   }

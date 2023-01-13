@@ -1,14 +1,3 @@
-import { Opts } from '../helpers'
-
-/**
- * Recursive options for Split
- * @internal
- */
-type SplitOpts<A extends number | string[] = string[]> = Opts<
-  'Split',
-  { value: A }
->
-
 /**
  * Splits a string `A` into an array of substrings split on string `B`
  * @experimental
@@ -21,15 +10,15 @@ type SplitOpts<A extends number | string[] = string[]> = Opts<
 export type Split<
   A extends string,
   B extends string = '',
-  O extends SplitOpts = SplitOpts<[]>
+  Z extends string[] = []
 > = B extends ''
   ? A extends `${infer D}${infer E}`
-    ? Split<E, B, SplitOpts<[...O['value'], D]>>
-    : O['value']
+    ? Split<E, B, [...Z, D]>
+    : Z
   : A extends `${string}${B}${string}`
   ? A extends `${infer D}${B}${infer E}`
-    ? Split<E, B, SplitOpts<[...O['value'], D]>>
+    ? Split<E, B, [...Z, D]>
     : never
-  : [...O['value'], A]
+  : [...Z, A]
 
 export {}

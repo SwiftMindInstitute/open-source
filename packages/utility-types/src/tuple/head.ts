@@ -1,4 +1,5 @@
 import { AnyArray } from '@any/any-array'
+import { Zero } from '@identity/number-additive-identity'
 
 /**
  * Return the head of tuple `A`
@@ -8,8 +9,11 @@ import { AnyArray } from '@any/any-array'
  * type Ex2 = First<[1, 2, 3]> // 1
  * ```
  * */
-export type Head<A extends AnyArray> = A[0]
+export type Head<A extends AnyArray> = A[Zero]
 
+/**
+ * Alias of `Head`
+ */
 export type First<A extends AnyArray> = Head<A>
 
 export {}

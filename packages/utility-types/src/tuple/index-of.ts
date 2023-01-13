@@ -5,7 +5,7 @@ import { AnyArray } from '@any/any-array'
  * @experimental
  * @example
  * ```
- * type Ex2 = KeyOf<['a', 'b']> // '0' | '1'
+ * type Ex = KeyOf<['a', 'b']> // '0' | '1'
  * ```
  */
 export type IndexOf<A extends AnyArray> = {

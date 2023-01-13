@@ -1,5 +1,5 @@
+import { IsZero } from '@identity/condition/is-number-additive-identity'
 import { Or } from '@logic/condition/or'
-import { IsZero } from './is-zero'
 
 /**
  * If `A ≡ 0` and `B ≡ 0` then `true` else `false`

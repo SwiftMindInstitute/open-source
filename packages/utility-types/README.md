@@ -160,13 +160,17 @@ Links:
 
 # Object Types
 
+Links
+
+- [TS: Utility-Types: Object Types](https://medium.com/@hansoksendahl/ts-utils-object-types-9bb2cd595792)
+
 ## Types
 
 - [KeyOf]()
 - [Override]()
 - [ValueOf]()
 
-# Template Types
+# String Types
 
 ## Conditions
 
