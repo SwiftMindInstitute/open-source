@@ -4,5 +4,9 @@ Made with ❤️ by BlueSky.
 
 # Packages
 
-- [utility-types](https://github.com/bluesky-llc/open-source/tree/main/packages/utility-types#readme)
-- [utils](https://github.com/bluesky-llc/open-source/tree/main/packages/utils#readme)
+- utility-types
+  - [README](https://github.com/bluesky-llc/open-source/tree/main/packages/utility-types#readme)
+  - [Documentation](https://bluesky-llc.github.io/open-source/modules/Utility_Types.html)
+- utils
+  - [README](https://github.com/bluesky-llc/open-source/tree/main/packages/utils#readme)
+  - [Documentation](https://bluesky-llc.github.io/open-source/modules/Utils.html)
