@@ -1,5 +1,5 @@
+export * from './capture'
 export * from './condition'
 export * from './interpolation'
 export * from './join'
-export * from './match'
 export * from './split'

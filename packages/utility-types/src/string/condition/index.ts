@@ -1,2 +1,2 @@
-export * from './has-match'
+export * from './has-capture-group'
 export * from './includes'

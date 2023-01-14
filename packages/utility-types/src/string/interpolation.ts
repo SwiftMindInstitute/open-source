@@ -1,4 +1,4 @@
-import { Match } from './match'
+import { Capture } from './capture'
 import { CaptureGroup } from './utils'
 
 /**
@@ -13,10 +13,10 @@ import { CaptureGroup } from './utils'
  */
 export type Interpolation<
   A extends string,
-  B extends Record<Match<A, C>, string>,
+  B extends Record<Capture<A, C>, string>,
   C extends CaptureGroup = CaptureGroup<'{{', '}}'>,
   D extends string = A,
-  F extends Match<A, C> = Match<A, C>
+  F extends Capture<A, C> = Capture<A, C>
 > = D extends `${infer G}${C['start']}${infer H}${C['end']}${infer I}`
   ? H extends F
     ? Interpolation<A, B, C, `${G}${B[H]}${I}`, F>
