@@ -1,5 +1,6 @@
-import { EveryNatural } from './condition/every-natural'
+import { And } from '../logic/condition/and'
 import { IsLessThan } from './condition/is-less-than'
+import { IsNatural } from './condition/is-natural'
 import { Subtract } from './subtract'
 
 /**
@@ -11,11 +12,11 @@ import { Subtract } from './subtract'
  * type Ex2 = Modulo<4, 2> // 0
  * ```
  */
-export type Modulo<A extends number, B extends number> = EveryNatural<
-  A,
-  B
+export type Modulo<A extends number, B extends number> = And<
+  IsNatural<A>,
+  IsNatural<B>
 > extends true
   ? IsLessThan<A, B> extends true
     ? A
     : Modulo<Subtract<A, B>, B>
-  : never
+  : number

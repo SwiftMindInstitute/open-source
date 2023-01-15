@@ -1,9 +1,14 @@
+import { Add as AddUtility } from '@bluesky.llc/utility-types'
+
 interface Add {
-  <A extends number, B extends number>(a: A, b: B): number
-  <A extends string, B extends string>(a: A, b: B): string
+  <A extends boolean, B extends number, C extends number>(
+    b: B,
+    c: C
+  ): A extends true ? AddUtility<B, C> : number
+  <A extends boolean, B extends string, C extends string>(b: B, c: C): string
   /** The remaining cases describe JavaScrpt's behavior */
-  <A extends string, B extends number>(a: A, b: B): string
-  <A extends number, B extends string>(a: A, b: B): string
+  <A extends boolean, B extends string, C extends number>(b: B, c: C): string
+  <A extends boolean, B extends number, C extends string>(b: B, c: C): string
 }
 
 /**
@@ -22,5 +27,7 @@ interface Add {
  * ```
  */
 const add: Add = (a: any, b: any) => a + b
+
+const x = add<1, 2>(2, 5)
 
 export default add

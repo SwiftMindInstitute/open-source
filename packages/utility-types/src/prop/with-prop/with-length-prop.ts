@@ -8,6 +8,6 @@ import { AnyObject } from '../../any/any-object'
  * type Ex = WithLengthProp<number> // { length: number }
  * ```
  */
-export type WithLengthProp<A = any> = AnyObject<'length', A>
+export type WithLengthProp = AnyObject<'length'>
 
 export {}

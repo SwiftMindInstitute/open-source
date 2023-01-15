@@ -1,9 +1,10 @@
-import { And } from './and'
 import { Not } from './not'
-import { Or } from './or'
 
 /**
  * If `A ⊻ B` then `true` else `false` where `A extends boolean` and `B extends
+ *
+ * Or<A, B>
+ *
  * @group Condition
  * @group Logic
  * @example
@@ -14,9 +15,8 @@ import { Or } from './or'
  * type Ex4 = Xor<false, false> // false
  * ```
  */
-export type Xor<A extends boolean, B extends boolean> = And<
-  Or<A, B>,
-  Not<And<A, B>>
->
+export type Xor<A extends boolean, B extends boolean> = A extends true
+  ? Not<B>
+  : B
 
 export {}

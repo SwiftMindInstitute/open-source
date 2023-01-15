@@ -1,7 +1,7 @@
 import { IsEqual } from '../../any/condition/is-equal'
 import { IsZero } from '../../identity/condition/is-number-additive-identity'
+import { Or } from '../../logic/condition/or'
 import { Subtract } from '../subtract'
-import { SomeZero } from './some-zero'
 
 /**
  * Evaluate `A < B`, where `A ∈ ℕ` and `B ∈ ℕ`
@@ -13,9 +13,9 @@ import { SomeZero } from './some-zero'
  * type Ex2 = IsLessThan<3, 1> // false
  * ```
  */
-export type IsLessThan<A extends number, B extends number> = SomeZero<
-  A,
-  B
+export type IsLessThan<A extends number, B extends number> = Or<
+  IsZero<A>,
+  IsZero<B>
 > extends true
   ? IsEqual<A, B> extends true
     ? false

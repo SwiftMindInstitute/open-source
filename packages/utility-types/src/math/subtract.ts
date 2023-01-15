@@ -1,6 +1,7 @@
 import { AnyTuple } from '../any/any-tuple'
+import { And } from '../logic/condition/and'
 import { LengthProp } from '../prop/length-prop'
-import { EveryNatural } from './condition/every-natural'
+import { IsNatural } from './condition/is-natural'
 
 /**
  * Return the difference of `A - B`
@@ -11,11 +12,11 @@ import { EveryNatural } from './condition/every-natural'
  * type Ex2 = Subtract<20, 13> // 7
  * ```
  */
-export type Subtract<A extends number, B extends number> = EveryNatural<
-  A,
-  B
+export type Subtract<A extends number, B extends number> = And<
+  IsNatural<A>,
+  IsNatural<B>
 > extends true
   ? AnyTuple<A> extends [...infer C, ...AnyTuple<B>]
     ? LengthProp<C>
-    : never
-  : never
+    : number
+  : number

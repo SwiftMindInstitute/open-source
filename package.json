@@ -20,6 +20,7 @@
   "license": "MIT",
   "scripts": {
     "test": "jest",
-    "docs": "typedoc"
+    "docs": "typedoc",
+    "ox": "scripts/ox.sh"
   }
 }

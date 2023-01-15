@@ -1,6 +1,7 @@
 import { AnyTuple } from '../any/any-tuple'
+import { And } from '../logic/condition/and'
 import { LengthProp } from '../prop/length-prop'
-import { EveryNatural } from './condition/every-natural'
+import { IsNatural } from './condition/is-natural'
 
 /**
  * Evaluate `A + B`, where `A ∈ ℕ` and `B ∈ ℕ`
@@ -11,11 +12,13 @@ import { EveryNatural } from './condition/every-natural'
  * type Ex2 = Add<0, 5> // 5
  * ```
  */
-export type Add<A extends number, B extends number> = EveryNatural<
-  A,
-  B
+export type Add<A extends number, B extends number> = And<
+  IsNatural<A>,
+  IsNatural<B>
 > extends true
-  ? LengthProp<[...AnyTuple<A>, ...AnyTuple<B>]>
-  : never
+  ? [...AnyTuple<A>, ...AnyTuple<B>] extends [...infer C]
+    ? LengthProp<C>
+    : number
+  : number
 
 export {}

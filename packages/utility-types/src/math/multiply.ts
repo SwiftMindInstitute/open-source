@@ -1,5 +1,7 @@
+import { IsZero } from '../identity/condition/is-number-additive-identity'
+import { And } from '../logic/condition/and'
 import { Add } from './add'
-import { EveryNatural } from './condition/every-natural'
+import { IsNatural } from './condition/is-natural'
 import { Subtract } from './subtract'
 
 /**
@@ -10,11 +12,11 @@ import { Subtract } from './subtract'
 type MultiAdd<
   A extends number,
   B extends number,
-  C extends number
-> = C extends 0
-  ? B
-  : Add<A, B> extends number
-  ? MultiAdd<A, Add<A, B>, Subtract<C, 1>>
+  C extends number = 0
+> = IsZero<B> extends true
+  ? C
+  : Add<A, C> extends number
+  ? MultiAdd<A, Subtract<B, 1>, Add<A, C>>
   : never
 
 /**
@@ -26,9 +28,9 @@ type MultiAdd<
  * type Ex2 = Multiply<5, 5> // 25
  * ```
  * */
-export type Multiply<A extends number, B extends number> = EveryNatural<
-  A,
-  B
+export type Multiply<A extends number, B extends number> = And<
+  IsNatural<A>,
+  IsNatural<B>
 > extends true
-  ? MultiAdd<A, 0, B>
-  : never
+  ? MultiAdd<A, B>
+  : number

@@ -1,6 +1,7 @@
+import { And } from '../logic/condition/and'
 import { Add } from './add'
-import { EveryNatural } from './condition/every-natural'
 import { IsLessThan } from './condition/is-less-than'
+import { IsNatural } from './condition/is-natural'
 import { Subtract } from './subtract'
 
 /**
@@ -11,7 +12,7 @@ import { Subtract } from './subtract'
 type MultiSub<
   A extends number,
   B extends number,
-  C extends number
+  C extends number = 0
 > = IsLessThan<A, B> extends true
   ? C
   : Add<C, 1> extends number
@@ -27,9 +28,9 @@ type MultiSub<
  * type Ex2 = Divide<11, 3> // 3
  * ```
  */
-export type Divide<A extends number, B extends number> = EveryNatural<
-  A,
-  B
+export type Divide<A extends number, B extends number> = And<
+  IsNatural<A>,
+  IsNatural<B>
 > extends true
-  ? MultiSub<A, B, 0>
-  : never
+  ? MultiSub<A, B>
+  : number
