@@ -1,5 +1,4 @@
 import { AnyConstructor } from './any-constructor'
-import { AnyFunction } from './any-function'
 
 /**
  * Generic mixin interface
@@ -7,10 +6,11 @@ import { AnyFunction } from './any-function'
  * @group Any
  * @example
  * ```
- * type Ex = AnyMixin = (..._: any[]) => { new (..._: any[]) => any }
+ * type Ex = AnyMixin // <A extends AnyConstructor>(..._: A) => AnyConstructor & A
  * ```
  */
-export type AnyMixin<
-  A extends AnyConstructor = AnyConstructor,
-  B extends any = any
-> = AnyFunction<[A], B>
+export type AnyMixin = <A extends AnyConstructor = AnyConstructor>(
+  a: A
+) => AnyConstructor & A
+
+export {}

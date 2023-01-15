@@ -1,4 +1,10 @@
+import { Options } from '../experiments/options'
+import { LengthProp } from '../prop/length-prop'
 import { AnyArray } from './any-array'
+
+interface Opts<A extends AnyArray = AnyArray> extends Options<'AnyTuple'> {
+  value: A
+}
 
 /**
  * Create a tuple of length `A` with entries of type `B` (defaults to `any`)
@@ -12,11 +18,9 @@ import { AnyArray } from './any-array'
 export type AnyTuple<
   A extends number,
   B = any,
-  C extends AnyArray = []
-> = C extends {
-  length: A
-}
-  ? C
-  : AnyTuple<A, B, [...C, B]>
+  Z extends Opts = Opts<[]>
+> = LengthProp<Z['value']> extends A
+  ? Z['value']
+  : AnyTuple<A, B, Opts<[...Z['value'], B]>>
 
 export {}

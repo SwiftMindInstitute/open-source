@@ -21,6 +21,6 @@
   "scripts": {
     "test": "jest",
     "docs": "typedoc",
-    "ox": "scripts/ox.sh"
+    "w": "scripts/w.sh"
   }
 }

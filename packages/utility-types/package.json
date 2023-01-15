@@ -1,6 +1,6 @@
 {
   "name": "@bluesky.llc/utility-types",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Utility types collection for TypeScript by BlueSky",
   "scripts": {
     "test": "echo No tests at this time",
