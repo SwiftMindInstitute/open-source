@@ -42,7 +42,7 @@
   "typedoc": {
     "entryPoint": "./src/index.ts",
     "readmeFile": "./README.md",
-    "displayName": "EventQueue",
+    "displayName": "Event-Queue",
     "tsconfig": "./tsconfig.json"
   }
 }
