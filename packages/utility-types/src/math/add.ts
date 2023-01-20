@@ -1,10 +1,11 @@
 import { AnyTuple } from '../any/any-tuple'
 import { And } from '../logic/condition/and'
-import { LengthProp } from '../prop/length-prop'
+import { LengthProp } from '../object/length-prop'
 import { IsNatural } from './condition/is-natural'
 
 /**
  * Evaluate `A + B`, where `A ∈ ℕ` and `B ∈ ℕ`
+ * @beta
  * @group Math
  * @example
  * ```
@@ -20,5 +21,3 @@ export type Add<A extends number, B extends number> = And<
     ? LengthProp<C>
     : number
   : number
-
-export {}

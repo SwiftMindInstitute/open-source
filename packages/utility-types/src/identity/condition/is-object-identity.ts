@@ -1,8 +1,9 @@
 import { IsEqual } from '../../any/condition/is-equal'
-import { ObjectIdenity } from '../object-identity'
+import { ObjectIntersectionIdenity } from '../object-intersection-identity'
 
 /**
  * If `A ≡ {}` then `true` else `false`
+ * @beta
  * @group Condition
  * @group Identity
  * @example
@@ -11,13 +12,12 @@ import { ObjectIdenity } from '../object-identity'
  * type Ex2 = IsObjectIdentity<{ a: true }> // false
  * ```
  */
-export type IsObjectIdentity<A> = IsEqual<A, ObjectIdenity>
+export type IsObjectIdentity<A> = IsEqual<A, ObjectIntersectionIdenity>
 
 /**
  * Alias for `IsObjectIdentity`
+ * @beta
  * @group Condition
  * @group Identity
  */
 export type IsEmptyObject<A> = IsObjectIdentity<A>
-
-export {}

@@ -1,26 +1,10 @@
-import { IsZero } from '../identity/condition/is-number-additive-identity'
+import { MultiAdd } from '../helpers/multi-add'
 import { And } from '../logic/condition/and'
-import { Add } from './add'
 import { IsNatural } from './condition/is-natural'
-import { Subtract } from './subtract'
-
-/**
- * Repeated addition utility function used in multiplication
- * @group Math
- * @internal
- */
-type MultiAdd<
-  A extends number,
-  B extends number,
-  C extends number = 0
-> = IsZero<B> extends true
-  ? C
-  : Add<A, C> extends number
-  ? MultiAdd<A, Subtract<B, 1>, Add<A, C>>
-  : never
 
 /**
  * Return the product of `A * B`
+ * @beta
  * @group Math
  * @example
  * ```

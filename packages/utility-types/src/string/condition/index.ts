@@ -1,2 +1,7 @@
 export * from './has-capture-group'
 export * from './includes'
+export * from './is-capitalized'
+export * from './is-case-insensitive'
+export * from './is-case-sensitive'
+export * from './is-lowercase'
+export * from './is-uppercase'

@@ -1,9 +1,8 @@
 /**
  * A generic class constructior interface.
- *
  * > Note for some reason constructors can't have `readonly any[]` for their
  * > rest parameters. The sole exception for functions. - hao
- *
+ * @beta
  * @group Any
  * @example
  * ```
@@ -14,5 +13,3 @@
 export interface AnyConstructor<A extends any[] = any[], B = any> {
   new (..._: A): B
 }
-
-export {}

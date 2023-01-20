@@ -1,5 +1,11 @@
-import createSimpleTypeGuard from '../utils/create-simple-type-guard'
+import createTypeofTypeGuard from '../utils/create-typeof-type-guard'
 
-const isBigint = createSimpleTypeGuard<bigint>('bigint')
+/**
+ * A type guard for bigint
+ * ```
+ * (a: unknown) => a is bigint
+ * ```
+ */
+const isBigint = createTypeofTypeGuard<bigint>('bigint')
 
 export default isBigint

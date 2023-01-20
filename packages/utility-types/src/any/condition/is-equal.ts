@@ -3,6 +3,7 @@ import { IsExtension } from './is-extension'
 
 /**
  * If `A extends B` and `B extends A` then `true` else `false`
+ * @beta
  * @group Condition
  * @group Any
  * @example
@@ -12,5 +13,3 @@ import { IsExtension } from './is-extension'
  * ```
  */
 export type IsEqual<A, B> = And<IsExtension<A, B>, IsExtension<B, A>>
-
-export {}

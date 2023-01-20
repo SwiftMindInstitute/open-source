@@ -3,6 +3,7 @@ import { Zero } from '../identity/number-additive-identity'
 
 /**
  * Return the head of tuple `A`
+ * @beta
  * @group Tuple
  * @example
  * ```
@@ -17,5 +18,3 @@ export type Head<A extends AnyArray> = A[Zero]
  * @group Tuple
  */
 export type First<A extends AnyArray> = Head<A>
-
-export {}

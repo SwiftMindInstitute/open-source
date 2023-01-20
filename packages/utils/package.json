@@ -1,7 +1,7 @@
 {
   "name": "@bluesky.llc/utils",
   "version": "0.0.4",
-  "description": "Util function collection for TypeScript by BlueSky",
+  "description": "Utility functions for TypeScript by BlueSky.llc",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bluesky-llc/open-source.git"
@@ -28,7 +28,7 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "@bluesky.llc/utility-types": "^0.0.4",
+    "@bluesky.llc/utility-types": "^0.1.1",
     "@types/node": "^18.11.5",
     "typescript": "^4.6.4",
     "vite": "^4.0.3",

@@ -2,7 +2,7 @@ import { CaptureGroup } from './utils'
 
 /**
  * Evaluate the union of the strings in A matching capture group B
- * @experimental
+ * @alpha
  * @group String
  * @example
  * ```
@@ -16,5 +16,3 @@ export type Capture<
 > = A extends `${infer _}${B['start']}${infer E}${B['end']}${infer F}`
   ? Capture<F, B, C | E>
   : C
-
-export {}

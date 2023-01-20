@@ -19,7 +19,7 @@
     "scope": "typescript,typescriptreact",
     "prefix": "util",
     "body": [
-      "const ${1:${TM_FILENAME_BASE/(-([a-zA-Z]))/${2:/upcase}/g}} = ($2) => $3",
+      "const ${1:${TM_FILENAME_BASE/[A-Za-z-]+/${0:/camelcase}/g}}} = ($2) => $3",
       "",
       "export default $1"
     ],
@@ -141,7 +141,25 @@
   "expect": {
     "scope": "typescript,typescriptreact",
     "prefix": "expect",
-    "body": ["expect(${1:actual}).${2:toBe}()"],
+    "body": ["expect(${1:actual}).${2:toBe}(${3:expected})"],
     "description": "expect"
+  },
+  "Utility Type": {
+    "scope": "typescript,javascript,typescriptreact",
+    "prefix": "type",
+    "body": [
+      "export type ${1:${TM_FILENAME_BASE/[A-Za-z-]+/${0:/pascalcase}/g}}<A${2}> = {",
+      "\t$3",
+      "}"
+    ],
+    "description": "Utility Type"
+  },
+  "Conditional Types": {
+    "scope": "typescript,javascript,typescriptreact",
+    "prefix": "condition",
+    "body": [
+      "export type ${1:${TM_FILENAME_BASE/[A-Za-z-]+/${0:/pascalcase}/g}}<A${2}> = ${3:A extends ${4:Type} ? ${5:true} : ${6:false}}"
+    ],
+    "description": "Conditional Types"
   }
 }

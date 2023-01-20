@@ -3,6 +3,7 @@ import { IsExtension } from './is-extension'
 
 /**
  * If `A extends AnyConstructor` then `true` else `false`
+ * @beta
  * @group Condition
  * @group Any
  * @example
@@ -16,5 +17,3 @@ import { IsExtension } from './is-extension'
  * ```
  */
 export type IsConstructor<A> = IsExtension<A, AnyConstructor>
-
-export {}

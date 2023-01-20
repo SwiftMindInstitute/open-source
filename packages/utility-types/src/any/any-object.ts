@@ -2,6 +2,7 @@ import { AnyKey } from './any-key'
 
 /**
  * Generic object interface
+ * @beta
  * @group Any
  * @example
  * ```
@@ -13,5 +14,3 @@ import { AnyKey } from './any-key'
 export type AnyObject<A extends AnyKey = AnyKey, B = any> = {
   [C in A]: B
 }
-
-export {}

@@ -1,6 +1,6 @@
 # Utils
 
-A collection of utility functions by BlueSky.
+Utility functions for TypeScript by BlueSky.llc.
 
 # Documentation
 

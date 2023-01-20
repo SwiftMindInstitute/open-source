@@ -2,6 +2,10 @@
 
 Made with ❤️ by BlueSky.
 
+# Contributing
+
+Read the style guide.
+
 # Packages
 
 - utility-types

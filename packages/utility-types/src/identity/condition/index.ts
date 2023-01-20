@@ -1,4 +1,4 @@
-export * from './is-array-identity'
+export * from './is-array-concat-identity'
 export * from './is-number-additive-identity'
 export * from './is-number-multiplicative-identity'
 export * from './is-object-identity'

@@ -1,5 +1,6 @@
 /**
  * If `A extends B` then `true` else `false`
+ * @beta
  * @group Condition
  * @group Any
  * @example
@@ -9,5 +10,3 @@
  * ```
  */
 export type IsExtension<A, B> = A extends B ? true : false
-
-export {}

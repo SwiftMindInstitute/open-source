@@ -1,5 +1,8 @@
+import { PureCondition } from '../../helpers'
+
 /**
- * If `A` then `false` else `true` where `A extends boolean`
+ * Evaluate `¬A`
+ * @beta
  * @group Condition
  * @group Logic
  * @example
@@ -8,6 +11,4 @@
  * type Ex2 = Not<false> // true
  * ```
  */
-export type Not<A extends boolean> = A extends true ? false : true
-
-export {}
+export type Not<A extends boolean> = PureCondition<A, false, true>

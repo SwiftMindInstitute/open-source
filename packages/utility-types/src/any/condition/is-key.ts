@@ -3,6 +3,7 @@ import { IsExtension } from './is-extension'
 
 /**
  * If `A extends AnyKey` then `true` else `false`
+ * @beta
  * @group Condition
  * @group Any
  * @example
@@ -14,5 +15,3 @@ import { IsExtension } from './is-extension'
  * ```
  */
 export type IsKey<A> = IsExtension<A, AnyKey>
-
-export {}

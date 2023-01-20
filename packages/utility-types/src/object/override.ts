@@ -2,6 +2,7 @@ import { KeyOf } from './key-of'
 
 /**
  * Return the intersection of `A` and `B` for any conflicts defer to `B`.
+ * @beta
  * @group Object
  * @example
  * ```
@@ -9,5 +10,3 @@ import { KeyOf } from './key-of'
  * ```
  */
 export type Override<A extends object, B extends object> = Omit<A, KeyOf<B>> & B
-
-export {}

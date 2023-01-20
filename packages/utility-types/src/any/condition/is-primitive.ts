@@ -3,6 +3,7 @@ import { IsExtension } from './is-extension'
 
 /**
  * If `A extends AnyPrimitive` then `true` else `false`
+ * @beta
  * @group Condition
  * @group Any
  * @example

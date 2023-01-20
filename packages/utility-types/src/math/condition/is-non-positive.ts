@@ -4,6 +4,7 @@ import { IsNegative } from './is-negative'
 
 /**
  * If `A ≤ 0` then `true` else `false`
+ * @beta
  * @group Condition
  * @group Math
  * @example
@@ -14,5 +15,3 @@ import { IsNegative } from './is-negative'
  * ```
  */
 export type IsNonPositive<A extends number> = Or<IsZero<A>, IsNegative<A>>
-
-export {}

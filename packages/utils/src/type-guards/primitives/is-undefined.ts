@@ -1,5 +1,11 @@
-import createSimpleTypeGuard from '../utils/create-simple-type-guard'
+import createTypeofTypeGuard from '../utils/create-typeof-type-guard'
 
-const isUndefined = createSimpleTypeGuard<undefined>('undefined')
+/**
+ * A type guard for undefined
+ * ```
+ * (a: unknown) => a is undefined
+ * ```
+ */
+const isUndefined = createTypeofTypeGuard<undefined>('undefined')
 
 export default isUndefined

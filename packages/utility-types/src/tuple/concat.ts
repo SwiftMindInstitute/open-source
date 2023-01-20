@@ -2,6 +2,7 @@ import { AnyArray } from '../any/any-array'
 
 /**
  * Return the concatenation of `A` and `B`
+ * @beta
  * @group Tuple
  * @example
  * ```
@@ -9,5 +10,3 @@ import { AnyArray } from '../any/any-array'
  * ```
  */
 export type Concat<A extends AnyArray, B extends AnyArray> = [...A, ...B]
-
-export {}

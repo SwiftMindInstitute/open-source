@@ -1,9 +1,13 @@
 import { AnyArray } from '../any/any-array'
-import { IsTruthy } from '../any/condition/is-truthy'
-import { Options } from '../experiments/options'
-import { IsEmptyArray } from '../identity/condition/is-array-identity'
+import { Options } from '../helpers/options'
+import { IsEmptyArray } from '../identity/condition/is-array-concat-identity'
 import { And } from '../logic/condition/and'
+import { Prepend } from './prepend'
 
+/**
+ * 🚫 DO NOT EXPORT
+ * @internal
+ */
 interface Opts<A extends boolean = boolean, B extends AnyArray = AnyArray>
   extends Options<'Ands'> {
   value: A
@@ -12,7 +16,7 @@ interface Opts<A extends boolean = boolean, B extends AnyArray = AnyArray>
 
 /**
  * Evaluate the conjunction of all entries of `A`
- * @experimental
+ * @alpha
  * @group Tuple
  * @example
  * ```
@@ -25,8 +29,10 @@ export type Ands<
   Z extends Opts = Opts<true, A>
 > = IsEmptyArray<A> extends true
   ? false
-  : Z['rest'] extends [infer D, ...infer E]
-  ? And<IsTruthy<Z['value']>, IsTruthy<D>> extends true
-    ? Ands<A, Opts<And<IsTruthy<Z['value']>, IsTruthy<D>>, E>>
-    : false
+  : Z['rest'] extends Prepend<infer C, infer B>
+  ? B extends boolean
+    ? And<Z['value'], B> extends true
+      ? Ands<A, Opts<And<Z['value'], B>, C>>
+      : false
+    : never
   : Z['value']

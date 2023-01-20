@@ -1,5 +1,11 @@
-import createSimpleTypeGuard from '../utils/create-simple-type-guard'
+import createTypeofTypeGuard from '../utils/create-typeof-type-guard'
 
-const isString = createSimpleTypeGuard<string>('string')
+/**
+ * A type guard for string
+ * ```
+ * (a: unknown) => a is string
+ * ```
+ */
+const isString = createTypeofTypeGuard<string>('string')
 
 export default isString

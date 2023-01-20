@@ -1,12 +1,12 @@
-import { IsEmptyArray } from '../../identity/condition/is-array-identity'
+import { IsEmptyArray } from '../../identity/condition/is-array-concat-identity'
 import { IsZero } from '../../identity/condition/is-number-additive-identity'
 import { IsEmptyObject } from '../../identity/condition/is-object-identity'
 import { IsEmptyString } from '../../identity/condition/is-string-identity'
-import { Or } from '../../logic/condition/or'
+import { Ors } from '../../tuple/ors'
 
 /**
  * If `A extends []` or `A extends ''` or `A extends {}` then `true` else `false`
- * @experimental
+ * @alpha
  * @group Condition
  * @group Any
  * @example
@@ -21,9 +21,6 @@ import { Or } from '../../logic/condition/or'
  * type Ex8 = IsEmpty<[true]>      // false
  * ```
  */
-export type IsEmpty<A> = Or<
-  IsZero<A>,
-  Or<IsEmptyString<A>, Or<IsEmptyObject<A>, IsEmptyArray<A>>>
+export type IsEmpty<A> = Ors<
+  [IsZero<A>, IsEmptyString<A>, IsEmptyObject<A>, IsEmptyArray<A>]
 >
-
-export {}

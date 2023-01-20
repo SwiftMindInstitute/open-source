@@ -4,11 +4,11 @@ import { CaptureGroup } from './utils'
 /**
  * Evaluate the string template `A` interpolating variables of `A` with
  * values from `B`
- * @experimental
+ * @beta
  * @group String
  * @example
  * ```
- * type Ex = Interpolate<'Hello {{a}}', { a: 'World' }> // 'Hello World!'
+ * type Ex = Interpolation<'Hello {{a}}', { a: 'World' }> // 'Hello World!'
  * ```
  */
 export type Interpolation<
@@ -22,5 +22,3 @@ export type Interpolation<
     ? Interpolation<A, B, C, `${G}${B[H]}${I}`, F>
     : never
   : `${D}`
-
-export {}

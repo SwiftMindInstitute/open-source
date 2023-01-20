@@ -1,7 +1,7 @@
 {
   "name": "@bluesky.llc/utility-types",
-  "version": "0.0.4",
-  "description": "Utility types collection for TypeScript by BlueSky",
+  "version": "0.1.1",
+  "description": "Utility-Types for TypeScript by BlueSky.llc",
   "scripts": {
     "test": "echo No tests at this time",
     "dev": "vite build --watch",

@@ -8,16 +8,12 @@ interface Add {
 
 /**
  * Add `a` to `b`.
- * @param a number|string
- * @param b number|string
- * @returns number|string
+ * @param a number | string
+ * @param b number | string
+ * @returns number | string
  * @example
  * ```
  * const ex1 = add(1, 2) // 3
- * ```
- * ```
- * @example
- * ```
  * const ex2 = add('a', 'b') // 'ab'
  * ```
  */

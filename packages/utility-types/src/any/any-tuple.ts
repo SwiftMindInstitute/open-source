@@ -1,13 +1,17 @@
-import { Options } from '../experiments/options'
-import { LengthProp } from '../prop/length-prop'
+import { Options } from '../helpers/options'
+import { LengthProp } from '../object/length-prop'
 import { AnyArray } from './any-array'
 
+/**
+ * 🚫 DO NOT EXPORT
+ */
 interface Opts<A extends AnyArray = AnyArray> extends Options<'AnyTuple'> {
   value: A
 }
 
 /**
  * Create a tuple of length `A` with entries of type `B` (defaults to `any`)
+ * @beta
  * @group Any
  * @example
  * ```
@@ -22,5 +26,3 @@ export type AnyTuple<
 > = LengthProp<Z['value']> extends A
   ? Z['value']
   : AnyTuple<A, B, Opts<[...Z['value'], B]>>
-
-export {}

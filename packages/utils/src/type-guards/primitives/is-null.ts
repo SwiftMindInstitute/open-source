@@ -1,5 +1,11 @@
-import createSimpleTypeGuard from '../utils/create-simple-type-guard'
+import createTypeofTypeGuard from '../utils/create-typeof-type-guard'
 
-const isNull = createSimpleTypeGuard<null>('null')
+/**
+ * A type guard for null
+ * ```
+ * (a: unknown) => a is null
+ * ```
+ */
+const isNull = createTypeofTypeGuard<null>('null')
 
 export default isNull

@@ -5,6 +5,7 @@ import { Subtract } from '../subtract'
 
 /**
  * Evaluate `A < B`, where `A ∈ ℕ` and `B ∈ ℕ`
+ * @beta
  * @group Condition
  * @group Math
  * @example
@@ -23,5 +24,3 @@ export type IsLessThan<A extends number, B extends number> = Or<
     ? true
     : false
   : IsLessThan<Subtract<A, 1>, Subtract<B, 1>>
-
-export {}

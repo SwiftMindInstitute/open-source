@@ -1,6 +1,6 @@
 # Utility-Types
 
-A collection of utility-types by BlueSky.
+Utility-Types for TypeScript by BlueSky.llc.
 
 # Documentation
 

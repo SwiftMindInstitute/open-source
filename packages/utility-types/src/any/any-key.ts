@@ -1,5 +1,6 @@
 /**
  * Type that can be used for any key
+ * @beta
  * @group Any
  * @example
  * ```
@@ -7,5 +8,3 @@
  * ```
  */
 export type AnyKey = keyof any
-
-export {}

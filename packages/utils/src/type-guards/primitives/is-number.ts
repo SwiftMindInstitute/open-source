@@ -1,5 +1,11 @@
-import createSimpleTypeGuard from '../utils/create-simple-type-guard'
+import createTypeofTypeGuard from '../utils/create-typeof-type-guard'
 
-const isNumber = createSimpleTypeGuard<number>('number')
+/**
+ * A type guard for number
+ * ```
+ * (a: unknown) => a is number
+ * ```
+ */
+const isNumber = createTypeofTypeGuard<number>('number')
 
 export default isNumber

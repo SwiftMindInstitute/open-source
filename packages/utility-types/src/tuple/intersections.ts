@@ -1,9 +1,9 @@
 import { AnyArray } from '../any/any-array'
-import { EmptyObject } from '../identity/object-identity'
+import { EmptyObject } from '../identity/object-intersection-identity'
 
 /**
  * Evaluate the intersection of all entries of `A`
- * @experimental
+ * @alpha
  * @group Tuple
  * @example
  * ```

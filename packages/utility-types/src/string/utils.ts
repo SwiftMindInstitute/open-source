@@ -1,6 +1,6 @@
 /**
  * An interface representing the start and end of a capture group
- * @internal
+ * @beta
  * @group String
  * @example
  * ```
@@ -14,5 +14,3 @@ export interface CaptureGroup<
   start: A
   end: B
 }
-
-export {}

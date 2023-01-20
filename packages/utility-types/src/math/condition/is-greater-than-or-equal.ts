@@ -3,6 +3,7 @@ import { IsLessThan } from './is-less-than'
 
 /**
  * Evaluate `A ≥ B`, where `A ∈ ℕ` and `B ∈ ℕ`
+ * @beta
  * @group Condition
  * @group Math
  * @example
@@ -15,5 +16,3 @@ import { IsLessThan } from './is-less-than'
 export type IsGreaterThanOrEqual<A extends number, B extends number> = Not<
   IsLessThan<A, B>
 >
-
-export {}

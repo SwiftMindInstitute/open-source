@@ -1,10 +1,13 @@
+import { AnyConstructor } from '@bluesky.llc/utility-types'
 import createTypeGuard from './create-type-guard'
 
-interface Constructor {
-  new (..._: any[]): any
-}
-
-const createInstanceTypeGuard = <A>(classType: Constructor) =>
-  createTypeGuard<A>(value => value instanceof classType)
+/**
+ * A generalized type guard factory for class instances
+ * ```
+ * <A>(Class: AnyConstructor) => (a: unknown) => a is A
+ * ```
+ */
+const createInstanceTypeGuard = <A>(Class: AnyConstructor) =>
+  createTypeGuard<A>(value => value instanceof Class)
 
 export default createInstanceTypeGuard

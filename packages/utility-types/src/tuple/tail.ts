@@ -3,6 +3,7 @@ import { Prepend } from './prepend'
 
 /**
  * Return the tail of tuple `A`
+ * @beta
  * @group Tuple
  * @example
  * ```

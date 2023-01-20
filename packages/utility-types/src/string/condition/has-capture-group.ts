@@ -1,20 +1,19 @@
+import { IsExtension } from '../../any/condition/is-extension'
 import { CaptureGroup } from '../utils'
 
 /**
  * Evaluate if `A` has a matches CaptureGroup `B`
- * @experimental
+ * @alpha
  * @group Condition
  * @group String
  * @example
  * ```
- * type Ex = HasCaptureGroup<'a {{b}} c'> // true
+ * type Ex1 = HasCaptureGroup<'a {{b}} c'>                         // true
+ * type Ex2 = HasCaptureGroup<'a b c'>                             // false
+ * type Ex3 = HasCaptureGroup<'a ${b} c', CaptureGroup<'${', '}'>> // true
  * ```
  */
 export type HasCaptureGroup<
   A extends string,
   B extends CaptureGroup = CaptureGroup<'{{', '}}'>
-> = A extends `${infer _C}${B['start']}${infer _D}${B['end']}${infer _E}`
-  ? true
-  : false
-
-export {}
+> = IsExtension<A, `${string}${B['start']}${string}${B['end']}${string}`>

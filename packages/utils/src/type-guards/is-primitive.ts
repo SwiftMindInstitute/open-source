@@ -1,8 +1,15 @@
 import { AnyPrimitive } from '@bluesky.llc/utility-types'
+import isNullish from './is-nullish'
 import { createTypeGuard } from './utils'
 
+/**
+ * A generalized type-guard for AnyPrimitive
+ * ```
+ * (a: unknown) => a is AnyPrimitive
+ * ```
+ */
 const isPrimitive = createTypeGuard<AnyPrimitive>(value => {
-  if (value === null || value === undefined) {
+  if (isNullish(value)) {
     return true
   }
   switch (typeof value) {
@@ -13,8 +20,9 @@ const isPrimitive = createTypeGuard<AnyPrimitive>(value => {
     case 'symbol': {
       return true
     }
-    default:
+    default: {
       return false
+    }
   }
 })
 

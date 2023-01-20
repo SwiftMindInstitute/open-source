@@ -1,5 +1,6 @@
 /**
  * Generic array interface
+ * @beta
  * @group Any
  * @example
  * ```
@@ -8,5 +9,3 @@
  * ```
  * */
 export type AnyArray<A = any> = A[] | readonly A[]
-
-export {}

@@ -1,6 +1,12 @@
 import { AnyFunction } from '@bluesky.llc/utility-types'
-import createSimpleTypeGuard from '../utils/create-simple-type-guard'
+import createTypeofTypeGuard from '../utils/create-typeof-type-guard'
 
-const isFunction = createSimpleTypeGuard<AnyFunction>('function')
+/**
+ * A type guard for function
+ * ```
+ * (a: unknown) => a is AnyFunction<AnyArray<any., any>
+ * ```
+ */
+const isFunction = createTypeofTypeGuard<AnyFunction>('function')
 
 export default isFunction

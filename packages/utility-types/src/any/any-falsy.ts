@@ -1,8 +1,9 @@
 import { NumberAdditiveIdentity } from '../identity/number-additive-identity'
-import { StringIdentity } from '../identity/string-identity'
+import { StringConcatIdentity } from '../identity/string-concat-identity'
 
 /**
  * All union of values that satisfy `<A>(a: A) => a == false`
+ * @beta
  * @group Any
  * @example
  * ```
@@ -11,9 +12,7 @@ import { StringIdentity } from '../identity/string-identity'
  */
 export type AnyFalsy =
   | false
-  | StringIdentity
+  | StringConcatIdentity
   | NumberAdditiveIdentity
   | null
   | undefined
-
-export {}

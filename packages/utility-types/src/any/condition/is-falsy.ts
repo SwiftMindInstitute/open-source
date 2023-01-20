@@ -3,6 +3,7 @@ import { IsExtension } from './is-extension'
 
 /**
  * If `A extends AnyFalsy` then `true` else `false`
+ * @beta
  * @group Condition
  * @group Any
  * @example
@@ -20,5 +21,3 @@ import { IsExtension } from './is-extension'
  * ```
  */
 export type IsFalsy<A> = IsExtension<A, AnyFalsy>
-
-export {}

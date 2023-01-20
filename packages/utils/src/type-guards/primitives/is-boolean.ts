@@ -1,5 +1,11 @@
-import createSimpleTypeGuard from '../utils/create-simple-type-guard'
+import createTypeofTypeGuard from '../utils/create-typeof-type-guard'
 
-const isBoolean = createSimpleTypeGuard<boolean>('boolean')
+/**
+ * A type guard for boolean
+ * ```
+ * (a: unknown) => a is boolean
+ * ```
+ */
+const isBoolean = createTypeofTypeGuard<boolean>('boolean')
 
 export default isBoolean

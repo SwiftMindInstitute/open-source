@@ -1,5 +1,11 @@
-import createSimpleTypeGuard from '../utils/create-simple-type-guard'
+import createTypeofTypeGuard from '../utils/create-typeof-type-guard'
 
-const isSymbol = createSimpleTypeGuard<symbol>('symbol')
+/**
+ * A type guard for symbol
+ * ```
+ * (a: unknown) => a is symbol
+ * ```
+ */
+const isSymbol = createTypeofTypeGuard<symbol>('symbol')
 
 export default isSymbol

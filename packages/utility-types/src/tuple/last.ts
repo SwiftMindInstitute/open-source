@@ -3,6 +3,7 @@ import { Append } from './append'
 
 /**
  * Return the last entry of tuple `A`
+ * @beta
  * @group Tuple
  * @example
  * ```
@@ -12,5 +13,3 @@ import { Append } from './append'
 export type Last<A extends AnyArray> = A extends Append<any[], infer B>
   ? B
   : never
-
-export {}

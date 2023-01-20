@@ -2,7 +2,7 @@ import { AnyArray } from '../any/any-array'
 
 /**
  * Evaluate the union of all entries of `A`
- * @experimental
+ * @alpha
  * @group Tuple
  * @example
  * ```
@@ -15,5 +15,3 @@ export type Unions<A extends AnyArray, B = never> = A extends [
 ]
   ? Unions<D, C | B>
   : B
-
-export {}

@@ -1,10 +1,9 @@
+import { PureCondition } from '../../helpers'
 import { Not } from './not'
 
 /**
- * If `A ⊻ B` then `true` else `false` where `A extends boolean` and `B extends
- *
- * Or<A, B>
- *
+ * Evaluate `A ⊻ B`
+ * @beta
  * @group Condition
  * @group Logic
  * @example
@@ -15,8 +14,8 @@ import { Not } from './not'
  * type Ex4 = Xor<false, false> // false
  * ```
  */
-export type Xor<A extends boolean, B extends boolean> = A extends true
-  ? Not<B>
-  : B
-
-export {}
+export type Xor<A extends boolean, B extends boolean> = PureCondition<
+  A,
+  Not<B>,
+  B
+>

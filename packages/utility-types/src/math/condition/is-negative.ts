@@ -2,6 +2,7 @@ import { IsExtension } from '../../any/condition/is-extension'
 
 /**
  * If `A < 0` then `true` else `false`
+ * @beta
  * @group Condition
  * @group Math
  * @example
@@ -12,5 +13,3 @@ import { IsExtension } from '../../any/condition/is-extension'
  * ```
  */
 export type IsNegative<A extends number> = IsExtension<`${A}`, `-${number}`>
-
-export {}

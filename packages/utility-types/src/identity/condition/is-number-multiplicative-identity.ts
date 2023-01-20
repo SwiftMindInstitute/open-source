@@ -1,8 +1,9 @@
-import { IsEqual } from '../../any/condition/is-equal'
+import { IsExtension } from '../../any'
 import { NumberMultiplicativeIdentity } from '../number-multiplicative-identity'
 
 /**
  * If `A ≡ 1` then `true` else `false`
+ * @beta
  * @group Condition
  * @group Identity
  * @example
@@ -11,16 +12,15 @@ import { NumberMultiplicativeIdentity } from '../number-multiplicative-identity'
  * type Ex2 = IsNumberMultiplicativeIdentity<2> // false
  * ```
  */
-export type IsNumberMultiplicativeIdentity<A> = IsEqual<
+export type IsNumberMultiplicativeIdentity<A> = IsExtension<
   A,
   NumberMultiplicativeIdentity
 >
 
 /**
  * Alias for `IsNumberMultiplicativeIdentity`
+ * @beta
  * @group Condition
  * @group Identity
  */
 export type IsOne<A> = IsNumberMultiplicativeIdentity<A>
-
-export {}

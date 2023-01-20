@@ -1,10 +1,11 @@
 import { AnyTuple } from '../any/any-tuple'
 import { And } from '../logic/condition/and'
-import { LengthProp } from '../prop/length-prop'
+import { LengthProp } from '../object/length-prop'
 import { IsNatural } from './condition/is-natural'
 
 /**
  * Return the difference of `A - B`
+ * @beta
  * @group Math
  * @example
  * ```

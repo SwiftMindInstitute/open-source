@@ -8,4 +8,4 @@ import { KeyOf } from './key-of'
  * type Ex = ValueOf<{ a: string, b: number }> // string | number
  * ```
  */
-export type ValueOf<A extends object> = A[KeyOf<A>]
+export type ValueOf<A> = A[KeyOf<A>]

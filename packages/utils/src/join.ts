@@ -1,12 +1,10 @@
-// import { Join } from '@bluesky.llc/utility-types'
+import { AnyTemplatable, Join } from '@bluesky.llc/utility-types'
 
-// type Ex = Join<['a', 'b', 'c'], ', '> // 'a, b, c'
+const join = <A extends AnyTemplatable[], B extends string = ''>(
+  a: A,
+  b: B = '' as B
+): Join<A, B> => a.join(b) as Join<A, B>
 
-// const join = <A extends string[], B extends string = ''>(
-//   a: A,
-//   b: B = '' as B
-// ): Join<A, B> => a.join(b)
-
-// export default join
+export default join
 
 export {}

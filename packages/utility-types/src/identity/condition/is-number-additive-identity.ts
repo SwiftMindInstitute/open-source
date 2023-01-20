@@ -1,8 +1,9 @@
-import { IsEqual } from '../../any/condition/is-equal'
+import { IsExtension } from '../../any'
 import { NumberAdditiveIdentity } from '../number-additive-identity'
 
 /**
  * If `A ≡ 0` then `true` else `false`
+ * @beta
  * @group Condition
  * @group Identity
  * @example
@@ -11,13 +12,12 @@ import { NumberAdditiveIdentity } from '../number-additive-identity'
  * type Ex2 = IsNumberAdditiveIdentity<2> // false
  * ```
  */
-export type IsNumberAdditiveIdentity<A> = IsEqual<A, NumberAdditiveIdentity>
+export type IsNumberAdditiveIdentity<A> = IsExtension<A, NumberAdditiveIdentity>
 
 /**
  * Alias for `IsNumberAdditiveIdentity`
+ * @beta
  * @group Condition
  * @group Identity
  */
 export type IsZero<A> = IsNumberAdditiveIdentity<A>
-
-export {}

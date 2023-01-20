@@ -1,5 +1,12 @@
-import createSimpleTypeGuard from '../utils/create-simple-type-guard'
+import { AnyObject } from '@bluesky.llc/utility-types'
+import createTypeofTypeGuard from '../utils/create-typeof-type-guard'
 
-const isObject = createSimpleTypeGuard<object>('object')
+/**
+ * A type guard for object
+ * ```
+ * (a: unknown) => a is AnyObject
+ * ```
+ */
+const isObject = createTypeofTypeGuard<AnyObject>('object')
 
 export default isObject

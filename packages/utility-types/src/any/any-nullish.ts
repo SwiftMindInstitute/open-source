@@ -1,5 +1,6 @@
 /**
  * A union of values that satisfy `<A>(a: A) => a == null`
+ * @beta
  * @group Any
  * @example
  * ```
@@ -7,5 +8,3 @@
  * ```
  */
 export type AnyNullish = null | undefined
-
-export {}

@@ -1,9 +1,10 @@
 import { And } from '../../logic/condition/and'
+import { IsInteger } from './is-integer'
 import { IsNonNegative } from './is-non-negative'
-import { IsWhole } from './is-whole'
 
 /**
  * If `A ∈ ℕ` then `true` else `false`
+ * @beta
  * @group Condition
  * @group Math
  * @example
@@ -14,6 +15,4 @@ import { IsWhole } from './is-whole'
  * type Ex4 = IsNatural<2.3> // false
  * ```
  */
-export type IsNatural<A extends number> = And<IsNonNegative<A>, IsWhole<A>>
-
-export {}
+export type IsNatural<A extends number> = And<IsNonNegative<A>, IsInteger<A>>

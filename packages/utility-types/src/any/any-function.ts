@@ -2,6 +2,7 @@ import { AnyArray } from './any-array'
 
 /**
  * Generic function interface
+ * @beta
  * @group Any
  * @example
  * ```
@@ -11,5 +12,3 @@ import { AnyArray } from './any-array'
  * ```
  */
 export type AnyFunction<A extends AnyArray = AnyArray, B = any> = (..._: A) => B
-
-export {}

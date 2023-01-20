@@ -1,6 +1,6 @@
 /**
  * Splits a string `A` into an array of substrings split on string `B`
- * @experimental
+ * @beta
  * @group String
  * @example
  * ```
@@ -21,5 +21,3 @@ export type Split<
     ? Split<E, B, [...Z, D]>
     : never
   : [...Z, A]
-
-export {}

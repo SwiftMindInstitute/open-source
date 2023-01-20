@@ -1,5 +1,6 @@
 /**
  * A union of all TypeScript primitives
+ * @beta
  * @group Any
  * @example
  * ```
@@ -14,5 +15,3 @@ export type AnyPrimitive =
   | symbol
   | null
   | undefined
-
-export {}

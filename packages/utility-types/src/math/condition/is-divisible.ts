@@ -3,6 +3,7 @@ import { Modulo } from '../modulo'
 
 /**
  * Evaluate `A % B === 0`, where `A ∈ ℕ` and `B ∈ ℕ`
+ * @beta
  * @group Condition
  * @group Math
  * @example
@@ -14,5 +15,3 @@ import { Modulo } from '../modulo'
 export type IsDivisible<A extends number, B extends number> = IsZero<
   Modulo<A, B>
 >
-
-export {}

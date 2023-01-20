@@ -1,6 +1,7 @@
+import { PureCondition } from '../../helpers'
 /**
- * If `A ∨ B` then `true` else `false` where `A extends boolean` and `B extends
- * boolean`
+ * Evaluate `A ∨ B`
+ * @beta
  * @group Condition
  * @group Logic
  * @example
@@ -11,10 +12,4 @@
  * type Ex4 = Or<false, false> // false
  * ```
  */
-export type Or<A extends boolean, B extends boolean> = A extends true
-  ? true
-  : B extends true
-  ? true
-  : false
-
-export {}
+export type Or<A extends boolean, B extends boolean> = PureCondition<A, A, B>

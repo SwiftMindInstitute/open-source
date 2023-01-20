@@ -21,7 +21,9 @@ export interface Which {
 
 /**
  * Create a which function
- *
+ * @param ref
+ * @param defaultKey
+ * @returns `ref[key]`
  * @example
  * ```
  * // Without default
@@ -31,6 +33,9 @@ export interface Which {
  * })
  * which1('a') // 'a'
  * which1('zzz') // undefined
+ * ```
+ * @example
+ * ```
  * // With default
  * const which2 = createWhich({
  *   a: 1,
@@ -39,10 +44,6 @@ export interface Which {
  * const ex3 = which2('a') // 1
  * const ex4 = which2('zzz') // 2
  * ```
- *
- * @param ref
- * @param defaultKey
- * @returns `ref[key]`
  */
 const createWhich: Which =
   (ref: any, defaultKey?: AnyKey) => (key?: AnyKey) => {

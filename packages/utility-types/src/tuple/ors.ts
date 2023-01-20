@@ -1,10 +1,21 @@
 import { AnyArray } from '../any/any-array'
-import { IsEmptyArray } from '../identity/condition/is-array-identity'
+import { Options } from '../helpers/options'
+import { IsEmptyArray } from '../identity/condition/is-array-concat-identity'
 import { Or } from '../logic/condition/or'
+import { Prepend } from './prepend'
+
+/**
+ * 🚫 DO NOT EXPORT
+ */
+interface Opts<A extends boolean = boolean, B extends AnyArray = AnyArray>
+  extends Options<'Ors'> {
+  value: A
+  rest: B
+}
 
 /**
  * Evaluate the disjunction of all elements of `A`
- * @experimental
+ * @alpha
  * @group Tuple
  * @example
  * ```
@@ -13,17 +24,14 @@ import { Or } from '../logic/condition/or'
  * ```
  */
 export type Ors<
-  A extends AnyArray<boolean>,
-  B extends boolean = false,
-  C extends AnyArray<boolean> = A
+  A extends AnyArray,
+  Z extends Opts = Opts<false, A>
 > = IsEmptyArray<A> extends true
   ? false
-  : C extends [infer D, ...infer E]
-  ? D extends boolean
-    ? E extends AnyArray<boolean>
-      ? Or<B, D> extends true
-        ? true
-        : Ors<A, Or<B, D>, E>
-      : never
+  : Z['rest'] extends Prepend<infer C, infer B>
+  ? B extends boolean
+    ? Or<Z['value'], B> extends true
+      ? true
+      : Ors<A, Opts<Or<Z['value'], B>, C>>
     : never
-  : B
+  : Z['value']

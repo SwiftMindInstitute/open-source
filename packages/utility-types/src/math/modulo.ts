@@ -5,6 +5,7 @@ import { Subtract } from './subtract'
 
 /**
  * Evaluate `A % B`, where `A ∈ ℕ` and `B ∈ ℕ`
+ * @beta
  * @group Math
  * @example
  * ```
