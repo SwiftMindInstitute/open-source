@@ -11,13 +11,15 @@ type EventType = AnyObject<AnyKey, AnyObject>
  * A WeakMap based event queue.
  * @alpha
  * ```
- * const ALERT = { [Symbol()]: null }
+ * interface Event {
+ *   message: { body: string }
+ * }
  *
  * const eventQueue = new EventQueue()
  *
- * eventQueue.on(ALERT, () => console.log('))
+ * eventQueue.on('message', ({ body }) => console.log(body))
  *
- *
+ * eventQueue.emit('message', { body: 'Hello World!' })
  * ```
  */
 class EventQueue<Event = EventType> {
