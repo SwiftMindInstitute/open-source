@@ -41,7 +41,7 @@ Any new type, interface, class, or function should be labeled `@experimental`.
 Once the new code has been documented the prior label can be removed and the
 `@alpha` label can be added. If the new code is added to a minor versioned
 release the prior label can be removed and `@beta` can be added. Finally, when
-a beta feature is part of a majorn versioned release the `@beta` label can be
+a beta feature is part of a major versioned release the `@beta` label can be
 removed.
 
 ## Unit Tests

@@ -1,7 +1,8 @@
 import { SnakeCase } from './snake-case'
 
 /**
- * Transform string `A` to snake-case split on `B` and uppercase letters
+ * Transform string `A` to SCREAMING_SNAKE_CASE split on `B` and uppercase
+ * letters
  * @alpha
  * @group String
  * @example

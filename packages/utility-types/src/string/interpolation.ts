@@ -12,7 +12,7 @@ interface Opts<A extends string = string, B extends string = string>
 }
 
 /**
- * Evaluate the string template `A` interpolating variables of `A` with
+ * Evaluate string template `A` interpolating variables of `A` with
  * values from `B`
  * @beta
  * @group String

@@ -10,7 +10,7 @@ interface Opts<A extends AnyTemplatable = AnyTemplatable> extends Options {
 }
 
 /**
- * Join a tuple of templatables A on a character templatable.
+ * Join a tuple of templatables `A` on a character templatable
  * @beta
  * @group String
  * @example

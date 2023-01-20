@@ -6,7 +6,7 @@ interface Opts<A extends string = string> {
 }
 
 /**
- * Transform any string
+ * Transform string `A` to PascalCase split on string `B`
  * @alpha
  * @group String
  * @example

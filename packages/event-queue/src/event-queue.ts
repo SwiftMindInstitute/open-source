@@ -16,7 +16,7 @@ type EventType = AnyObject<AnyKey, AnyObject>
  *   message: { body: string }
  * }
  *
- * const eventQueue = new EventQueue()
+ * const eventQueue = new EventQueue<Event>()
  *
  * eventQueue.on('message', ({ body }) => console.log(body))
  *

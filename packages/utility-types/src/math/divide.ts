@@ -9,6 +9,7 @@ import { IsNatural } from './antecedent/is-natural'
  * @example
  * ```
  * type Ex1 = Divide<9, 3> // 3
+ * // NOTE only natural numbers are supported for output
  * type Ex2 = Divide<11, 3> // 3
  * ```
  */
