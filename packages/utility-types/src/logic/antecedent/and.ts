@@ -2,7 +2,7 @@ import { PureAntecedent } from '../../helpers'
 /**
  * Evaluate `A ∧ B`
  * @beta
- * @group Antecedant
+ * @group Antecedent
  * @group Logic
  * @example
  * ```

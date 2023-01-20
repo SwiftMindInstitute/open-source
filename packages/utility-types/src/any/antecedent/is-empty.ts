@@ -7,7 +7,7 @@ import { Ors } from '../../tuple/ors'
 /**
  * If `A extends []` or `A extends ''` or `A extends {}` then `true` else `false`
  * @alpha
- * @group Antecedant
+ * @group Antecedent
  * @group Any
  * @example
  * ```

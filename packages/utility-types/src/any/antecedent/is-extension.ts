@@ -1,7 +1,7 @@
 /**
  * If `A extends B` then `true` else `false`
  * @beta
- * @group Antecedant
+ * @group Antecedent
  * @group Any
  * @example
  * ```

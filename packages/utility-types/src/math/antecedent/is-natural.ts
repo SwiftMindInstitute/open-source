@@ -5,7 +5,7 @@ import { IsNonNegative } from './is-non-negative'
 /**
  * If `A ∈ ℕ` then `true` else `false`
  * @beta
- * @group Antecedant
+ * @group Antecedent
  * @group Math
  * @example
  * ```

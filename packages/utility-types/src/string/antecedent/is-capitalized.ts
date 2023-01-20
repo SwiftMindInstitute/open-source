@@ -3,7 +3,7 @@ import { IsExtension } from '../../any/antecedent/is-extension'
 /**
  * If `A` is capitalized then `true` else `false`
  * @beta
- * @group Antecedant
+ * @group Antecedent
  * @group String
  * @example
  * ```

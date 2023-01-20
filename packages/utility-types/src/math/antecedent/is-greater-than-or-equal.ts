@@ -4,7 +4,7 @@ import { IsLessThan } from './is-less-than'
 /**
  * Evaluate `A ≥ B`, where `A ∈ ℕ` and `B ∈ ℕ`
  * @beta
- * @group Antecedant
+ * @group Antecedent
  * @group Math
  * @example
  * ```

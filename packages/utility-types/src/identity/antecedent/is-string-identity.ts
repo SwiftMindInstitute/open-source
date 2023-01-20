@@ -4,7 +4,7 @@ import { StringConcatIdentity } from '../string-concat-identity'
 /**
  * If `A ≡ ''` then `true` else `false`
  * @beta
- * @group Antecedant
+ * @group Antecedent
  * @group Identity
  * @example
  * ```
@@ -17,7 +17,7 @@ export type IsStringIdentity<A> = IsEqual<A, StringConcatIdentity>
 /**
  * Alias for `IsStringIdentity`
  * @beta
- * @group Antecedant
+ * @group Antecedent
  * @group Identity
  */
 export type IsEmptyString<A> = IsStringIdentity<A>

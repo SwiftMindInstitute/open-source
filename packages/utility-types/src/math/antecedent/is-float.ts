@@ -3,7 +3,7 @@ import { IsExtension } from '../../any/antecedent/is-extension'
 /**
  * If the string representation of `A` has a decimal then `true` else `false`
  * @beta
- * @group Antecedant
+ * @group Antecedent
  * @group Math
  * @example
  * ```

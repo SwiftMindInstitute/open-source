@@ -4,7 +4,7 @@ import { NumberAdditiveIdentity } from '../number-additive-identity'
 /**
  * If `A ≡ 0` then `true` else `false`
  * @beta
- * @group Antecedant
+ * @group Antecedent
  * @group Identity
  * @example
  * ```
@@ -17,7 +17,7 @@ export type IsNumberAdditiveIdentity<A> = IsExtension<A, NumberAdditiveIdentity>
 /**
  * Alias for `IsNumberAdditiveIdentity`
  * @beta
- * @group Antecedant
+ * @group Antecedent
  * @group Identity
  */
 export type IsZero<A> = IsNumberAdditiveIdentity<A>

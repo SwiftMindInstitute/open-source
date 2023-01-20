@@ -4,7 +4,7 @@ import { ValueOf } from '../value-of'
 /**
  * If `B extends ValueOf<A>` then `true` else `false`
  * @beta
- * @group Antecedant
+ * @group Antecedent
  * @group Object
  * @example
  * ```

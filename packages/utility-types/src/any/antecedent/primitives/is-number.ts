@@ -3,7 +3,7 @@ import { IsExtension } from '../is-extension'
 /**
  * If `A extends number` then `true` else `false`
  * @beta
- * @group Antecedant
+ * @group Antecedent
  * @group Any
  * @example
  * ```

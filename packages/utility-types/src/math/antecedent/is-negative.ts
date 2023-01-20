@@ -3,7 +3,7 @@ import { IsExtension } from '../../any/antecedent/is-extension'
 /**
  * If `A < 0` then `true` else `false`
  * @beta
- * @group Antecedant
+ * @group Antecedent
  * @group Math
  * @example
  * ```

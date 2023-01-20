@@ -4,7 +4,7 @@ import { NumberMultiplicativeIdentity } from '../number-multiplicative-identity'
 /**
  * If `A ≡ 1n` then `true` else `false`
  * @alpha
- * @group Antecedant
+ * @group Antecedent
  * @group Identity
  * @example
  * ```

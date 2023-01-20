@@ -1,3 +1,4 @@
+import { BigintAdditiveIdentity } from '../identity/bigint-additive-identity'
 import { NumberAdditiveIdentity } from '../identity/number-additive-identity'
 import { StringConcatIdentity } from '../identity/string-concat-identity'
 
@@ -7,12 +8,13 @@ import { StringConcatIdentity } from '../identity/string-concat-identity'
  * @group Any
  * @example
  * ```
- * type Ex = AnyFalsy // false | '' | 0 | null | undefined
+ * type Ex = AnyFalsy // false | '' | 0 | 0n | null | undefined
  * ```
  */
 export type AnyFalsy =
   | false
   | StringConcatIdentity
   | NumberAdditiveIdentity
+  | BigintAdditiveIdentity
   | null
   | undefined

@@ -4,7 +4,7 @@ import { IsFloat } from './is-float'
 /**
  * If `A ∈ ℤ` then `true` else `false`.
  * @beta
- * @group Antecedant
+ * @group Antecedent
  * @group Math
  * @example
  * ```

@@ -3,7 +3,7 @@ import { IsTruthy } from '../any/antecedent/is-truthy'
 /**
  * If `IsTruthy<A> extends true` then `B` else `C`
  * @beta
- * @group Antecedant
+ * @group Antecedent
  * @group If
  * @example
  * ```

@@ -4,7 +4,7 @@ import { IsCaseInsensitive } from './is-case-insensitive'
 /**
  * If `Lowercase<A> extends Uppercase<A>` then `true` else `false`
  * @beta
- * @group Antecedant
+ * @group Antecedent
  * @group String
  * @example
  * ```

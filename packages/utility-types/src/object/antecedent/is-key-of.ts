@@ -6,7 +6,7 @@ import { KeyOf } from '../key-of'
 /**
  * If `B extends KeyOf<A>` then `true` else `false`
  * @beta
- * @group Antecedant
+ * @group Antecedent
  * @group Object
  * @example
  * ```

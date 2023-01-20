@@ -5,7 +5,7 @@ import { IndexOf } from '../index-of'
 /**
  * If `B extends IndexOf<A>` then `true` else `false`
  * @beta
- * @group Antecedant
+ * @group Antecedent
  * @group Tuple
  * @example
  * ```

@@ -4,7 +4,7 @@ import { Modulo } from '../modulo'
 /**
  * Evaluate `A % B === 0`, where `A ∈ ℕ` and `B ∈ ℕ`
  * @beta
- * @group Antecedant
+ * @group Antecedent
  * @group Math
  * @example
  * ```

@@ -4,7 +4,7 @@ import { Not } from './not'
 /**
  * Evaluate `A ⊻ B`
  * @beta
- * @group Antecedant
+ * @group Antecedent
  * @group Logic
  * @example
  * ```

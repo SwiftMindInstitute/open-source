@@ -4,7 +4,7 @@ import { ObjectIntersectionIdenity } from '../object-intersection-identity'
 /**
  * If `A ≡ {}` then `true` else `false`
  * @beta
- * @group Antecedant
+ * @group Antecedent
  * @group Identity
  * @example
  * ```
@@ -17,7 +17,7 @@ export type IsObjectIdentity<A> = IsEqual<A, ObjectIntersectionIdenity>
 /**
  * Alias for `IsObjectIdentity`
  * @beta
- * @group Antecedant
+ * @group Antecedent
  * @group Identity
  */
 export type IsEmptyObject<A> = IsObjectIdentity<A>

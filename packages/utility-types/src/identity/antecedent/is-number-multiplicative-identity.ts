@@ -4,7 +4,7 @@ import { NumberMultiplicativeIdentity } from '../number-multiplicative-identity'
 /**
  * If `A ≡ 1` then `true` else `false`
  * @beta
- * @group Antecedant
+ * @group Antecedent
  * @group Identity
  * @example
  * ```
@@ -20,7 +20,7 @@ export type IsNumberMultiplicativeIdentity<A> = IsExtension<
 /**
  * Alias for `IsNumberMultiplicativeIdentity`
  * @beta
- * @group Antecedant
+ * @group Antecedent
  * @group Identity
  */
 export type IsOne<A> = IsNumberMultiplicativeIdentity<A>

@@ -4,7 +4,7 @@ import { IsExtension } from './is-extension'
 /**
  * If `A extends B` and `B extends A` then `true` else `false`
  * @beta
- * @group Antecedant
+ * @group Antecedent
  * @group Any
  * @example
  * ```

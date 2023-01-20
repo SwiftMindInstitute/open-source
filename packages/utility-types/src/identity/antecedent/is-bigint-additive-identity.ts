@@ -4,7 +4,7 @@ import { NumberAdditiveIdentity } from '../number-additive-identity'
 /**
  * If `A ≡ 0n` then `true` else `false`
  * @alpha
- * @group Antecedant
+ * @group Antecedent
  * @group Identity
  * @example
  * ```

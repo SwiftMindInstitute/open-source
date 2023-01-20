@@ -4,7 +4,7 @@ import { CaptureGroup } from '../utils'
 /**
  * Evaluate if `A` has a matches CaptureGroup `B`
  * @alpha
- * @group Antecedant
+ * @group Antecedent
  * @group String
  * @example
  * ```

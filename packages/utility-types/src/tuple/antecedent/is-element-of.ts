@@ -5,7 +5,7 @@ import { ElementOf } from '../element-of'
 /**
  * If `B extends ElementOf<A>` then `true` else `false`
  * @beta
- * @group Antecedant
+ * @group Antecedent
  * @group Tuple
  * @example
  * ```
