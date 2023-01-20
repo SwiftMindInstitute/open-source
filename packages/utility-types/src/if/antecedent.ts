@@ -20,4 +20,4 @@ import { If } from './if'
  * type Ex6 = Antecedent<0, 1, 0>            // false
  * ```
  */
-export type Antecedent<A, B, C = A> = If<A, IsTruthy<B>, IsTruthy<C>>
+export type Antecedent<A, B = A, C = A> = If<A, IsTruthy<B>, IsTruthy<C>>

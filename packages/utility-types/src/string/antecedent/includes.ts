@@ -1,7 +1,7 @@
 import { IsExtension } from '../../any/antecedent/is-extension'
 
 /**
- * Check if the string `B` is in `A`.
+ * Check if the string `B` is in `A`
  * @beta
  * @group Antecedent
  * @group String

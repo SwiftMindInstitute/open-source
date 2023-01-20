@@ -8,9 +8,9 @@ import { IsCaseInsensitive } from './is-case-insensitive'
  * @group String
  * @example
  * ```
- * type Ex1 = IsCaseInsensitive<'?'> // true
- * type Ex2 = IsCaseInsensitive<'a'> // false
- * type Ex3 = IsCaseInsensitive<'A'> // false
+ * type Ex1 = IsCaseSensitive<'a'> // true
+ * type Ex2 = IsCaseSensitive<'A'> // true
+ * type Ex3 = IsCaseSensitive<'?'> // false
  * ```
  */
 export type IsCaseSensitive<A extends string> = Not<IsCaseInsensitive<A>>

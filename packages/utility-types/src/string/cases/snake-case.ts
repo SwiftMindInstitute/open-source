@@ -25,15 +25,15 @@ interface Opts<A extends string = string> {
 export type SnakeCase<
   A extends string,
   B extends string = ' ' | '-',
-  C extends Opts = Opts<''>
+  Z extends Opts = Opts<''>
 > = A extends `${infer D}${infer E}`
   ? D extends B
-    ? C['value'] extends ''
-      ? SnakeCase<E, B, C>
-      : SnakeCase<E, B, Opts<`${C['value']}_`>>
+    ? Z['value'] extends ''
+      ? SnakeCase<E, B, Z>
+      : SnakeCase<E, B, Opts<`${Z['value']}_`>>
     : And<IsCaseSensitive<D>, IsUppercase<D>> extends true
-    ? C['value'] extends ''
+    ? Z['value'] extends ''
       ? SnakeCase<E, B, Opts<Lowercase<D>>>
-      : SnakeCase<E, B, Opts<`${C['value']}_${Lowercase<D>}`>>
-    : SnakeCase<E, B, Opts<`${C['value']}${D}`>>
-  : C['value']
+      : SnakeCase<E, B, Opts<`${Z['value']}_${Lowercase<D>}`>>
+    : SnakeCase<E, B, Opts<`${Z['value']}${D}`>>
+  : Z['value']

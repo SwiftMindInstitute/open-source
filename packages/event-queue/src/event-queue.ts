@@ -8,8 +8,9 @@ import {
 type EventType = AnyObject<AnyKey, AnyObject>
 
 /**
- * A WeakMap based event queue.
+ * A strongly typed event queue.
  * @alpha
+ * @example
  * ```
  * interface Event {
  *   message: { body: string }

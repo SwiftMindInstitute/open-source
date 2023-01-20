@@ -25,15 +25,15 @@ interface Opts<A extends string = string> {
 export type KebabCase<
   A extends string,
   B extends string = ' ' | '_',
-  C extends Opts = Opts<''>
+  Z extends Opts = Opts<''>
 > = A extends `${infer D}${infer E}`
   ? D extends B
-    ? C['value'] extends ''
-      ? KebabCase<E, B, C>
-      : KebabCase<E, B, Opts<`${C['value']}-`>>
+    ? Z['value'] extends ''
+      ? KebabCase<E, B, Z>
+      : KebabCase<E, B, Opts<`${Z['value']}-`>>
     : And<IsCaseSensitive<D>, IsUppercase<D>> extends true
-    ? C['value'] extends ''
+    ? Z['value'] extends ''
       ? KebabCase<E, B, Opts<Lowercase<D>>>
-      : KebabCase<E, B, Opts<`${C['value']}-${Lowercase<D>}`>>
-    : KebabCase<E, B, Opts<`${C['value']}${D}`>>
-  : C['value']
+      : KebabCase<E, B, Opts<`${Z['value']}-${Lowercase<D>}`>>
+    : KebabCase<E, B, Opts<`${Z['value']}${D}`>>
+  : Z['value']

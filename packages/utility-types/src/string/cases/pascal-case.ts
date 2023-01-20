@@ -21,9 +21,9 @@ interface Opts<A extends string = string> {
 export type PascalCase<
   A extends string,
   B extends string = ' ' | '-' | '_',
-  C extends Opts = Opts<''>
+  Z extends Opts = Opts<''>
 > = A extends `${infer D}${B}${infer E}`
-  ? PascalCase<E, B, Opts<`${C['value']}${Capitalize<D>}`>>
-  : C['value'] extends ''
+  ? PascalCase<E, B, Opts<`${Z['value']}${Capitalize<D>}`>>
+  : Z['value'] extends ''
   ? A
-  : `${C['value']}${Capitalize<A>}`
+  : `${Z['value']}${Capitalize<A>}`
