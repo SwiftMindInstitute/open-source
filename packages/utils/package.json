@@ -34,8 +34,8 @@
     "vite": "^4.0.3",
     "vite-plugin-dts": "^1.6.6"
   },
-  "main": "./dist/utils.es.js",
-  "module": "./dist/utils.umd.js",
+  "main": "./dist/index.es.js",
+  "module": "./dist/index.umd.js",
   "types": "./dist/index.d.ts",
   "files": [
     "./dist/*"

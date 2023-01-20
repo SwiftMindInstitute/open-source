@@ -1,6 +1,6 @@
-import { And } from '../logic/condition/and'
-import { IsLessThan } from './condition/is-less-than'
-import { IsNatural } from './condition/is-natural'
+import { And } from '../logic/antecedent/and'
+import { IsLessThan } from './antecedent/is-less-than'
+import { IsNatural } from './antecedent/is-natural'
 import { Subtract } from './subtract'
 
 /**

@@ -32,8 +32,8 @@
     "vite-tsconfig-paths": "^4.0.3"
   },
   "homepage": "https://github.com/bluesky-llc/open-source#readme",
-  "main": "./dist/utility-types.es.js",
-  "module": "./dist/utility-types.umd.js",
+  "main": "./dist/index.es.js",
+  "module": "./dist/index.umd.js",
   "types": "./dist/index.d.ts",
   "files": [
     "./dist/*"

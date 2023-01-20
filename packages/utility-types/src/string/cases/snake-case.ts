@@ -1,6 +1,6 @@
-import { And } from '../../logic/condition/and'
-import { IsCaseSensitive } from '../condition/is-case-sensitive'
-import { IsUppercase } from '../condition/is-uppercase'
+import { And } from '../../logic/antecedent/and'
+import { IsCaseSensitive } from '../antecedent/is-case-sensitive'
+import { IsUppercase } from '../antecedent/is-uppercase'
 
 /**
  * # 🚫 DO NOT EXPORT

@@ -1,6 +1,6 @@
 import { MultiAdd } from '../helpers/multi-add'
-import { And } from '../logic/condition/and'
-import { IsNatural } from './condition/is-natural'
+import { And } from '../logic/antecedent/and'
+import { IsNatural } from './antecedent/is-natural'
 
 /**
  * Return the product of `A * B`

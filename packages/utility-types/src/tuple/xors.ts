@@ -1,7 +1,7 @@
 import { AnyArray } from '../any/any-array'
 import { Options } from '../helpers/options'
-import { IsEmptyArray } from '../identity/condition/is-array-concat-identity'
-import { Xor } from '../logic/condition/xor'
+import { IsEmptyArray } from '../identity/antecedent/is-array-concat-identity'
+import { Xor } from '../logic/antecedent/xor'
 
 /**
  * 🚫 DO NOT EXPORT

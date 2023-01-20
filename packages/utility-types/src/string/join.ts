@@ -1,5 +1,5 @@
 import { AnyTemplatable } from '../any'
-import { IsEmpty } from '../any/condition/is-empty'
+import { IsEmpty } from '../any/antecedent/is-empty'
 import { Options } from '../helpers/options'
 
 /**

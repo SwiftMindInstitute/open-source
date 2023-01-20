@@ -15,7 +15,7 @@ export default defineConfig({
       entry: path.resolve(__dirname, 'src/index.ts'),
       name: 'utility-types',
       formats: ['es', 'umd'],
-      fileName: format => `utility-types.${format}.js`,
+      fileName: format => `index.${format}.js`,
     },
   },
 })

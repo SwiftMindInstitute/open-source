@@ -18,24 +18,33 @@ So you're thinking about contributing? Welcome!
 
 Welcome to the style guide.
 
-## Have a sense of humor
+## Naming
 
-If you have no chill please contribute elsewhere. Writing code should be fun.
+- `SCREAMING_SNAKE_CASE` for all constants, including `enum` values.
+- `PascalCase` for all types, interfaces, and classes
+- `camelCase` for all non-constant run-time variables and function names
 
-## Intolerant of Intolerance
+## Arrow functions
 
-The mission of BlueSky.llc is to help enable the TypeScript community and
-development community at large. Behaviors that discourage collaboration or
-negatively impact diversity and inclusion will lead to corrective action.
-
-## The Screaming 🐍
-
-**SCREAMING_SNAKE_CASE** is used for all constants in this code base. That
-includes `enum` values.
-
-## Use arrow functions
-
-Use arrow functions whenever possible. If you are writing a function has
-overloads implement the overloads as a type or interface and declare the type
-on the function declaration (for a good example of this pattern see
+Use arrow functions whenever possible. If you are writing a function that has
+overloads implement the overloads as a type or interface (for a good example of
+this pattern see
 [pipe](https://github.com/bluesky-llc/open-source/blob/main/packages/utils/src/pipe.ts)).
+
+## TSDoc
+
+All source code comments should use [TSDoc](https://tsdoc.org/).
+
+## New Code
+
+Any new type, interface, class, or function should be labeled `@experimental`.
+Once the new code has been documented the prior label can be removed and the
+`@alpha` label can be added. If the new code is added to a minor versioned
+release the prior label can be removed and `@beta` can be added. Finally, when
+a beta feature is part of a majorn versioned release the `@beta` label can be
+removed.
+
+## Unit Tests
+
+Every package should have a `test` script. Every `test` script should use
+[Jest](https://jestjs.io/).

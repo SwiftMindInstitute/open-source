@@ -1,5 +1,5 @@
+export * from './antecedent'
 export * from './array-concat-identity'
-export * from './condition'
 export * from './number-additive-identity'
 export * from './number-multiplicative-identity'
 export * from './object-intersection-identity'

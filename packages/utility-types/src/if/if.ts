@@ -1,9 +1,9 @@
-import { IsTruthy } from '../any/condition/is-truthy'
+import { IsTruthy } from '../any/antecedent/is-truthy'
 
 /**
  * If `IsTruthy<A> extends true` then `B` else `C`
  * @beta
- * @group Condition
+ * @group Antecedant
  * @group If
  * @example
  * ```

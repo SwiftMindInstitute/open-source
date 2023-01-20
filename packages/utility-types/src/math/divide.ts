@@ -1,6 +1,6 @@
 import { MultiSub } from '../helpers/multi-sub'
-import { And } from '../logic/condition/and'
-import { IsNatural } from './condition/is-natural'
+import { And } from '../logic/antecedent/and'
+import { IsNatural } from './antecedent/is-natural'
 
 /**
  * Evaluate `A / B`, where `A ∈ ℕ` and `B ∈ ℕ`

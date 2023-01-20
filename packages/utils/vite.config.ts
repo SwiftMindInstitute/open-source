@@ -13,7 +13,7 @@ export default defineConfig({
       entry: path.resolve(__dirname, 'src/index.ts'),
       name: 'utils',
       formats: ['es', 'umd'],
-      fileName: format => `utils.${format}.js`,
+      fileName: format => `index.${format}.js`,
     },
   },
 })

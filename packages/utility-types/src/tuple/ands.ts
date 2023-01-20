@@ -1,7 +1,7 @@
 import { AnyArray } from '../any/any-array'
 import { Options } from '../helpers/options'
-import { IsEmptyArray } from '../identity/condition/is-array-concat-identity'
-import { And } from '../logic/condition/and'
+import { IsEmptyArray } from '../identity/antecedent/is-array-concat-identity'
+import { And } from '../logic/antecedent/and'
 import { Prepend } from './prepend'
 
 /**

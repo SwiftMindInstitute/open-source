@@ -1,6 +1,6 @@
 import { One } from '../identity'
 import { Add } from './add'
-import { IsNatural } from './condition/is-natural'
+import { IsNatural } from './antecedent/is-natural'
 
 /**
  * Evaluate `A + 1`, where `A ∈ ℕ`

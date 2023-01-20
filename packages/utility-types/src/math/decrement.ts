@@ -1,7 +1,7 @@
 import { Zero } from '../identity'
-import { And } from '../logic/condition/and'
-import { IsGreaterThan } from './condition/is-greater-than'
-import { IsNatural } from './condition/is-natural'
+import { And } from '../logic/antecedent/and'
+import { IsGreaterThan } from './antecedent/is-greater-than'
+import { IsNatural } from './antecedent/is-natural'
 import { Subtract } from './subtract'
 
 /**

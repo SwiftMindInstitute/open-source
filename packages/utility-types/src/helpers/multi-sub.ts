@@ -1,4 +1,4 @@
-import { IsLessThan } from '../math/condition/is-less-than'
+import { IsLessThan } from '../math/antecedent/is-less-than'
 import { Increment } from '../math/increment'
 import { Subtract } from '../math/subtract'
 

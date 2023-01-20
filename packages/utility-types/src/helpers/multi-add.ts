@@ -1,4 +1,4 @@
-import { IsZero } from '../identity/condition/is-number-additive-identity'
+import { IsZero } from '../identity/antecedent/is-number-additive-identity'
 import { Add } from '../math/add'
 import { Decrement } from '../math/decrement'
 

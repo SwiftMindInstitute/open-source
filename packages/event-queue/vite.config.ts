@@ -11,9 +11,9 @@ export default defineConfig({
   build: {
     lib: {
       entry: path.resolve(__dirname, 'src/index.ts'),
-      name: 'utils',
+      name: 'event-queue',
       formats: ['es', 'umd'],
-      fileName: format => `utils.${format}.js`,
+      fileName: format => `index.${format}.js`,
     },
   },
 })
