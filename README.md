@@ -4,7 +4,7 @@ Made with ❤️ by BlueSky.
 
 # Contributing
 
-Read the style guide.
+Read the [style guide](https://github.com/bluesky-llc/open-source/blob/main/STYLE.md).
 
 # Packages
 

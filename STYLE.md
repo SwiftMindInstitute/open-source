@@ -1,3 +1,5 @@
+# Style Guide
+
 So you're thinking about contributing? Welcome!
 
 # Inspiration
@@ -18,20 +20,22 @@ Welcome to the style guide.
 
 ## Have a sense of humor
 
-If you have no chill you are not welcome here. Writing code should be fun if it
-was not it would just be an unhealthy obsession or a really boring job.
+If you have no chill please contribute elsewhere. Writing code should be fun.
 
 ## Intolerant of Intolerance
 
-The mission of BlueSky.llc is to take
+The mission of BlueSky.llc is to help enable the TypeScript community and
+development community at large. Behaviors that discourage collaboration or
+negatively impact diversity and inclusion will lead to corrective action.
 
 ## The Screaming 🐍
 
-We use **SCREAMING_SNAKE_CASE** for all constants in this code base. That
-includes `enum` values. Enum's stepped over the line into run-time land and now
-they have to play by the rules.
+**SCREAMING_SNAKE_CASE** is used for all constants in this code base. That
+includes `enum` values.
 
-## Symbols
+## Use arrow functions
 
-Symbols are cool. Use them. Imagine an API in multiple languages how do you
-refer to the same keys
+Use arrow functions whenever possible. If you are writing a function has
+overloads implement the overloads as a type or interface and declare the type
+on the function declaration (for a good example of this pattern see
+[pipe](https://github.com/bluesky-llc/open-source/blob/main/packages/utils/src/pipe.ts)).
