@@ -6,22 +6,22 @@ Utility-Types for TypeScript by BlueSky.llc.
 
 Provides the following modules.
 
-- Any
+- Any  
   Types and antecedents that can be used for inference
-- Identity
+- Identity  
   Types that form an identity element under some operation
-- If
+- If  
   Types for creating conditional logic and antecedents to use with the logic
   module
-- Logic
+- Logic  
   Antecedents that implement boolean logic
-- Math
+- Math  
   Types and antecedents for wathematical operations on the natural numbers
-- Object
+- Object  
   Types and antecedents for working with objects and properties
-- String
+- String  
   Types and antecedents for working with strings
-- Tuple
+- Tuple  
   Types and antecedents for working with tuples
 
 # Documentation

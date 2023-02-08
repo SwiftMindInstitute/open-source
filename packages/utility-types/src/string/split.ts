@@ -1,9 +1,9 @@
-import { Options } from '../helpers/options'
+import { Internal } from '../helpers/internal'
 
 /**
  * # 🚫 DO NOT EXPORT
  */
-interface Opts<A extends string[] = string[]> extends Options {
+interface Opts<A extends string[] = string[]> extends Internal {
   value: A
 }
 

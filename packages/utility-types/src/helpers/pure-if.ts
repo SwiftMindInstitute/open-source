@@ -1,5 +1,6 @@
 /**
- * If `IsTruthy<A> extends true` then `B` else `C`
+ * # 🚫 DO NOT EXPORT FROM src/index.ts
+ * If `A extends true` then `B` else `C`
  * @internal
  * @example
  * ```

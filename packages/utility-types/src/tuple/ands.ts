@@ -1,15 +1,15 @@
 import { AnyArray } from '../any/any-array'
-import { Options } from '../helpers/options'
+import { Internal } from '../helpers/internal'
 import { IsEmptyArray } from '../identity/antecedent/is-array-concat-identity'
 import { And } from '../logic/antecedent/and'
 import { Prepend } from './prepend'
 
 /**
- * 🚫 DO NOT EXPORT
+ * # 🚫 DO NOT EXPORT
  * @internal
  */
 interface Opts<A extends boolean = boolean, B extends AnyArray = AnyArray>
-  extends Options<'Ands'> {
+  extends Internal<'Ands'> {
   value: A
   rest: B
 }

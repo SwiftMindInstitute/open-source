@@ -3,6 +3,7 @@ import { Add } from '../math/add'
 import { Decrement } from '../math/decrement'
 
 /**
+ * # 🚫 DO NOT EXPORT FROM src/index.ts
  * Repeated addition utility function used in multiplication
  * @internal
  */

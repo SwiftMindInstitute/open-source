@@ -1,11 +1,11 @@
-import { Options } from '../helpers/options'
+import { Internal } from '../helpers/internal'
 import { LengthProp } from '../object/length-prop'
 import { AnyArray } from './any-array'
 
 /**
- * 🚫 DO NOT EXPORT
+ * # 🚫 DO NOT EXPORT
  */
-interface Opts<A extends AnyArray = AnyArray> extends Options<'AnyTuple'> {
+interface Opts<A extends AnyArray = AnyArray> extends Internal<'AnyTuple'> {
   value: A
 }
 

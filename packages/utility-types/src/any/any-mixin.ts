@@ -9,6 +9,6 @@ import { AnyConstructor } from './any-constructor'
  * type Ex = AnyMixin // <A extends AnyConstructor>(a: A) => any
  * ```
  */
-export type AnyMixin<A extends any = any> = {
+export type AnyMixin<A = any> = {
   <B extends AnyConstructor>(b: B): A
 }

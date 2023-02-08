@@ -1,6 +1,8 @@
 import { AnyArray } from '../any'
 
 /**
- * This form is more convenient for inference
+ * # 🚫 DO NOT EXPORT FROM src/index.ts
+ * Convenience type for infering the head and tail of a tuple
+ * @internal
  */
-export type HeadAndTail<B extends any, C extends AnyArray> = [B, ...C]
+export type HeadAndTail<B, C extends AnyArray> = [B, ...C]

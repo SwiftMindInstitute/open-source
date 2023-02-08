@@ -19,7 +19,7 @@
     "scope": "typescript,typescriptreact",
     "prefix": "util",
     "body": [
-      "const ${1:${TM_FILENAME_BASE/[A-Za-z-]+/${0:/camelcase}/g}}} = ($2) => $3",
+      "const ${1:${TM_FILENAME_BASE/[A-Za-z-]+/${0:/camelcase}/g}} = ($2) => $3",
       "",
       "export default $1"
     ],

@@ -4,13 +4,7 @@
  * @group Any
  * @example
  * ```
- * type Ex = `${AnyTemplatable}`
+ * type Ex = `${AnyStringish}`
  * ```
  */
-export type AnyTemplatable =
-  | string
-  | number
-  | bigint
-  | boolean
-  | null
-  | undefined
+export type AnyStringish = string | number | bigint | boolean | null | undefined

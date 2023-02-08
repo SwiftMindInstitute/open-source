@@ -1,7 +1,8 @@
 import { PureIf } from './pure-if'
 
 /**
- * Evaluate `A ? B : C`
+ * # 🚫 DO NOT EXPORT FROM src/index.ts
+ * Evaluate `A ? B : C` where `A`, `B`, and `C` are boolean
  * @internal
  * @example
  * ```

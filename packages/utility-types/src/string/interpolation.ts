@@ -1,4 +1,4 @@
-import { Options } from '../helpers'
+import { Internal } from '../helpers'
 import { Capture } from './capture'
 import { CaptureGroup } from './utils'
 
@@ -6,7 +6,7 @@ import { CaptureGroup } from './utils'
  * # 🚫 DO NOT EXPORT
  */
 interface Opts<A extends string = string, B extends string = string>
-  extends Options {
+  extends Internal {
   value: A
   variables: B
 }

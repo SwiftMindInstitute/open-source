@@ -8,8 +8,8 @@ import {
 type EventType = AnyObject<AnyKey, AnyObject>
 
 /**
- * A strongly typed event queue.
- * @alpha
+ * An event queue.
+ * @beta
  * @example
  * ```
  * interface Event {
@@ -67,7 +67,7 @@ class EventQueue<Event = EventType> {
   }
 
   /**
-   *
+   * Emit an event
    * @param eventType KeyOf<Event>
    * @param event Event[typeof eventType]
    */
