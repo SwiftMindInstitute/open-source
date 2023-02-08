@@ -1,7 +1,12 @@
-import { AnyConstructor, AnyFunction, AnyKey } from '@bluesky.llc/utility-types'
+import {
+  AnyConstructor,
+  AnyFunction,
+  AnyKey,
+  ConstructorReturnType,
+} from '@bluesky.llc/utility-types'
 import { isUndefined, numberGenerator } from '@bluesky.llc/utils'
 import { Component } from './component'
-import Entity, { ConstructorReturnType } from './entity'
+import Entity from './entity'
 
 class Manager {
   #generateId: Generator
@@ -18,6 +23,10 @@ class Manager {
     this.api = { query: this.#query }
   }
 
+  /**
+   * Return a unique id from the supplied generator
+   * @returns An entity id
+   */
   createEntity() {
     const { value: id } = this.#generateId.next()!
 
@@ -26,6 +35,11 @@ class Manager {
     return id
   }
 
+  /**
+   * Get the entity instance associated with `id`
+   * @param id An entity id
+   * @returns An entity instance
+   */
   #getEntity<A>(id: A) {
     return this.#entityInstanceMap.get(id)
   }
@@ -34,6 +48,11 @@ class Manager {
     this.#entityInstanceMap.delete(id)
   }
 
+  /**
+   *
+   * @param ctor Component class
+   * @returns
+   */
   #initEntitiesByComponent(ctor: Function) {
     const entities = this.#componentEntitiesMap.get(ctor)
 

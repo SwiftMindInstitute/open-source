@@ -1,4 +1,8 @@
-import { AnyConstructor, AnyKey } from '@bluesky.llc/utility-types'
+import {
+  AnyConstructor,
+  AnyKey,
+  ConstructorReturnType,
+} from '@bluesky.llc/utility-types'
 import { isUndefined } from '@bluesky.llc/utils'
 import { Component } from './component'
 
