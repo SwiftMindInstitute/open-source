@@ -7,6 +7,7 @@ describe('EventQueue', () => {
     eventQueue = new EventQueue()
   })
 
+  // NOTE(hao) Broad strokes here...
   it('should allow adding and emitting events', () => {
     let actual: string | undefined
     eventQueue.on('message', ({ body }) => (actual = body))
@@ -16,7 +17,8 @@ describe('EventQueue', () => {
     expect(actual).toBe(expected)
   })
 
-  it('should allow remiving events', () => {
+  // NOTE(hao) Broad strokes here...
+  it('should allow removing events', () => {
     const initial = 'a'
     let actual: string = initial
     eventQueue.on('message', ({ body }) => (actual = body))

@@ -1,6 +1,7 @@
 /**
  * Return the yield type of a generator
  * @alpha
+ * @group Function
  * @example
  * ```
  * type Ex = GeneratorYieldType<Generator<string, any, any>> // string

@@ -28,15 +28,6 @@ const interpolate: Interpolate = (...params: any[]) => {
 
   const [template, captureGroup, variables] = params
 
-  console.log(
-    template,
-    captureGroup,
-    `${captureGroup.start}(.*?)${captureGroup.end}`,
-    template.match(
-      new RegExp(`${captureGroup.start}(.*?)${captureGroup.end}`, 'g')
-    )
-  )
-
   const result = (template as string).replace(
     new RegExp(`${captureGroup.start}(.*?)${captureGroup.end}`, 'g'),
     (_, match) => variables[match]

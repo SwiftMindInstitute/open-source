@@ -3,7 +3,7 @@ import { NumberAdditiveIdentity } from '../identity/number-additive-identity'
 import { StringConcatIdentity } from '../identity/string-concat-identity'
 
 /**
- * All union of values that satisfy `<A>(a: A) => a == false`
+ * A union of values that satisfy `<A>(a: A) => a == false`
  * @beta
  * @group Any
  * @example

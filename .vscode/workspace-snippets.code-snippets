@@ -25,6 +25,18 @@
     ],
     "description": "Create a new Util"
   },
+  "New Class": {
+    "scope": "typescript,typescriptreact",
+    "prefix": "class",
+    "body": [
+      "class ${1:${TM_FILENAME_BASE/[A-Za-z-]+/${0:/pascalcase}/g}} {$2",
+      "\t${3:constructor($4) {$5\\}}",
+      "}",
+      "",
+      "export default $1"
+    ],
+    "description": "Create a new Util"
+  },
   "Create a component": {
     "scope": "typescriptreact",
     "prefix": "component",

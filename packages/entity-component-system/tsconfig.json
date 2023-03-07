@@ -16,6 +16,10 @@
     "noImplicitReturns": true,
     "skipLibCheck": true
   },
-  "include": ["src"],
+  "include": [
+    "src",
+    "../set-query/src/queries.ts",
+    "../utils/src/token-creator.ts"
+  ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

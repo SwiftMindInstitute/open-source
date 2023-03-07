@@ -1,6 +1,6 @@
 # EventQueue
 
-A EventQueue class by BlueSky.llc.
+An Event Queue class by BlueSky.llc.
 
 # Overview
 

@@ -46,9 +46,10 @@
     "tsconfig": "./tsconfig.json"
   },
   "dependencies": {
-    "@bluesky.llc/utility-types": "^0.1.1",
-    "@bluesky.llc/utils": "^0.0.4",
     "@bluesky.llc/event-queue": "^0.0.1",
-    "@bluesky.llc/set-map": "^0.0.1"
+    "@bluesky.llc/utility-types": "0.1.2",
+    "@bluesky.llc/utils": "^0.0.4",
+    "@bluesky.llc/weak-ref-set-map-query": "^0.0.1",
+    "@bluesky.llc/weak-ref-map": "^0.0.1"
   }
 }

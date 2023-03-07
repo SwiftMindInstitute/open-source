@@ -8,6 +8,10 @@ Provides the following modules.
 
 - Any  
   Types and antecedents that can be used for inference
+- Function
+  Commonly used functional patterns
+- Generator
+  Utility types for infering information about generators.
 - Identity  
   Types that form an identity element under some operation
 - If  

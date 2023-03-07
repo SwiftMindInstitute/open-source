@@ -1,4 +1,4 @@
-import { AnyConstructor } from '@bluesky.llc/utility-types'
+import { Constructor } from '@bluesky.llc/utility-types'
 import createTypeGuard from './create-type-guard'
 
 /**
@@ -7,7 +7,7 @@ import createTypeGuard from './create-type-guard'
  * <A>(Class: AnyConstructor) => (a: unknown) => a is A
  * ```
  */
-const createInstanceTypeGuard = <A>(Class: AnyConstructor) =>
+const createInstanceTypeGuard = <A>(Class: Constructor) =>
   createTypeGuard<A>(value => value instanceof Class)
 
 export default createInstanceTypeGuard

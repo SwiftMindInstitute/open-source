@@ -3,7 +3,7 @@ import { If } from './if'
 
 /**
  * If `IsTruthy<A>` then `IsTruthy<B>` else `IsTruthy<C>`
- * @beta
+ * @alpha
  * @group Antecedent
  * @group If
  * @example

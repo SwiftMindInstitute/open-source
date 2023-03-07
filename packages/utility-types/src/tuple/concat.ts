@@ -1,7 +1,7 @@
 import { AnyArray } from '../any/any-array'
 
 /**
- * Return the concatenation of `A` and `B`
+ * Concatenate `A` and `B`
  * @beta
  * @group Tuple
  * @example

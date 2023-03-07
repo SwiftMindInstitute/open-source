@@ -28,7 +28,7 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "@bluesky.llc/utility-types": "^0.1.1",
+    "@bluesky.llc/utility-types": "^0.1.2",
     "@types/node": "^18.11.5",
     "typescript": "^4.6.4",
     "vite": "^4.0.3",

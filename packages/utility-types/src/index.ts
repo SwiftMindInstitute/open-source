@@ -1,5 +1,5 @@
 export * from './any'
-export * from './constructor'
+export * from './function'
 export * from './generator'
 export * from './identity'
 export * from './logic'

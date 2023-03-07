@@ -3,6 +3,7 @@ import { Increment } from '../math/increment'
 import { Subtract } from '../math/subtract'
 
 /**
+ * # 🚫 DO NOT EXPORT FROM src/index.ts
  * Repeated subtraction utility function used in division
  * @internal
  */

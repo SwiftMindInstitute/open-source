@@ -1,5 +1,3 @@
-import { KeyOf } from './key-of'
-
 /**
  * Return the intersection of `A` and `B` for any conflicts defer to `B`.
  * @beta
@@ -9,4 +7,4 @@ import { KeyOf } from './key-of'
  * type Ex = Override<{ a: number, b: number }, { a: string }>['a'] // string
  * ```
  */
-export type Override<A extends object, B extends object> = Omit<A, KeyOf<B>> & B
+export type Override<A extends object, B extends object> = Omit<A, keyof B> & B

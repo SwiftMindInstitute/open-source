@@ -1,4 +1,4 @@
-import { AnyConstructor, AnyFunction } from '@bluesky.llc/utility-types'
+import { AnyFunction, Constructor } from '@bluesky.llc/utility-types'
 import { createTypeGuard } from './utils'
 
 /**
@@ -7,7 +7,7 @@ import { createTypeGuard } from './utils'
  * (a: unknown) => a is AnyConstructor<any[], any>
  * ```
  */
-const isConstructor = createTypeGuard<AnyConstructor>((value: unknown) => {
+const isConstructor = createTypeGuard<Constructor>((value: unknown) => {
   try {
     Reflect.construct(String, [], value as AnyFunction | undefined)
   } catch (e) {

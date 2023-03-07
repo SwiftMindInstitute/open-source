@@ -1,6 +1,6 @@
-import { AnyTuple } from '../any/any-tuple'
 import { And } from '../logic/antecedent/and'
 import { LengthProp } from '../object/length-prop'
+import { Tuple } from '../tuple/tuple'
 import { IsNatural } from './antecedent/is-natural'
 
 /**
@@ -17,7 +17,7 @@ export type Add<A extends number, B extends number> = And<
   IsNatural<A>,
   IsNatural<B>
 > extends true
-  ? [...AnyTuple<A>, ...AnyTuple<B>] extends [...infer C]
+  ? [...Tuple<A>, ...Tuple<B>] extends [...infer C]
     ? LengthProp<C>
     : number
   : number

@@ -1,10 +1,8 @@
 #!/bin/sh
 
-# 🐂
-
-echo $COMPANY_NAME
-
 source scripts/constants.sh
+
+echo "${COMPANY_NAME} Monorepo"
 
 PACKAGE=$1
 shift

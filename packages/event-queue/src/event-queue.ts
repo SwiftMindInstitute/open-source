@@ -8,7 +8,10 @@ import {
 type EventType = AnyObject<AnyKey, AnyObject>
 
 /**
- * An event queue.
+ * # Event Queue
+ *
+ * Made with ❤️ by [bluesky.llc](https://bluesky.llc).
+ *
  * @beta
  * @example
  * ```
@@ -24,7 +27,7 @@ type EventType = AnyObject<AnyKey, AnyObject>
  * ```
  */
 class EventQueue<Event = EventType> {
-  private map: Map<KeyOf<Event>, Set<AnyFunction<[any], void>>> = new Map()
+  #map: Map<KeyOf<Event>, Set<AnyFunction<[any], void>>> = new Map()
 
   /**
    * Add an event listener
@@ -35,11 +38,11 @@ class EventQueue<Event = EventType> {
     eventType: A,
     callback: AnyFunction<[Event[A]], void>
   ) {
-    if (!this.map.has(eventType)) {
-      this.map.set(eventType, new Set())
+    if (!this.#map.has(eventType)) {
+      this.#map.set(eventType, new Set())
     }
 
-    const callbacks = this.map.get(eventType)
+    const callbacks = this.#map.get(eventType)
 
     if (callbacks) {
       callbacks.add(callback)
@@ -56,13 +59,13 @@ class EventQueue<Event = EventType> {
     callback?: AnyFunction<[Event[A]], void>
   ) {
     if (callback) {
-      const callbacks = this.map.get(eventType)
+      const callbacks = this.#map.get(eventType)
 
       if (callbacks) {
         callbacks.delete(callback)
       }
     } else {
-      this.map.delete(eventType)
+      this.#map.delete(eventType)
     }
   }
 
@@ -72,7 +75,7 @@ class EventQueue<Event = EventType> {
    * @param event Event[typeof eventType]
    */
   emit<A extends KeyOf<Event>>(eventType: A, event: Event[A]) {
-    const callbacks = this.map.get(eventType)
+    const callbacks = this.#map.get(eventType)
 
     if (callbacks) {
       for (const callback of callbacks) {

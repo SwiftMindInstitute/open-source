@@ -1,6 +1,7 @@
 /**
  * Return the return type of a generator
  * @alpha
+ * @group Function
  * @example
  * ```
  * type Ex = GeneratorReturnType<Generator<any, string, any>> // string

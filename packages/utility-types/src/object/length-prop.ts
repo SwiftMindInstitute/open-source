@@ -1,6 +1,5 @@
 import { Split } from '../string/split'
 import { InferProperty } from './infer-property'
-import { WithLengthProp } from './with-property/with-length-prop'
 
 /**
  * Return the length of tuple `A`
@@ -12,6 +11,6 @@ import { WithLengthProp } from './with-property/with-length-prop'
  * type Ex2 = LengthProp<[1, 2, 3]> // 3
  * ```
  */
-export type LengthProp<A extends WithLengthProp> = A extends string
-  ? InferProperty<Split<A>, 'length'>
+export type LengthProp<A> = A extends string
+  ? InferProperty<Split<A>, 'length'> // TODO(hao) see if this is still necessary in 5.0
   : InferProperty<A, 'length'>

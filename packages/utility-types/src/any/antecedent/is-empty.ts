@@ -1,8 +1,5 @@
-import { IsEmptyArray } from '../../identity/antecedent/is-array-concat-identity'
-import { IsZero } from '../../identity/antecedent/is-number-additive-identity'
-import { IsEmptyObject } from '../../identity/antecedent/is-object-identity'
-import { IsEmptyString } from '../../identity/antecedent/is-string-identity'
-import { Ors } from '../../tuple/ors'
+import { Emptyish } from '../any-emptyish'
+import { IsExtension } from './is-extension'
 
 /**
  * If `A extends []` or `A extends ''` or `A extends {}` then `true` else `false`
@@ -21,6 +18,4 @@ import { Ors } from '../../tuple/ors'
  * type Ex8 = IsEmpty<[true]>      // false
  * ```
  */
-export type IsEmpty<A> = Ors<
-  [IsZero<A>, IsEmptyString<A>, IsEmptyObject<A>, IsEmptyArray<A>]
->
+export type IsEmpty<A> = IsExtension<A, Emptyish>
