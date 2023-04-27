@@ -1,7 +1,7 @@
 {
-  "name": "@bluesky.llc/utility-types",
+  "name": "@swiftmind/utility-types",
   "version": "0.1.2",
-  "description": "Utility-Types for TypeScript by BlueSky.llc",
+  "description": "Utility-Types for TypeScript by SwiftMind Institute",
   "scripts": {
     "test": "echo No tests at this time",
     "dev": "vite build --watch",
@@ -19,7 +19,7 @@
     "static-typing",
     "bluesky"
   ],
-  "author": "Hans Oksendahl <hans.oksendahl@bluesky.llc> (https://bluesky.llc)",
+  "author": "Hans Oksendahl <hans.oksendahl@swiftmindinstitute.org> (https://swiftmindinstitute.org)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/bluesky-llc/open-source/issues"

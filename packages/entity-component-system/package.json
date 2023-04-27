@@ -1,7 +1,7 @@
 {
-  "name": "@bluesky.llc/entity-component-system",
+  "name": "@swiftmind/entity-component-system",
   "version": "0.0.4",
-  "description": "ECS implementation for TypeScript by BlueSky",
+  "description": "ECS implementation for TypeScript by SwiftMind Institute",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bluesky-llc/open-source.git"
@@ -14,7 +14,7 @@
     "which",
     "bluesky"
   ],
-  "author": "Hans Oksendahl <hans.oksendahl@bluesky.llc> (https://bluesky.llc)",
+  "author": "Hans Oksendahl <hans.oksendahl@swiftmindinstitute.org> (https://swiftmindinstitute.org)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/bluesky-llc/open-source/issues"
@@ -46,10 +46,10 @@
     "tsconfig": "./tsconfig.json"
   },
   "dependencies": {
-    "@bluesky.llc/event-queue": "^0.0.1",
-    "@bluesky.llc/utility-types": "0.1.2",
-    "@bluesky.llc/utils": "^0.0.4",
-    "@bluesky.llc/weak-ref-set-map-query": "^0.0.1",
-    "@bluesky.llc/weak-ref-map": "^0.0.1"
+    "@swiftmind/event-queue": "^0.0.1",
+    "@swiftmind/utility-types": "0.1.2",
+    "@swiftmind/utils": "^0.0.4",
+    "@swiftmind/weak-ref-set-map-query": "^0.0.1",
+    "@swiftmind/weak-ref-map": "^0.0.1"
   }
 }

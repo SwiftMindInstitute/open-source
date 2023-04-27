@@ -1,6 +1,6 @@
 # EventQueue
 
-An Event Queue class by BlueSky.llc.
+An Event Queue class by SwiftMind Institute.
 
 # Overview
 

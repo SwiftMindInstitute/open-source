@@ -1,6 +1,6 @@
 # Utils
 
-Utility functions for TypeScript by BlueSky.llc.
+Utility functions for TypeScript by SwiftMind Institute.
 
 # Documentation
 

@@ -1,6 +1,6 @@
-# BlueSky Open Source
+# SwiftMind Institute Open Source
 
-Made with ❤️ by BlueSky.
+Made with ❤️ by SwiftMind Institute.
 
 # Contributing
 
@@ -11,7 +11,7 @@ Read the [style guide](https://github.com/bluesky-llc/open-source/blob/main/STYL
 There is a top level script that is provided for convenience.
 
 ```bash
-npm run w <package> <command>
+pnpm run w <package> <command>
 ```
 
 # Packages
@@ -33,7 +33,4 @@ npm run w <package> <command>
 
 - Set up automated builds and testing
 - Add some badges for CI completion
-- Move to PNPM
-  This repository has no requirements of deploying to GCP so npm is not
-  required
 - Create some sponsorship options

@@ -1,6 +1,6 @@
 # Utility-Types
 
-Utility-Types for TypeScript by BlueSky.llc.
+Utility-Types for TypeScript by SwiftMind Institute.
 
 # Overview
 

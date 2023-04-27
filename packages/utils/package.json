@@ -1,7 +1,7 @@
 {
-  "name": "@bluesky.llc/utils",
+  "name": "@swiftmind/utils",
   "version": "0.0.4",
-  "description": "Utility functions for TypeScript by BlueSky.llc",
+  "description": "Utility functions for TypeScript by SwiftMind Institute",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bluesky-llc/open-source.git"
@@ -14,7 +14,7 @@
     "which",
     "bluesky"
   ],
-  "author": "Hans Oksendahl <hans.oksendahl@bluesky.llc> (https://bluesky.llc)",
+  "author": "Hans Oksendahl <hans.oksendahl@swiftmindinstitute.org> (https://swiftmindinstitute.org)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/bluesky-llc/open-source/issues"
@@ -28,7 +28,7 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "@bluesky.llc/utility-types": "^0.1.2",
+    "@swiftmind/utility-types": "^0.1.2",
     "@types/node": "^18.11.5",
     "typescript": "^4.6.4",
     "vite": "^4.0.3",

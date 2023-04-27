@@ -1,6 +1,6 @@
 # BidMap
 
-A Bidirectional Map class by BlueSky.llc.
+A Bidirectional Map class by SwiftMind Institute.
 
 # Overview
 

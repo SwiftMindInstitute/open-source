@@ -1,2 +1,2 @@
-COMPANY_NAME="BlueSky LLC"
-NPM_ORG="@bluesky.llc"
+COMPANY_NAME="SwiftMind Institute"
+NPM_ORG="@swiftmind"

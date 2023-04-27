@@ -1,7 +1,7 @@
 {
-  "name": "@bluesky.llc/weak-ref-set",
+  "name": "@swiftmind/weak-ref-set",
   "version": "0.0.1",
-  "description": "Weak Reference Set class for TypeScript by BlueSky",
+  "description": "Weak Reference Set class for TypeScript by SwiftMind Institute",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bluesky-llc/open-source.git"
@@ -16,7 +16,7 @@
     "reference",
     "bluesky"
   ],
-  "author": "Hans Oksendahl <hans.oksendahl@bluesky.llc> (https://bluesky.llc)",
+  "author": "Hans Oksendahl <hans.oksendahl@swiftmindinstitute.org> (https://swiftmindinstitute.org)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/bluesky-llc/open-source/issues"
@@ -30,7 +30,7 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "@bluesky.llc/utility-types": "0.1.2",
+    "@swiftmind/utility-types": "0.1.2",
     "@types/node": "^18.11.5",
     "expose-gc": "^1.0.0",
     "typescript": "^4.6.4",

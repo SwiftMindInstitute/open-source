@@ -1,7 +1,7 @@
 {
-  "name": "@bluesky.llc/bid-map",
+  "name": "@swiftmind/bid-map",
   "version": "0.0.1",
-  "description": "Bidirectional Map for TypeScript by BlueSky.llc",
+  "description": "Bidirectional Map for TypeScript by SwiftMind Institute",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bluesky-llc/open-source.git"
@@ -13,7 +13,7 @@
     "map",
     "bluesky"
   ],
-  "author": "Hans Oksendahl <hans.oksendahl@bluesky.llc> (https://bluesky.llc)",
+  "author": "Hans Oksendahl <hans.oksendahl@swiftmindinstitute.org> (https://swiftmindinstitute.org)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/bluesky-llc/open-source/issues"

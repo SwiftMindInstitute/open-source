@@ -1,6 +1,6 @@
 # EventQueue
 
-A WeakRef Set class by BlueSky.llc.
+A WeakRef Set class by SwiftMind Institute.
 
 The core of the WeakRefSet class is an instance with the signature.
 

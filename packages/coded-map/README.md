@@ -1,6 +1,6 @@
 # EventQueue
 
-A WeakRef Set class by BlueSky.llc.
+A WeakRef Set class by SwiftMind Institute.
 
 # Documentation
 
