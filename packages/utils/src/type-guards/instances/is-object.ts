@@ -1,4 +1,4 @@
-import { AnyObject } from '@bluesky.llc/utility-types'
+import { AnyObject } from '@swiftmind/utility-types'
 import createTypeofTypeGuard from '../utils/create-typeof-type-guard'
 
 /**

@@ -1,4 +1,4 @@
-import { Or } from '@bluesky.llc/utility-types'
+import { Or } from '@swiftmind/utility-types'
 
 /**
  * Return the disjunction of `a ∨ b`

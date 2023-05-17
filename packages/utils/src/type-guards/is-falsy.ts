@@ -1,4 +1,4 @@
-import { AnyFalsy } from '@bluesky.llc/utility-types'
+import { AnyFalsy } from '@swiftmind/utility-types'
 import { createTypeGuard } from './utils'
 
 /**

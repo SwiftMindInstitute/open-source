@@ -1,5 +1,5 @@
 {
-  "name": "@bluesky.llc/utils",
+  "name": "@swiftmind/utils",
   "version": "0.0.1",
   "typedoc": {
     "entryPoint": "./src/index.ts",

@@ -1,4 +1,4 @@
-import { Not } from '@bluesky.llc/utility-types'
+import { Not } from '@swiftmind/utility-types'
 
 /**
  * Return the negation of `a`

@@ -1,4 +1,4 @@
-import { AnyKey, AnyObject } from '@bluesky.llc/utility-types'
+import { AnyKey, AnyObject } from '@swiftmind/utility-types'
 
 const setProp = <A extends AnyObject, B extends AnyKey, C>(
   ref: A,

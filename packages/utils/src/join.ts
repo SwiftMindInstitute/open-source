@@ -1,4 +1,4 @@
-import { AnyStringish, Join } from '@bluesky.llc/utility-types'
+import { AnyStringish, Join } from '@swiftmind/utility-types'
 
 const join = <A extends AnyStringish[], B extends string = ''>(
   a: A,

@@ -1,4 +1,4 @@
-import { AnyFunction, Constructor } from '@bluesky.llc/utility-types'
+import { AnyFunction, Constructor } from '@swiftmind/utility-types'
 import { createTypeGuard } from './utils'
 
 /**

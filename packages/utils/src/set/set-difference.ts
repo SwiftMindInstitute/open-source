@@ -1,4 +1,4 @@
-import { AnySet, ValueOf } from '@bluesky.llc/utility-types'
+import { AnySet, ValueOf } from '@swiftmind/utility-types'
 import setComplement from './set-complement'
 import setIntersection from './set-intersection'
 import setUnion from './set-union'

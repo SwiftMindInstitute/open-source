@@ -1,4 +1,4 @@
-import { AnyKey, IsKeyOf } from '@bluesky.llc/utility-types'
+import { AnyKey, IsKeyOf } from '@swiftmind/utility-types'
 
 /**
  * If `ref[key] === undefined` then `false` else `true`

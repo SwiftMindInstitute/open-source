@@ -1,4 +1,4 @@
-import { AnyKey } from '@bluesky.llc/utility-types'
+import { AnyKey } from '@swiftmind/utility-types'
 
 /**
  * If `A[B]` then `A[B]` else if `A[C]` then `A[C]` else `undefined`

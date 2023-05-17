@@ -1,4 +1,4 @@
-import { IsFloat } from '@bluesky.llc/utility-types'
+import { IsFloat } from '@swiftmind/utility-types'
 
 /**
  * Return if the string representation a JavaScript number looks like a float

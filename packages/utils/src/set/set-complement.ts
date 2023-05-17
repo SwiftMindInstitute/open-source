@@ -1,4 +1,4 @@
-import { AnySet, Constructor, ValueOf } from '@bluesky.llc/utility-types'
+import { AnySet, Constructor, ValueOf } from '@swiftmind/utility-types'
 
 /**
  * Calculate the

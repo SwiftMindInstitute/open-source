@@ -1,4 +1,4 @@
-import { AnyKey } from '@bluesky.llc/utility-types/dist/any/any-key'
+import { AnyKey } from '@swiftmind/utility-types/dist/any/any-key'
 import createTypeGuard from './utils/create-type-guard'
 
 const isKey = createTypeGuard<AnyKey>(value => {

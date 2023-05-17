@@ -1,4 +1,4 @@
-import { Constructor } from '@bluesky.llc/utility-types'
+import { Constructor } from '@swiftmind/utility-types'
 import createTypeGuard from './create-type-guard'
 
 /**

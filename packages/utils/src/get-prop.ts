@@ -1,4 +1,4 @@
-import { AnyKey, AnyObject } from '@bluesky.llc/utility-types'
+import { AnyKey, AnyObject } from '@swiftmind/utility-types'
 import { isNullish } from './type-guards'
 
 /**

@@ -3,7 +3,7 @@ import {
   EmptyObject,
   GeneratorReturnType,
   GeneratorYieldType,
-} from '@bluesky.llc/utility-types'
+} from '@swiftmind/utility-types'
 
 /**
  * An object reference yielded (or returned) from the object generator

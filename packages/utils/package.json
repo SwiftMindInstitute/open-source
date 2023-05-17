@@ -4,7 +4,7 @@
   "description": "Utility functions for TypeScript by SwiftMind Institute",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bluesky-llc/open-source.git"
+    "url": "git+https://github.com/swiftmindinstitute/open-source.git"
   },
   "keywords": [
     "typescript",
@@ -12,14 +12,14 @@
     "types",
     "switch",
     "which",
-    "bluesky"
+    "swiftmind"
   ],
   "author": "Hans Oksendahl <hans.oksendahl@swiftmindinstitute.org> (https://swiftmindinstitute.org)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bluesky-llc/open-source/issues"
+    "url": "https://github.com/swiftmindinstitute/open-source/issues"
   },
-  "homepage": "https://github.com/bluesky-llc/open-source#readme",
+  "homepage": "https://github.com/swiftmindinstitute/open-source#readme",
   "type": "module",
   "scripts": {
     "test": "jest",
@@ -28,7 +28,7 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "@swiftmind/utility-types": "^0.1.2",
+    "@swiftmind/utility-types": "^0.1.3",
     "@types/node": "^18.11.5",
     "typescript": "^4.6.4",
     "vite": "^4.0.3",

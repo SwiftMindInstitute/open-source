@@ -1,4 +1,4 @@
-import { Xor } from '@bluesky.llc/utility-types'
+import { Xor } from '@swiftmind/utility-types'
 
 /**
  * Return the disjunction of `a ⊻ b`

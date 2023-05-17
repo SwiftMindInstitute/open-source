@@ -1,4 +1,4 @@
-import { AnyNullish } from '@bluesky.llc/utility-types'
+import { AnyNullish } from '@swiftmind/utility-types'
 import { createTypeGuard } from './utils'
 
 /**

@@ -1,4 +1,4 @@
-import { AnySet, Constructor, ValueOf } from '@bluesky.llc/utility-types'
+import { AnySet, Constructor, ValueOf } from '@swiftmind/utility-types'
 
 /**
  * The [Intersection](https://en.wikipedia.org/wiki/Intersection_(set_theory))

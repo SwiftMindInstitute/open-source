@@ -3,7 +3,7 @@ import {
   Capture,
   CaptureGroup,
   Interpolation,
-} from '@bluesky.llc/utility-types'
+} from '@swiftmind/utility-types'
 
 interface Interpolate {
   <A extends string>(a: A): A

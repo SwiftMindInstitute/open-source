@@ -1,4 +1,4 @@
-import { AnyPrimitive } from '@bluesky.llc/utility-types'
+import { AnyPrimitive } from '@swiftmind/utility-types'
 import isNullish from './is-nullish'
 import { createTypeGuard } from './utils'
 

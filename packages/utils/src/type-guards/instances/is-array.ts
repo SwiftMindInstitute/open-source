@@ -1,4 +1,4 @@
-import { AnyArray } from '@bluesky.llc/utility-types'
+import { AnyArray } from '@swiftmind/utility-types'
 import { createTypeGuard } from '../utils'
 
 /**

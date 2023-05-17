@@ -1,4 +1,4 @@
-import { AnyKey, AnyObject, IsKeyOf } from '@bluesky.llc/utility-types'
+import { AnyKey, AnyObject, IsKeyOf } from '@swiftmind/utility-types'
 
 const isKeyOf = <A extends AnyObject, B extends AnyKey>(
   ref: A,

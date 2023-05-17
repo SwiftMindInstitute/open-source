@@ -4,7 +4,7 @@ import {
   AnyKey,
   AnyObject,
   KeyOf,
-} from '@bluesky.llc/utility-types'
+} from '@swiftmind/utility-types'
 
 const DISCRIMINANT_PROPERTY = 'type'
 

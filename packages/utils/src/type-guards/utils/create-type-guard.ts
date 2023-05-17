@@ -1,4 +1,4 @@
-import { AnyFunction } from '@bluesky.llc/utility-types'
+import { AnyFunction } from '@swiftmind/utility-types'
 
 /**
  * A generalized type guard factory
