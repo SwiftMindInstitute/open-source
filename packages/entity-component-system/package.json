@@ -4,7 +4,7 @@
   "description": "ECS implementation for TypeScript by SwiftMind Institute",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bluesky-llc/open-source.git"
+    "url": "git+https://github.com/swiftmind/open-source.git"
   },
   "keywords": [
     "typescript",
@@ -17,9 +17,9 @@
   "author": "Hans Oksendahl <hans.oksendahl@swiftmindinstitute.org> (https://swiftmindinstitute.org)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bluesky-llc/open-source/issues"
+    "url": "https://github.com/swiftmind/open-source/issues"
   },
-  "homepage": "https://github.com/bluesky-llc/open-source#readme",
+  "homepage": "https://github.com/swiftmind/open-source#readme",
   "type": "module",
   "scripts": {
     "test": "jest",
@@ -46,10 +46,9 @@
     "tsconfig": "./tsconfig.json"
   },
   "dependencies": {
-    "@swiftmind/event-queue": "^0.0.1",
-    "@swiftmind/utility-types": "0.1.2",
-    "@swiftmind/utils": "^0.0.4",
-    "@swiftmind/weak-ref-set-map-query": "^0.0.1",
-    "@swiftmind/weak-ref-map": "^0.0.1"
+    "@swiftmind/event-queue": "workspace:^",
+    "@swiftmind/utility-types": "workspace:^",
+    "@swiftmind/utils": "workspace:^",
+    "@swiftmind/weak-ref-map": "workspace:^"
   }
 }

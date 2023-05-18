@@ -1,13 +1,4 @@
 import { AnyStringish } from '../any'
-import { IsEmpty } from '../any/antecedent/is-empty'
-import { Internal } from '../helpers/internal'
-
-/**
- * # 🚫 DO NOT EXPORT
- */
-interface Opts<A extends AnyStringish = AnyStringish> extends Internal {
-  value: A
-}
 
 /**
  * Join a tuple of templatables `A` on a templatable `B`
@@ -15,21 +6,19 @@ interface Opts<A extends AnyStringish = AnyStringish> extends Internal {
  * @group String
  * @example
  * ```
- * type Ex = Join<['a', 'b', 'c'], ', '> // 'a, b, c'
+ * type Ex1 = Join<'a', 'b', '.', ', '>  // 'a.b'
+ * type Ex2 = Join<'a', null, '.', ', '> // 'a'
+ * type Ex1 = Join<null, 'b', '.', ', '> // 'b'
  * ```
  */
 export type Join<
-  A extends AnyStringish[],
-  B extends AnyStringish = '',
-  Z extends Opts = Opts<''>
-> = IsEmpty<A> extends true
-  ? Z['value']
-  : A extends [infer D, ...infer E]
-  ? D extends AnyStringish
-    ? E extends AnyStringish[]
-      ? Z extends ''
-        ? Join<E, B, Opts<D>>
-        : Join<E, B, Opts<`${Z['value']}${B}${D}`>>
-      : never
-    : never
-  : never
+  A extends any,
+  B extends any,
+  C extends AnyStringish
+> = A extends string
+  ? B extends string
+    ? `${A}${C}${B}`
+    : A
+  : B extends string
+  ? B
+  : ''
