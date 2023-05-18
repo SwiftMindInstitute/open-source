@@ -1,6 +1,7 @@
 export { default as brandObject } from './brand-object'
 export { default as createFactories } from './create-factories'
 export { default as createWhich } from './create-which'
+export { default as cx } from './cx'
 export * from './generators'
 export { default as getProp } from './get-prop'
 export { default as interpolate } from './interpolate'
