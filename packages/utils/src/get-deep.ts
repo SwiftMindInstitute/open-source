@@ -1,40 +1,52 @@
-import { AnyKey, AnyObject, Join } from '@swiftmind/utility-types'
+import { AnyKey, AnyPrimitive, Join } from '@swiftmind/utility-types'
+
+interface DeepObject {
+  [_: AnyKey]: DeepObject | AnyPrimitive
+}
 
 type TemplateKeys<
-  A extends AnyObject,
-  B extends string | undefined = undefined
+  A extends DeepObject,
+  B extends string,
+  C extends string | undefined = undefined
 > = A extends object
   ? {
-      [C in keyof A]: A[C] extends object
-        ? C extends string
-          ? TemplateKeys<A[C], Join<B, C, '.'>>
+      [D in keyof A]: A[D] extends object
+        ? D extends string
+          ? TemplateKeys<A[D], B, Join<C, D, B>>
           : never
-        : C extends string
-        ? Join<B, C, '.'>
+        : D extends string
+        ? Join<C, D, B>
         : never
     }[keyof A]
   : never
 
 type NestedValue<
-  A extends AnyObject,
-  B extends TemplateKeys<A>
-> = B extends `${infer D}.${infer E}`
-  ? A[D] extends AnyObject
-    ? E extends TemplateKeys<A[D]>
-      ? NestedValue<A[D], E>
+  A extends DeepObject,
+  B extends TemplateKeys<A, C>,
+  C extends string
+> = B extends `${infer D}${C}${infer E}`
+  ? A[D] extends DeepObject
+    ? E extends TemplateKeys<A[D], C>
+      ? NestedValue<A[D], E, C>
       : never
     : never
   : A[B]
 
-const cx =
-  <A extends AnyObject>(templates: A) =>
-  <B extends TemplateKeys<A>>(key: B): NestedValue<A, B> => {
-    const subKeys = key.split('.')
+interface GetDeep {
+  <A extends DeepObject, B extends TemplateKeys<A, C>, C extends string = '.'>(
+    a: A,
+    b: B,
+    c: C
+  ): NestedValue<A, B, C>
+}
 
-    return subKeys.reduce(
-      (memo: AnyObject, subKey: AnyKey) => memo[subKey] as any,
-      templates
-    ) as NestedValue<A, B>
-  }
+const getDeep: GetDeep = (ref, key, connector) => {
+  const subKeys = key.split(connector)
 
-export default cx
+  return subKeys.reduce(
+    (memo: DeepObject, subKey: AnyKey) => memo[subKey] as any,
+    ref
+  ) as NestedValue<typeof ref, typeof key, typeof connector>
+}
+
+export default getDeep
