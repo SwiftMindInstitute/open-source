@@ -1,10 +1,9 @@
 import { Split } from '../string/split'
-import { InferProperty } from './infer-property'
 
 /**
  * Return the length of tuple `A`
  * @beta
- * @group Prop
+ * @group Object
  * @example
  * ```
  * type Ex1 = LengthProp<'Hello'>   // 5
@@ -12,5 +11,7 @@ import { InferProperty } from './infer-property'
  * ```
  */
 export type LengthProp<A> = A extends string
-  ? InferProperty<Split<A>, 'length'> // TODO(hao) see if this is still necessary in 5.0
-  : InferProperty<A, 'length'>
+  ? Split<A>['length'] // TODO(hao) see if this is still necessary in 5.0
+  : 'length' extends keyof A
+  ? A['length']
+  : never

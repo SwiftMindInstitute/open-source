@@ -1,36 +1,4 @@
-import { AnyKey, AnyPrimitive, Join } from '@swiftmind/utility-types'
-
-interface DeepObject {
-  [_: AnyKey]: DeepObject | AnyPrimitive
-}
-
-type TemplateKeys<
-  A extends DeepObject,
-  B extends string,
-  C extends string | undefined = undefined
-> = A extends object
-  ? {
-      [D in keyof A]: A[D] extends object
-        ? D extends string
-          ? TemplateKeys<A[D], B, Join<C, D, B>>
-          : never
-        : D extends string
-        ? Join<C, D, B>
-        : never
-    }[keyof A]
-  : never
-
-type NestedValue<
-  A extends DeepObject,
-  B extends TemplateKeys<A, C>,
-  C extends string
-> = B extends `${infer D}${C}${infer E}`
-  ? A[D] extends DeepObject
-    ? E extends TemplateKeys<A[D], C>
-      ? NestedValue<A[D], E, C>
-      : never
-    : never
-  : A[B]
+import { AnyKey } from '@swiftmind/utility-types'
 
 interface GetDeep {
   <A extends DeepObject, B extends TemplateKeys<A, C>, C extends string = '.'>(

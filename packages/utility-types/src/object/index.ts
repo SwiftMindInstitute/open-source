@@ -1,4 +1,7 @@
 export * from './antecedent'
+export * from './get-keys'
+export * from './get-value'
 export * from './key-of'
+export * from './length-prop'
 export * from './override'
 export * from './value-of'
