@@ -1,11 +1,7 @@
-import { Join } from '@swiftmind/utility-types'
-
-interface Templates {
-  [_: string]: string | Templates
-}
+import { AnyKey, AnyObject, Join } from '@swiftmind/utility-types'
 
 type TemplateKeys<
-  A extends Templates,
+  A extends AnyObject,
   B extends string | undefined = undefined
 > = A extends object
   ? {
@@ -20,10 +16,10 @@ type TemplateKeys<
   : never
 
 type NestedValue<
-  A extends Templates,
+  A extends AnyObject,
   B extends TemplateKeys<A>
 > = B extends `${infer D}.${infer E}`
-  ? A[D] extends Templates
+  ? A[D] extends AnyObject
     ? E extends TemplateKeys<A[D]>
       ? NestedValue<A[D], E>
       : never
@@ -31,12 +27,12 @@ type NestedValue<
   : A[B]
 
 const cx =
-  <A extends Templates>(templates: A) =>
+  <A extends AnyObject>(templates: A) =>
   <B extends TemplateKeys<A>>(key: B): NestedValue<A, B> => {
     const subKeys = key.split('.')
 
     return subKeys.reduce(
-      (memo, subKey) => memo[subKey] as any,
+      (memo: AnyObject, subKey: AnyKey) => memo[subKey] as any,
       templates
     ) as NestedValue<A, B>
   }

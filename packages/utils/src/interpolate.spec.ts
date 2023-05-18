@@ -24,7 +24,7 @@ describe('interpolate', () => {
 
   it('should allow setting a custom capture group', () => {
     const template = '${a} ${b} ${c}'
-    const actual = interpolate(template, { start: '\\${', end: '}' } as const, {
+    const actual = interpolate(template, { start: '${', end: '}' } as const, {
       a: 'A',
       b: 'B',
       c: 'C',
