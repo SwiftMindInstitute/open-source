@@ -32,15 +32,13 @@ type NestedValue<
 
 const cx =
   <A extends Templates>(templates: A) =>
-  <B extends TemplateKeys<A>>(key: B) => {
+  <B extends TemplateKeys<A>>(key: B): NestedValue<A, B> => {
     const subKeys = key.split('.')
 
-    const blah = subKeys.reduce(
+    return subKeys.reduce(
       (memo, subKey) => memo[subKey] as any,
       templates
     ) as NestedValue<A, B>
-
-    return blah
   }
 
 export default cx
