@@ -11,7 +11,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: path.resolve(__dirname, 'src/index.ts'),
-      name: 'utility-types',
+      name: 'create-t',
       formats: ['es', 'umd'],
       fileName: format => `index.${format}.js`,
     },

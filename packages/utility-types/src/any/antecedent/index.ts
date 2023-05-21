@@ -1,6 +1,5 @@
 export * from '../../function/antecedent/is-function'
 export * from './is-array'
-export * from './is-empty'
 export * from './is-equal'
 export * from './is-extension'
 export * from './is-falsy'

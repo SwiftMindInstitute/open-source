@@ -13,11 +13,3 @@ import { ObjectIntersectionIdenity } from '../object-intersection-identity'
  * ```
  */
 export type IsObjectIdentity<A> = IsEqual<A, ObjectIntersectionIdenity>
-
-/**
- * Alias for `IsObjectIdentity`
- * @beta
- * @group Antecedent
- * @group Identity
- */
-export type IsEmptyObject<A> = IsObjectIdentity<A>

@@ -1,6 +1,8 @@
-import { AnyKey } from 'any/any-key'
-import { AnyPrimitive } from 'any/any-primitive'
-import { Join } from 'string/join'
+import { AnyKey } from '../any/any-key'
+import { AnyPrimitive } from '../any/any-primitive'
+import { Join } from '../string/join'
+import { IsEmptyObject } from './antecedent'
+import { KeyOf } from './key-of'
 
 export interface DeepObject {
   [_: AnyKey]: DeepObject | AnyPrimitive
@@ -22,12 +24,14 @@ export type GetKeys<
   C extends string | undefined = undefined
 > = A extends object
   ? {
-      [D in keyof A]: A[D] extends object
+      [D in KeyOf<A>]: A[D] extends object
         ? D extends string
-          ? GetKeys<A[D], B, Join<C, D, B>>
+          ? IsEmptyObject<A> extends true
+            ? Join<C, D, B>
+            : GetKeys<A[D], B, Join<C, D, B>>
           : never
         : D extends string
         ? Join<C, D, B>
         : never
-    }[keyof A]
+    }[KeyOf<A>]
   : never

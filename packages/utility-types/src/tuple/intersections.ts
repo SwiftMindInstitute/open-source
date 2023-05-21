@@ -1,5 +1,4 @@
 import { AnyArray } from '../any/any-array'
-import { EmptyObject } from '../identity/object-intersection-identity'
 
 /**
  * Evaluate the intersection of all entries of `A`
@@ -10,7 +9,7 @@ import { EmptyObject } from '../identity/object-intersection-identity'
  * type Ex = Intersections<[{ a: 'a' }, { b: 'b' }]> // { a: 'a', b: 'b' }
  * ```
  */
-export type Intersections<A extends AnyArray, B = EmptyObject> = A extends [
+export type Intersections<A extends AnyArray, B = {}> = A extends [
   infer C,
   ...infer D
 ]

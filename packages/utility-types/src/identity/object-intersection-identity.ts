@@ -13,10 +13,3 @@
  * ```
  */
 export type ObjectIntersectionIdenity = {}
-
-/**
- * Alias of `ObjectIdenity`
- * @beta
- * @group Identity
- */
-export type EmptyObject = ObjectIntersectionIdenity

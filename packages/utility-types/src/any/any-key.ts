@@ -4,7 +4,7 @@
  * @group Any
  * @example
  * ```
- * type Ex = Record<AnyKey, any> = Record<string | number | symbol, any>
+ * type Ex = Record<AnyKey, any> // Record<string | number | symbol, any>
  * ```
  */
-export type AnyKey = keyof any
+export type AnyKey = PropertyKey

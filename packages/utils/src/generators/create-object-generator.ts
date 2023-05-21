@@ -1,8 +1,8 @@
 import {
   AnyKey,
-  EmptyObject,
   GeneratorReturnType,
   GeneratorYieldType,
+  ObjectIntersectionIdenity,
 } from '@swiftmind/utility-types'
 
 /**
@@ -27,7 +27,7 @@ interface CreateObjectGenerator {
     Reference<A, ReferenceValue<B>>,
     Reference<A, ReferenceValue<B>>
   >
-  (): Generator<EmptyObject, EmptyObject>
+  (): Generator<ObjectIntersectionIdenity, ObjectIntersectionIdenity>
 }
 
 /**

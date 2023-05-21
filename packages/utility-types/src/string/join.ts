@@ -1,5 +1,3 @@
-import { AnyStringish } from '../any'
-
 /**
  * Join a tuple of templatables `A` on a templatable `B`
  * @beta
@@ -14,7 +12,7 @@ import { AnyStringish } from '../any'
 export type Join<
   A extends any,
   B extends any,
-  C extends AnyStringish
+  C extends string | number
 > = A extends string
   ? B extends string
     ? `${A}${C}${B}`
