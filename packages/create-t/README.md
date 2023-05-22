@@ -1,16 +1,10 @@
 # EventQueue
 
-A WeakRef Set class by SwiftMind Institute.
-
-The core of the WeakRefSet class is an instance with the signature.
-
-```ts
-Set<WeakRef<object>>
-```
+A String handling class for TypeScript by SwiftMind Institute
 
 # Documentation
 
-- [Documentation](https://bluesky-llc.github.io/open-source/modules/Event_Queue.html)
+- [Documentation](https://bluesky-llc.github.io/open-source/modules/Create_T.html)
 
 # Contributing
 

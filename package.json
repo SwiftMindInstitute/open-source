@@ -7,7 +7,7 @@
   "devDependencies": {
     "@jest/globals": "^29.5.0",
     "@types/jest": "^29.5.1",
-    "eslint": "^8.40.0",
+    "eslint": "^8.41.0",
     "jest": "^29.5.0",
     "prettier": "^2.8.8",
     "prettier-plugin-organize-imports": "^3.2.2",
@@ -20,7 +20,7 @@
   "license": "MIT",
   "scripts": {
     "test": "jest",
-    "docs": "typedoc",
+    "docs": "typedoc --entryPointStrategy packages",
     "w": "scripts/w.sh"
   }
 }

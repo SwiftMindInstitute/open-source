@@ -39,12 +39,6 @@
   "files": [
     "./dist/*"
   ],
-  "typedoc": {
-    "entryPoint": "./src/index.ts",
-    "readmeFile": "./README.md",
-    "displayName": "Entity-Component-System",
-    "tsconfig": "./tsconfig.json"
-  },
   "dependencies": {
     "@swiftmind/event-queue": "workspace:^",
     "@swiftmind/utility-types": "workspace:^",
