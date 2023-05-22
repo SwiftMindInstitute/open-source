@@ -6,7 +6,7 @@ describe('createT', () => {
     const t = createT({
       motto: 'Kick {{this}} and take {{that}}.',
     } as const)
-    const actual = t('motto', { this: 'ass', that: 'names' })
+    const actual = t('motto', { this: 'ass', that: 'names' } as const)
 
     expect(actual).toBe(expected)
   })

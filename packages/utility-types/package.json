@@ -1,6 +1,6 @@
 {
   "name": "@swiftmind/utility-types",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Utility-Types for TypeScript by SwiftMind Institute",
   "scripts": {
     "test": "echo No tests at this time",
