@@ -28,25 +28,51 @@ export type Interpolation<
     : never
   : D
 
-const createT =
-  <A extends DeepObject, B extends CaptureGroup = { start: '{{'; end: '}}' }>(
-    templates: A,
-    captureGroup: B = { start: '{{', end: '}}' } as B
-  ) =>
-  <
+export type Variables<
+  A extends DeepObject | AnyPrimitive,
+  B extends CaptureGroup
+> = Capture<A, B> extends never ? never : AnyObject<Capture<A, B>, string>
+
+/**
+ * Create a function that defines a group of string `templates` using a deeply
+ * nested object and an optional user defined `captureGroup` for variable
+ * interpolation.
+ *
+ * @param templates
+ * @param captureGroup
+ * @returns
+ */
+const createT = <
+  A extends DeepObject,
+  B extends CaptureGroup = { start: '{{'; end: '}}' }
+>(
+  templates: A,
+  captureGroup: B = { start: '{{', end: '}}' } as B
+) => {
+  /**
+   * Return a curried function that takes a `key` defined in `templates` and
+   * an object containing the variables defined for that function.
+   * @param key
+   * @param variables
+   * @returns
+   */
+  const templateFunction = <
     C extends GetKeys<A>,
     D extends AnyObject<Capture<GetValue<A, C>, B>, string>
   >(
     key: C,
-    variables: D
+    variables: D = {} as D
   ): Interpolation<GetValue<A, C>, B, D> => {
     const template = getDeepProp(templates, key)
 
     return interpolate(
       template as string,
       captureGroup,
-      variables
+      variables ?? {}
     ) as Interpolation<GetValue<A, C>, B, D>
   }
+
+  return templateFunction
+}
 
 export default createT
