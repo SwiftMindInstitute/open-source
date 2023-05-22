@@ -30,9 +30,9 @@ Provides the following modules.
 
 # Documentation
 
-- [Documentation](https://bluesky-llc.github.io/open-source/modules/Utility_Types.html)
+- [Documentation](https://swiftmindinstitute.github.io/open-source/modules/Utility_Types.html)
 - [Utility-Types Blog Series](https://medium.com/@hansoksendahl/list/ts-utilitytypes-dcf631c157a5)
 
 # Contributing
 
-Read the [style guide](https://github.com/bluesky-llc/open-source/blob/main/STYLE.md#style-guide).
+Read the [style guide](https://github.com/swiftmind/open-source/blob/main/STYLE.md#style-guide).

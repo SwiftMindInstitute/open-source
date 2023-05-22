@@ -17,7 +17,7 @@
 <h1>Module @swiftmind/entity-component-system</h1></div>
 <section class="tsd-panel tsd-typography"><a id="md:entity-component-system" class="tsd-anchor"></a><h1><a href="#md:entity-component-system">Entity Component System</a></h1><p>Made with ❤️ by <a href="https://bluesky.llc">bluesky.llc</a>.</p>
 <a id="md:documentation" class="tsd-anchor"></a><h1><a href="#md:documentation">Documentation</a></h1><ul>
-<li><a href="https://bluesky-llc.github.io/open-source/modules/Utils.html">Documentation</a></li>
+<li><a href="https://swiftmindinstitute.github.io/open-source/modules/Utils.html">Documentation</a></li>
 </ul>
 <a id="md:overview" class="tsd-anchor"></a><h1><a href="#md:overview">Overview</a></h1><p>This is an Entity Component System implementation. It&#39;s designed to be as
 simple and robust as possible.</p>
@@ -26,10 +26,10 @@ not define them directly. The default is an auto-incrementing number however,
 @bluesky.llc/utils also provides generators for <code>bigint</code> and <code>symbol</code> data
 types which can be used interchangably. That can be passed in to the
 EntityComponentSystem constructor.</p>
-<pre><code class="language-ts"><span class="hl-3">const</span><span class="hl-1"> </span><span class="hl-4">ecs</span><span class="hl-1"> = </span><span class="hl-3">new</span><span class="hl-1"> </span><span class="hl-0">EntityComponentSystem</span><span class="hl-1">()</span><br/><br/><span class="hl-3">const</span><span class="hl-1"> </span><span class="hl-4">entity</span><span class="hl-1"> = </span><span class="hl-5">ecs</span><span class="hl-1">.</span><span class="hl-0">create</span><span class="hl-1">() </span><span class="hl-6">// 0</span>
+<pre><code class="language-ts"><span class="hl-3">const</span><span class="hl-1"> </span><span class="hl-4">ecs</span><span class="hl-1"> = </span><span class="hl-3">new</span><span class="hl-1"> </span><span class="hl-0">EntityComponentSystem</span><span class="hl-1">()</span><br/><br/><span class="hl-3">const</span><span class="hl-1"> </span><span class="hl-4">entity</span><span class="hl-1"> = </span><span class="hl-5">ecs</span><span class="hl-1">.</span><span class="hl-0">create</span><span class="hl-1">() </span><span class="hl-7">// 0</span>
 </code><button>Copy</button></pre>
 <p>You can also supply your own generator.</p>
-<pre><code class="language-ts"><span class="hl-7">import</span><span class="hl-1"> { </span><span class="hl-5">bigintGenerator</span><span class="hl-1"> } </span><span class="hl-7">from</span><span class="hl-1"> </span><span class="hl-2">&#39;@bluesky.llc/utils&#39;</span><br/><br/><span class="hl-3">const</span><span class="hl-1"> </span><span class="hl-4">ecs</span><span class="hl-1"> = </span><span class="hl-3">new</span><span class="hl-1"> </span><span class="hl-0">EntityComponentSystem</span><span class="hl-1">(</span><span class="hl-0">bigintGenerator</span><span class="hl-1">())</span><br/><br/><span class="hl-3">const</span><span class="hl-1"> </span><span class="hl-4">entity</span><span class="hl-1"> = </span><span class="hl-5">ecs</span><span class="hl-1">.</span><span class="hl-0">create</span><span class="hl-1">()</span>
+<pre><code class="language-ts"><span class="hl-6">import</span><span class="hl-1"> { </span><span class="hl-5">bigintGenerator</span><span class="hl-1"> } </span><span class="hl-6">from</span><span class="hl-1"> </span><span class="hl-2">&#39;@bluesky.llc/utils&#39;</span><br/><br/><span class="hl-3">const</span><span class="hl-1"> </span><span class="hl-4">ecs</span><span class="hl-1"> = </span><span class="hl-3">new</span><span class="hl-1"> </span><span class="hl-0">EntityComponentSystem</span><span class="hl-1">(</span><span class="hl-0">bigintGenerator</span><span class="hl-1">())</span><br/><br/><span class="hl-3">const</span><span class="hl-1"> </span><span class="hl-4">entity</span><span class="hl-1"> = </span><span class="hl-5">ecs</span><span class="hl-1">.</span><span class="hl-0">create</span><span class="hl-1">()</span>
 </code><button>Copy</button></pre>
 <a id="md:components" class="tsd-anchor"></a><h2><a href="#md:components">Components</a></h2></section></div>
 <div class="col-sidebar">

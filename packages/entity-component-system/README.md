@@ -4,7 +4,7 @@ Made with ❤️ by [bluesky.llc](https://bluesky.llc).
 
 # Documentation
 
-- [Documentation](https://bluesky-llc.github.io/open-source/modules/Utils.html)
+- [Documentation](https://swiftmindinstitute.github.io/open-source/modules/Utils.html)
 
 # Overview
 

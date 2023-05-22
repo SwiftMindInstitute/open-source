@@ -2,15 +2,7 @@
 
 A String handling class for TypeScript by SwiftMind Institute
 
-```ts
-const t = createT({
-  home: {
-    welcome: 'Welcome {{name}}, to SwiftMind Institute',
-  },
-} as const)
-
-const welcome = t('home.welcome', { name: 'Hans' } as const)
-```
+![Demo](https://www.dropbox.com/s/5z4bv9y91laie97/create-t.gif?raw=1)
 
 # Documentation
 
