@@ -22,5 +22,6 @@
     "test": "jest",
     "docs": "typedoc --entryPointStrategy packages",
     "w": "scripts/w.sh"
-  }
+  },
+  "private": true
 }
