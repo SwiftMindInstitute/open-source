@@ -4,7 +4,7 @@
   "description": "Weak Reference Set class for TypeScript by SwiftMind Institute",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/swiftmind/open-source.git"
+    "url": "git+https://github.com/swiftmindinstitute/open-source.git"
   },
   "keywords": [
     "typescript",
@@ -19,9 +19,9 @@
   "author": "Hans Oksendahl <hans.oksendahl@swiftmindinstitute.org> (https://swiftmindinstitute.org)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/swiftmind/open-source/issues"
+    "url": "https://github.com/swiftmindinstitute/open-source/issues"
   },
-  "homepage": "https://github.com/swiftmind/open-source#readme",
+  "homepage": "https://github.com/swiftmindinstitute/open-source#readme",
   "type": "module",
   "scripts": {
     "test": "jest",

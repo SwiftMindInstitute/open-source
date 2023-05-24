@@ -16,4 +16,4 @@ memory reference.
 
 # Contributing
 
-Read the [style guide](https://github.com/swiftmind/open-source/blob/main/STYLE.md#style-guide).
+Read the [style guide](https://github.com/swiftmindinstitute/open-source/blob/main/STYLE.md#style-guide).
