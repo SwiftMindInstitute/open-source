@@ -7,7 +7,7 @@ import { IsFloat } from '@swiftmind/utility-types'
  * @returns A boolean indicating if it looks like a float
  */
 const validateIsFloat = <A extends number>(value: A): IsFloat<A> => {
-  return (value === (value | 0)) as IsFloat<A>
+  return (value !== (value | 0)) as IsFloat<A>
 }
 
 export default validateIsFloat

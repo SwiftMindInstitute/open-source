@@ -24,11 +24,15 @@ describe('interpolate', () => {
 
   it('should allow setting a custom capture group', () => {
     const template = '${a} ${b} ${c}'
-    const actual = interpolate(template, { start: '${', end: '}' } as const, {
-      a: 'A',
-      b: 'B',
-      c: 'C',
-    })
+    const actual = interpolate(
+      template,
+      { start: '\\${', end: '}' } as const,
+      {
+        a: 'A',
+        b: 'B',
+        c: 'C',
+      } as const
+    )
     const expected = 'A B C'
 
     expect(actual).toBe(expected)
