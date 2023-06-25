@@ -30,8 +30,8 @@ export type Interpolation<
 
 export type Variables<
   A extends DeepObject | AnyPrimitive,
-  B extends CaptureGroup
-> = Capture<A, B> extends never ? never : AnyObject<Capture<A, B>, string>
+  B extends CaptureGroup = CaptureGroup<'{{', '}}'>
+> = Capture<A, B> extends never ? [] : [AnyObject<Capture<A, B>, string>]
 
 /**
  * Create a function that defines a group of string `templates` using a deeply
@@ -61,14 +61,15 @@ const createT = <
     D extends AnyObject<Capture<GetValue<A, C>, B>, string>
   >(
     key: C,
-    variables: D = {} as D
+    ...params: Capture<GetValue<A, C>, B> extends never ? [] : [D]
   ): Interpolation<GetValue<A, C>, B, D> => {
+    const variables = params[0] ?? {}
     const template = getDeepProp(templates, key)
 
     return interpolate(
       template as string,
       captureGroup,
-      variables ?? {}
+      variables
     ) as Interpolation<GetValue<A, C>, B, D>
   }
 
