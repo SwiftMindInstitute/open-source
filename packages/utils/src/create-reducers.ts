@@ -1,17 +1,21 @@
-import { Tail } from '@swiftmind/utility-types'
+import { AnyPrimitive, Tail } from '@swiftmind/utility-types'
 
-type ReducerFunction<A extends any = any> = (a: A, ...b: any[]) => A
+export type ReducerFunction<A extends any = any> = (a: A, ...b: any[]) => A
 
-type ReducerFunctions<A extends any> = {
+export type ReducerFunctions<A extends any> = {
   [_: string]: ReducerFunction<A>
 }
 
+export interface Action<A extends AnyPrimitive, B extends any[]> {
+  type: A
+  params: B
+}
+
 /** Given a set of ReducerFunctions define the type for the actions */
-type ReducerActions<A extends any, B extends ReducerFunctions<A>> = {
-  [C in keyof B]: (..._: Tail<Parameters<B[C]>>) => {
-    type: C
-    params: Tail<Parameters<B[C]>>
-  }
+export type ReducerActions<A extends any, B extends ReducerFunctions<A>> = {
+  [C in keyof B]: (
+    ..._: Tail<Parameters<B[C]>>
+  ) => Action<C, Tail<Parameters<B[C]>>>
 }
 
 /**
@@ -22,23 +26,16 @@ type ReducerActions<A extends any, B extends ReducerFunctions<A>> = {
  * @returns
  */
 function createReducers<A extends any, B extends ReducerFunctions<A>>(
-  initialState: A,
+  _: A,
   reducerFunctions: B
 ) {
-  let state = initialState
-
-  const reducer = <C extends keyof B>({
-    type,
-    params,
-  }: {
-    type: C
-    params: Tail<Parameters<B[C]>>
-  }): A => {
+  const reducer = <C extends keyof B>(
+    state: A,
+    { type, params }: Action<C, Tail<Parameters<B[C]>>>
+  ): A => {
     const reducerMethod = reducerFunctions[type]
 
-    state = reducerMethod(state, ...params)
-
-    return state
+    return reducerMethod(state, ...params)
   }
 
   const actions: ReducerActions<A, B> = Object.keys(reducerFunctions).reduce(
@@ -50,9 +47,7 @@ function createReducers<A extends any, B extends ReducerFunctions<A>>(
     {} as ReducerActions<A, B>
   )
 
-  const reset = () => (state = initialState)
-
-  return { reducer, actions, reset }
+  return { reducer, actions }
 }
 
 export default createReducers

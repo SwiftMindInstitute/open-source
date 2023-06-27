@@ -6,7 +6,7 @@ describe('createReducers', () => {
     const initialState = 0
     const { reducer, actions } = createReducers(initialState, { identity })
     const expected = 0
-    const actual = reducer(actions.identity())
+    const actual = reducer(initialState, actions.identity())
 
     expect(actual).toBe(expected)
   })
@@ -17,21 +17,7 @@ describe('createReducers', () => {
       increment: state => state + 1,
     })
     const expected = 1
-    const actual = reducer(actions.increment())
-
-    expect(actual).toBe(expected)
-  })
-
-  it('should allow resetting state', () => {
-    const initialState = false
-    const { reducer, actions, reset } = createReducers(initialState, {
-      set: (_, value) => value,
-      identity,
-    })
-    reducer(actions.set(true))
-    reset()
-    const expected = initialState
-    const actual = reducer(actions.identity())
+    const actual = reducer(initialState, actions.increment())
 
     expect(actual).toBe(expected)
   })

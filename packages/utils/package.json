@@ -1,6 +1,6 @@
 {
   "name": "@swiftmind/utils",
-  "version": "0.1.7",
+  "version": "1.0.0",
   "description": "Utility functions for TypeScript by SwiftMind Institute",
   "repository": {
     "type": "git",
