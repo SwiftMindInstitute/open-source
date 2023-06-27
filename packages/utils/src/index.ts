@@ -1,5 +1,8 @@
 export { default as brandObject } from './brand-object'
 export { default as createFactories } from './create-factories'
+export * from './create-reducers'
+export { default as createReducers } from './create-reducers'
+export * from './create-which'
 export { default as createWhich } from './create-which'
 export * from './generators'
 export { default as getDeepProp } from './get-deep-prop'
