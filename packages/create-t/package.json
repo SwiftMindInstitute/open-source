@@ -1,6 +1,6 @@
 {
   "name": "@swiftmind/create-t",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "String handling class for TypeScript by SwiftMind Institute",
   "repository": {
     "type": "git",
