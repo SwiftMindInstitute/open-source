@@ -1,4 +1,4 @@
-interface Flow {
+export interface Flow {
   // Parameters: 1
   <A, B>(ab: (a: A) => B): (a: A) => B
   // Parameters: 2
