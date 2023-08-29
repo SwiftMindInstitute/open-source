@@ -29,10 +29,10 @@
   },
   "devDependencies": {
     "@swiftmind/utility-types": "workspace:^",
-    "@types/node": "^20.2.1",
-    "typescript": "^5.0.4",
-    "vite": "^4.3.8",
-    "vite-plugin-dts": "^2.3.0"
+    "@types/node": "^20.5.7",
+    "typescript": "^5.2.2",
+    "vite": "^4.4.9",
+    "vite-plugin-dts": "^3.5.2"
   },
   "main": "./dist/index.umd.js",
   "module": "./dist/index.es.js",
