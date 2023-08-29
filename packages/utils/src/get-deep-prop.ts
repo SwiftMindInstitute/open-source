@@ -4,6 +4,18 @@ import {
   GetValue,
 } from '@swiftmind/utility-types/dist/object'
 
+/**
+ * Get a deeply nested value from an object
+ *
+ * @param ref
+ * @param key
+ * @param connector
+ * @example
+ * ```
+ * getDeepProp({ a: { b: { c: 'd' }} }, 'a.b.c') // string
+ * getDeepProp({ w: { x: { y: 'z' } } }, 'w:x:y', ':') // string
+ * ```
+ */
 const getDeepProp = <
   A extends DeepObject,
   B extends GetKeys<A, C>,
